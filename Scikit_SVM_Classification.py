@@ -64,8 +64,8 @@ def Scikit_SVM_Regression(filename):
     testing_Labels = labels[800:1000]
 
     predict_Labels = Scikit_SVR_Model.predict(testing_Features)
-    print predict_Labels
-    print testing_Labels-predict_Labels
+    accurancy = Scikit_SVR_Model.score(testing_Features, testing_Labels)
+    print accurancy
 
 def Scikit_DecisionTree_Classification(filename):
     # read training data and testing data
@@ -86,8 +86,8 @@ def Scikit_DecisionTree_Classification(filename):
     testing_Labels = labels[800:1000]
 
     predict_Labels = Scikit_DecisionTree_Model.predict(testing_Features)
-    print predict_Labels
-    print testing_Labels-predict_Labels
+    accurancy = Scikit_DecisionTree_Model.score(testing_Features, testing_Labels)
+    print accurancy
 
 def Scikit_RandomForest_Classification(filename):
     # read training data and testing data
@@ -108,8 +108,8 @@ def Scikit_RandomForest_Classification(filename):
     testing_Labels = labels[800:1000]
 
     predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
-    print predict_Labels
-    print testing_Labels-predict_Labels
+    accurancy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
+    print accurancy
 
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
