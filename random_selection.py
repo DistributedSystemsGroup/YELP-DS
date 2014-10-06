@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 
 import io, os
 import random
