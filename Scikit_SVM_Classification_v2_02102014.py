@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+"""
+This code implemented review texts classication by using Support Vector Machine, Support Vector Regression, 
+Decision Tree and Random Forest, the evaluation function has been implemented as well.
+"""
+
 from time import gmtime, strftime
 from sklearn import svm
 from sklearn import tree
@@ -12,15 +17,20 @@ import io, os
 from sklearn.externals.six import StringIO
 
 
-
 training_Features = []
 training_Labels = []
 testing_Features = []
 testing_Labels = []
 
 numberOfSamples = 1000
+# the number of training and testing samples
 trainingSamples = int(0.8 * numberOfSamples)
 testingSamples = int(0.2 * numberOfSamples)
+
+""" the result evaluation function, which defined Absolutely Right: predict label==real label;
+                                                  Nearly Right: |predict label-real label|<=1;
+                                                  Wrong: else cases;
+"""
 
 def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
     acc_rate = [0, 0, 0]
@@ -45,7 +55,7 @@ def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
 
         finalResult = "#AbsolutelyRight: " + str(acc_rate[0]) + " #NearlyRight: " + str(acc_rate[1]) + " #Wrong: " + str(acc_rate[2]) + '\n'
         output_file.write(unicode(finalResult))
-        finalResultPercentage = "#AbsolutelyRight: " + str(acc_rate[0]*1.0/testingSamples) + " #NearlyRight: " + str(acc_rate[1]*1.0/testingSamples) + " #Wrong: " + str(acc_rate[2]*1.0/testingSamples) + '\n'     
+        finalResultPercentage = "#AbsolutelyRight: " + str(acc_rate[0]*1.0/testingSamples) + " #NearlyRight: " + str(acc_rate[1]*1.0/testingSamples) + " #Wrong: " + str(acc_rate[2]*1.0/testingSamples) + '\n'
         output_file.write(unicode(finalResultPercentage))
 
 def Data_Preparation(filename):
@@ -64,7 +74,7 @@ def Data_Preparation(filename):
         for item in data:
             features.append(item["histogram"])
             labels.append(item["rating"])
-    
+
     #training
     training_Features = features[0:trainingSamples]
     training_Labels = labels[0:trainingSamples]
@@ -141,7 +151,7 @@ def main():
 
     inputfile = "data/output_split1000.json"
     Data_Preparation(inputfile)
-    
+
     Scikit_SVM_Classification('data/evaluation/evaluation_SVM.txt', 1)
     #Scikit_SVM_Regression('data/evaluation/evaluation_SVMR.txt', 1)
     Scikit_DecisionTree_Classification('data/evaluation/evaluation_DT.txt')
