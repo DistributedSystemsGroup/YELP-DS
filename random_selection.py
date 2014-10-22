@@ -1,3 +1,8 @@
+"""
+This file is used to randomly extract small number of reviews from the orginal 
+json file
+"""
+
 #! /usr/bin/env python
 
 import io, os
