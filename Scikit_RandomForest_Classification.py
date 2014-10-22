@@ -107,7 +107,7 @@ def main():
     Data_Preparation(inputfile)
     print("Finished preparing data ...")
     
-    Scikit_RandomForest_Classification('Data/evaluation_result/evaluation_RF.txt')
+    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
 
     endtime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     print(starttime)
