@@ -57,6 +57,7 @@ def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
         output_file.write(unicode(finalResult))
         finalResultPercentage = "#AbsolutelyRight: " + str(acc_rate[0]*1.0/testingSamples) + " #NearlyRight: " + str(acc_rate[1]*1.0/testingSamples) + " #Wrong: " + str(acc_rate[2]*1.0/testingSamples) + '\n'
         output_file.write(unicode(finalResultPercentage))
+        print(" #Wrong: " + str(acc_rate[2]*1.0/testingSamples))
 
 def Data_Preparation(filename):
 
@@ -82,50 +83,17 @@ def Data_Preparation(filename):
     testing_Features = features[trainingSamples:trainingSamples + testingSamples]
     testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
 
-def Scikit_SVM_Classification(evaluation_file, kernel_Index):
-
-    if kernel_Index == 1:
-        Scikit_SVM_Model = svm.SVC(kernel='linear')
-    elif kernel_Index == 2:
-        Scikit_SVM_Model = svm.SVC(kernel='rbf')
-    elif kernel_Index == 3:
-        Scikit_SVM_Model = svm.SVC(kernel='poly', degree=3)
-    Scikit_SVM_Model.fit(training_Features, training_Labels)
-
-    predict_Labels = Scikit_SVM_Model.predict(testing_Features)
-    accuracy = Scikit_SVM_Model.score(testing_Features, testing_Labels)
-    print "SVM_Classification: "
-    print accuracy
-
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
-
-def Scikit_SVM_Regression(evaluation_file, kernel_Index):
-    #(kernel can be 1, 2, 3)
-    if kernel_Index == 1:
-        Scikit_SVR_Model = svm.SVR(kernel='linear', C=1e3)
-    elif kernel_Index == 2:
-        Scikit_SVR_Model = svm.SVR(kernel='rbf', C=1e3, gamma=0.1)
-    elif kernel_Index == 3:
-        Scikit_SVR_Model = svm.SVR(kernel='poly', C=1e3, degree=2)
-    Scikit_SVR_Model.fit(training_Features, training_Labels)
-
-    predict_Labels = Scikit_SVR_Model.predict(testing_Features)
-
-    accuracy = Scikit_SVR_Model.score(testing_Features, testing_Labels)
-    print "SVMRegression_Classification: "
-    print accuracy
-
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
 def Scikit_DecisionTree_Classification(evaluation_file):
-
+    print("Starting Decision Tree Classification ...")
     Scikit_DecisionTree_Model = tree.DecisionTreeClassifier()
+    print("Training ..")
     Scikit_DecisionTree_Model.fit(training_Features, training_Labels)
-
+    print("Drawing tree ..")
     # Draw tree
-    with open("data/tree.dot", 'w') as f:
+    with open("data/output/others/tree.dot", 'w') as f:
         f = tree.export_graphviz(Scikit_DecisionTree_Model, out_file=f)
-
+    print("Testing ..")
     predict_Labels = Scikit_DecisionTree_Model.predict(testing_Features)
     accuracy = Scikit_DecisionTree_Model.score(testing_Features, testing_Labels)
     print "DecisionTree_Classification: "
@@ -133,30 +101,18 @@ def Scikit_DecisionTree_Classification(evaluation_file):
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
-def Scikit_RandomForest_Classification(evaluation_file):
-
-    Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=500)
-    Scikit_RandomForest_Model.fit(training_Features, training_Labels)
-
-    predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
-    accuracy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
-
-    print "RandomForest_Classification: "
-    print accuracy
-
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
 
-    inputfile = "data/output_split1000.json"
+    inputfile = "data/output/histogram.json"
+
+    print("Preparing data ...")
     Data_Preparation(inputfile)
-
-    Scikit_SVM_Classification('data/evaluation/evaluation_SVM.txt', 1)
-    #Scikit_SVM_Regression('data/evaluation/evaluation_SVMR.txt', 1)
-    Scikit_DecisionTree_Classification('data/evaluation/evaluation_DT.txt')
-    Scikit_RandomForest_Classification('data/evaluation/evaluation_RF.txt')
-
+    print("Finished preparing data ...")
+    
+    Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
+    
     endtime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     print(starttime)
     print(endtime)

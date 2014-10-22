@@ -4,10 +4,10 @@ import io, os
 import random
 
 numberOfData = 1125458
-numberOfSample = 1000
+numberOfSample = 200
 
-inputfile = 'yelp_academic_dataset_review.json'
-outputfile = 'samples.json'
+inputfile = 'data/input/source/yelp_academic_dataset_review.json'
+outputfile = 'data/input/200samples.json'
 
 randomSelectionList = random.sample(xrange(0, numberOfData), numberOfSample)
 

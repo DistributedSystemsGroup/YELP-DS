@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
+"""
+This code implemented review texts classication by using Support Vector Machine, Support Vector Regression, 
+Decision Tree and Random Forest, the evaluation function has been implemented as well.
+"""
+
 from time import gmtime, strftime
 from sklearn import svm
 from sklearn import tree
@@ -11,12 +16,21 @@ import io, os
 
 from sklearn.externals.six import StringIO
 
-features = []
-labels = []
 
-numberOfSamples = 10000
+training_Features = []
+training_Labels = []
+testing_Features = []
+testing_Labels = []
+
+numberOfSamples = 1000
+# the number of training and testing samples
 trainingSamples = int(0.8 * numberOfSamples)
 testingSamples = int(0.2 * numberOfSamples)
+
+""" the result evaluation function, which defined Absolutely Right: predict label==real label;
+                                                  Nearly Right: |predict label-real label|<=1;
+                                                  Wrong: else cases;
+"""
 
 def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
     acc_rate = [0, 0, 0]
@@ -41,11 +55,20 @@ def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
 
         finalResult = "#AbsolutelyRight: " + str(acc_rate[0]) + " #NearlyRight: " + str(acc_rate[1]) + " #Wrong: " + str(acc_rate[2]) + '\n'
         output_file.write(unicode(finalResult))
-        finalResultPercentage = "#AbsolutelyRight: " + str(acc_rate[0]*1.0/testingSamples) + " #NearlyRight: " + str(acc_rate[1]*1.0/testingSamples) + " #Wrong: " + str(acc_rate[2]*1.0/testingSamples) + '\n'     
+        finalResultPercentage = "#AbsolutelyRight: " + str(acc_rate[0]*1.0/testingSamples) + " #NearlyRight: " + str(acc_rate[1]*1.0/testingSamples) + " #Wrong: " + str(acc_rate[2]*1.0/testingSamples) + '\n'
         output_file.write(unicode(finalResultPercentage))
+        print(" #Wrong: " + str(acc_rate[2]*1.0/testingSamples))
+
+def Data_Preparation(filename):
+
+    global training_Features
+    global training_Labels
+    global testing_Features
+    global testing_Labels
 
 
-def Scikit_SVM_Classification(filename, evaluation_file):
+    features = []
+    labels = []
     # read training and testing data
     with open(filename) as data_file:
         data = json.load(data_file)
@@ -53,23 +76,24 @@ def Scikit_SVM_Classification(filename, evaluation_file):
             features.append(item["histogram"])
             labels.append(item["rating"])
 
-    # train the model using linear kernel, RBF kernel and polynomial
-    # kernel respecively
+    #training
     training_Features = features[0:trainingSamples]
-    training_Labels  = labels[0:trainingSamples]
-    kernel_Index = 2 #(kernel can be 1, 2, 3)
+    training_Labels = labels[0:trainingSamples]
+    # testing
+    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
+    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
+
+def Scikit_SVM_Classification(evaluation_file, kernel_Index):
+    print("Starting SVM Classification ...")
     if kernel_Index == 1:
         Scikit_SVM_Model = svm.SVC(kernel='linear')
     elif kernel_Index == 2:
         Scikit_SVM_Model = svm.SVC(kernel='rbf')
     elif kernel_Index == 3:
         Scikit_SVM_Model = svm.SVC(kernel='poly', degree=3)
+    print("Training ..")
     Scikit_SVM_Model.fit(training_Features, training_Labels)
-
-    # testing
-    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
-    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
-
+    print("Testing ..")
     predict_Labels = Scikit_SVM_Model.predict(testing_Features)
     accuracy = Scikit_SVM_Model.score(testing_Features, testing_Labels)
     print "SVM_Classification: "
@@ -77,31 +101,18 @@ def Scikit_SVM_Classification(filename, evaluation_file):
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
-def Scikit_SVM_Regression(filename, evaluation_file):
-    # read training data and testing data
-    with open(filename) as data_file:
-        data = json.load(data_file)
-        for item in data:
-            features.append(item['histogram'])
-            labels.append(item['rating'])
-
-    # fit regression model
-    training_Features = features[0:trainingSamples]
-    training_Labels  = labels[0:trainingSamples]
-    kernel_Index = 2 #(kernel can be 1, 2, 3)
+def Scikit_SVM_Regression(evaluation_file, kernel_Index):
+    print("Starting SVM Regression ...")
+    #(kernel can be 1, 2, 3)
     if kernel_Index == 1:
         Scikit_SVR_Model = svm.SVR(kernel='linear', C=1e3)
     elif kernel_Index == 2:
         Scikit_SVR_Model = svm.SVR(kernel='rbf', C=1e3, gamma=0.1)
     elif kernel_Index == 3:
         Scikit_SVR_Model = svm.SVR(kernel='poly', C=1e3, degree=2)
+    print("Training ..")
     Scikit_SVR_Model.fit(training_Features, training_Labels)
-
-    # testing
-    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
-    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
-    
-
+    print("Testing ..")
     predict_Labels = Scikit_SVR_Model.predict(testing_Features)
 
     accuracy = Scikit_SVR_Model.score(testing_Features, testing_Labels)
@@ -110,28 +121,16 @@ def Scikit_SVM_Regression(filename, evaluation_file):
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
-def Scikit_DecisionTree_Classification(filename, evaluation_file):
-    # read training data and testing data
-    with open(filename) as data_file:
-        data = json.load(data_file)
-        for item in data:
-            features.append(item['histogram'])
-            labels.append(item['rating'])
-
-    # fit classification model
-    training_Features = features[0:trainingSamples]
-    training_Labels  = labels[0:trainingSamples]
+def Scikit_DecisionTree_Classification(evaluation_file):
+    print("Starting Decision Tree Classification ...")
     Scikit_DecisionTree_Model = tree.DecisionTreeClassifier()
+    print("Training ..")
     Scikit_DecisionTree_Model.fit(training_Features, training_Labels)
-
+    print("Drawing tree ..")
     # Draw tree
-    with open("data/tree.dot", 'w') as f:
+    with open("data/output/others/tree.dot", 'w') as f:
         f = tree.export_graphviz(Scikit_DecisionTree_Model, out_file=f)
-
-    # testing
-    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
-    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
-
+    print("Testing ..")
     predict_Labels = Scikit_DecisionTree_Model.predict(testing_Features)
     accuracy = Scikit_DecisionTree_Model.score(testing_Features, testing_Labels)
     print "DecisionTree_Classification: "
@@ -139,38 +138,33 @@ def Scikit_DecisionTree_Classification(filename, evaluation_file):
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
-def Scikit_RandomForest_Classification(filename, evaluation_file):
-    # read training data and testing data
-    with open(filename) as data_file:
-        data = json.load(data_file)
-        for item in data:
-            features.append(item['histogram'])
-            labels.append(item['rating'])
-
-    # fit classification model
-    training_Features = features[0:trainingSamples]
-    training_Labels  = labels[0:trainingSamples]
-    Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=10)
+def Scikit_RandomForest_Classification(evaluation_file):
+    print("Starting Random Forest Classification ...")
+    Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=500)
+    print("Training ..")
     Scikit_RandomForest_Model.fit(training_Features, training_Labels)
-
-    # testing
-    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
-    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
-
+    print("Testing ..")
     predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
     accuracy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
+
     print "RandomForest_Classification: "
     print accuracy
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
 def main():
-    inputfile = "data/output_split10000.json"
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
-    Scikit_SVM_Classification(inputfile, 'data/evaluation/evaluation_SVM.txt')
-    Scikit_SVM_Regression(inputfile, 'data/evaluation/evaluation_SVMR.txt')
-    Scikit_DecisionTree_Classification(inputfile, 'data/evaluation/evaluation_DT.txt')
-    Scikit_RandomForest_Classification(inputfile, 'data/evaluation/evaluation_RF.txt')
+
+    inputfile = "data/output/histogram.json"
+
+    print("Preparing data ...")
+    Data_Preparation(inputfile)
+    print("Finished preparing data ...")
+    Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
+    #Scikit_SVM_Regression('data/evaluation/evaluation_SVMR.txt', 1)
+    Scikit_DecisionTree_Classification('Data/evaluation_result/evaluation_DT.txt')
+    Scikit_RandomForest_Classification('Data/evaluation_result/evaluation_RF.txt')
+
     endtime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     print(starttime)
     print(endtime)
