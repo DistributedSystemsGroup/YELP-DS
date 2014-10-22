@@ -162,8 +162,8 @@ def main():
     print("Finished preparing data ...")
     Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
     #Scikit_SVM_Regression('data/evaluation/evaluation_SVMR.txt', 1)
-    Scikit_DecisionTree_Classification('Data/evaluation_result/evaluation_DT.txt')
-    Scikit_RandomForest_Classification('Data/evaluation_result/evaluation_RF.txt')
+    Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
+    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
 
     endtime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     print(starttime)
