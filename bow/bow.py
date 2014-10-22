@@ -94,7 +94,7 @@ with open('../data/input/1000samples.json') as fileobject, open("../data/diction
                     buildingHistogram3Bins(item["priorpolarity"], result)
             for item in dicData6Bins:
                 if word == item["word"]:
-                    buildingHistogram6Bins(item["priorpolarity"], result)
+                    buildingHistogram6Bins(item["type"], item["priorpolarity"], result)
         
         buildingHistogramDay(data["date"], result)
 

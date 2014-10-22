@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import MDS
 from mpl_toolkits.mplot3d import Axes3D
 
-filenames = ['data/input/1StarsSamples.json', 'data/input/2StarsSamples.json', 'data/input/3StarsSamples.json','data/input/4StarsSamples.json', 'data/input/5StarsSamples.json']
+filenames = ['Data/1star/1StarsSamples.json', 'Data/2star/2StarsSamples.json', 'Data/3star/3StarsSamples.json', 'Data/4star/4StarsSamples.json', 'Data/5star/5StarsSamples.json']
 
 vectorizer = CountVectorizer(input='filename', ngram_range=(1,3), stop_words='english', strip_accents='unicode', token_pattern=ur'\b\w+\b')
 
