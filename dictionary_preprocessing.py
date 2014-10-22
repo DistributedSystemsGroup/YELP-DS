@@ -1,3 +1,7 @@
+"""
+This file is used to preprocess the dictionary files
+"""
+
 import re, io, json
 
 with open("data/dictionary/source/subjclueslen1-HLTEMNLP05.tff") as dicobject:
