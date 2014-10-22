@@ -4,7 +4,7 @@
 3: 5 - 3 - 3 --> wrong
 4: 1 - 5 - 5 --> wrong
 5: 3 - 4 - 4 --> nearlyright
-6: 1 - 4 - 4 --> wrong
+6: 1 - 3 - 3 --> wrong
 7: 4 - 4 - 4 --> right
 8: 5 - 5 - 5 --> right
 9: 5 - 5 - 5 --> right
@@ -27,7 +27,7 @@
 26: 2 - 5 - 5 --> wrong
 27: 4 - 5 - 5 --> nearlyright
 28: 1 - 5 - 5 --> wrong
-29: 5 - 5 - 5 --> right
+29: 5 - 4 - 4 --> nearlyright
 30: 4 - 3 - 3 --> nearlyright
 31: 5 - 4 - 4 --> nearlyright
 32: 5 - 4 - 4 --> nearlyright
@@ -41,7 +41,7 @@
 40: 4 - 5 - 5 --> nearlyright
 41: 4 - 5 - 5 --> nearlyright
 42: 5 - 5 - 5 --> right
-43: 1 - 5 - 5 --> wrong
+43: 1 - 4 - 4 --> wrong
 44: 5 - 5 - 5 --> right
 45: 5 - 5 - 5 --> right
 46: 3 - 4 - 4 --> nearlyright
@@ -65,7 +65,7 @@
 64: 1 - 5 - 5 --> wrong
 65: 5 - 4 - 4 --> nearlyright
 66: 4 - 5 - 5 --> nearlyright
-67: 3 - 4 - 4 --> nearlyright
+67: 3 - 5 - 5 --> wrong
 68: 2 - 4 - 4 --> wrong
 69: 5 - 4 - 4 --> nearlyright
 70: 4 - 3 - 3 --> nearlyright
@@ -88,7 +88,7 @@
 87: 4 - 5 - 5 --> nearlyright
 88: 1 - 1 - 1 --> right
 89: 5 - 5 - 5 --> right
-90: 3 - 3 - 3 --> right
+90: 3 - 2 - 2 --> nearlyright
 91: 5 - 3 - 3 --> wrong
 92: 5 - 5 - 5 --> right
 93: 4 - 4 - 4 --> right
@@ -98,7 +98,7 @@
 97: 5 - 5 - 5 --> right
 98: 4 - 4 - 4 --> right
 99: 4 - 4 - 4 --> right
-100: 5 - 3 - 3 --> wrong
+100: 5 - 1 - 1 --> wrong
 101: 4 - 5 - 5 --> nearlyright
 102: 4 - 3 - 3 --> nearlyright
 103: 3 - 4 - 4 --> nearlyright
@@ -123,19 +123,19 @@
 122: 3 - 5 - 5 --> wrong
 123: 4 - 4 - 4 --> right
 124: 3 - 1 - 1 --> wrong
-125: 5 - 4 - 4 --> nearlyright
+125: 5 - 5 - 5 --> right
 126: 4 - 4 - 4 --> right
-127: 1 - 1 - 1 --> right
+127: 1 - 2 - 2 --> nearlyright
 128: 3 - 5 - 5 --> wrong
 129: 4 - 5 - 5 --> nearlyright
 130: 5 - 4 - 4 --> nearlyright
-131: 2 - 4 - 4 --> wrong
+131: 2 - 5 - 5 --> wrong
 132: 3 - 3 - 3 --> right
 133: 1 - 4 - 4 --> wrong
 134: 5 - 4 - 4 --> nearlyright
 135: 5 - 5 - 5 --> right
 136: 4 - 2 - 2 --> wrong
-137: 2 - 2 - 2 --> right
+137: 2 - 5 - 5 --> wrong
 138: 4 - 3 - 3 --> nearlyright
 139: 5 - 4 - 4 --> nearlyright
 140: 5 - 2 - 2 --> wrong
@@ -173,7 +173,7 @@
 172: 5 - 5 - 5 --> right
 173: 5 - 5 - 5 --> right
 174: 4 - 4 - 4 --> right
-175: 5 - 4 - 4 --> nearlyright
+175: 5 - 5 - 5 --> right
 176: 5 - 3 - 3 --> wrong
 177: 4 - 5 - 5 --> nearlyright
 178: 5 - 1 - 1 --> wrong
@@ -183,7 +183,7 @@
 182: 4 - 4 - 4 --> right
 183: 5 - 4 - 4 --> nearlyright
 184: 5 - 4 - 4 --> nearlyright
-185: 4 - 5 - 5 --> nearlyright
+185: 4 - 4 - 4 --> right
 186: 5 - 5 - 5 --> right
 187: 5 - 5 - 5 --> right
 188: 5 - 4 - 4 --> nearlyright
@@ -191,12 +191,12 @@
 190: 5 - 5 - 5 --> right
 191: 5 - 4 - 4 --> nearlyright
 192: 5 - 5 - 5 --> right
-193: 1 - 5 - 5 --> wrong
+193: 1 - 4 - 4 --> wrong
 194: 5 - 4 - 4 --> nearlyright
-195: 5 - 4 - 4 --> nearlyright
+195: 5 - 5 - 5 --> right
 196: 2 - 4 - 4 --> wrong
 197: 5 - 5 - 5 --> right
 198: 5 - 4 - 4 --> nearlyright
 199: 5 - 5 - 5 --> right
-#AbsolutelyRight: 82 #NearlyRight: 73 #Wrong: 45
-#AbsolutelyRight: 0.41 #NearlyRight: 0.365 #Wrong: 0.225
+#AbsolutelyRight: 82 #NearlyRight: 71 #Wrong: 47
+#AbsolutelyRight: 0.41 #NearlyRight: 0.355 #Wrong: 0.235

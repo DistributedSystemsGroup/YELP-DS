@@ -77,9 +77,9 @@ def Data_Preparation(filename):
     with open(filename) as data_file:
         data = json.load(data_file)
         for item in data:
-            #histogram = item["histogram"]
-            #features.append([histogram[2]])
-            features.append(item["histogram"])
+            histogram = item["histogram"]
+            features.append([histogram[2]])
+            #features.append(item["histogram"])
             labels.append(item["rating"])
         #print(features)
     #training

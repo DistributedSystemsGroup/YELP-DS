@@ -36,7 +36,7 @@
 35: 2 - 5 - 5 --> wrong
 36: 3 - 4 - 4 --> nearlyright
 37: 5 - 5 - 5 --> right
-38: 5 - 5 - 5 --> right
+38: 5 - 4 - 4 --> nearlyright
 39: 2 - 3 - 3 --> nearlyright
 40: 4 - 5 - 5 --> nearlyright
 41: 4 - 5 - 5 --> nearlyright
@@ -166,7 +166,7 @@
 165: 2 - 1 - 1 --> nearlyright
 166: 4 - 4 - 4 --> right
 167: 4 - 5 - 5 --> nearlyright
-168: 5 - 2 - 2 --> wrong
+168: 5 - 5 - 5 --> right
 169: 4 - 4 - 4 --> right
 170: 5 - 5 - 5 --> right
 171: 2 - 5 - 5 --> wrong
@@ -198,5 +198,5 @@
 197: 5 - 5 - 5 --> right
 198: 5 - 4 - 4 --> nearlyright
 199: 5 - 5 - 5 --> right
-#AbsolutelyRight: 81 #NearlyRight: 71 #Wrong: 48
-#AbsolutelyRight: 0.405 #NearlyRight: 0.355 #Wrong: 0.24
+#AbsolutelyRight: 81 #NearlyRight: 72 #Wrong: 47
+#AbsolutelyRight: 0.405 #NearlyRight: 0.36 #Wrong: 0.235
