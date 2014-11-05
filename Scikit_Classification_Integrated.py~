@@ -109,7 +109,7 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
     
     #the implementation of R_2 score measure 
     r2Score = r2_score(testing_Labels, predict_Labels)
-    print("R2 Square score of SVM Classification: " + str(r2Score)) 
+    print("R2 Square score of SVM Classification: " + r2Score) 
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
@@ -142,7 +142,7 @@ def Scikit_SVM_CrossValidation_Classification(evaluation_file, kernel_Index):
 
     #the implementation of R_2 score measure 
     r2Score = r2_score(testing_Labels, predict_Labels)
-    print("R2 Square score of SVM CrossValidation Classification: " + str(r2Score)) 
+    print("R2 Square score of SVM CrossValidation Classification: " + r2Score) 
 
     #Result_Evaluation (evaluation_file, y_test, predict_Labels)
 
@@ -166,7 +166,7 @@ def Scikit_SVM_Regression(evaluation_file, kernel_Index):
 
     #the implementation of R_2 score measure 
     r2Score = r2_score(testing_Labels, predict_Labels)
-    print("R2 Square score of SVM Regression Classification: " + str(r2Score)) 
+    print("R2 Square score of SVM Regression Classification: " + r2Score) 
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 

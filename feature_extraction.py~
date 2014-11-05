@@ -134,7 +134,7 @@ class Histogram():
                 final_result.append(result[10])
                 final_result.append(result[11])
                 #listOfHistogramAndRating.append({'rating': data["stars"], 'histogram': final_result})
-                listOfHistogramAndRating.append([data["stars"] final_result])
+                listOfHistogramAndRating.append(str([data["stars"] final_result]) + "\n")
                 
 
             with io.open('data/output/histogram.txt', 'w', encoding='utf-8') as outfile:

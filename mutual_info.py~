@@ -14,7 +14,7 @@ def mutualScore(label1, label2):
 #that as x increases, so does y.    
 def personR(label1, label2):
     score = pearsonr(label1, label2)
-    return score[0]
+    return score
 
 def main():
 
