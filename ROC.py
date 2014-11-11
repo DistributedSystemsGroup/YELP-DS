@@ -55,6 +55,7 @@ for i in range(len(y_train)):
     temp[y_train[i]-1] = 1
     y_train_new.append(temp)
 
+y_train_new = y_train_new.toarray()
 print type(y_train_new)
   
 X_test = testing_Features 
