@@ -46,6 +46,10 @@ def buildingHistogram3Bins(keyword, result):
     elif keyword == 'negation':
         result[8]+=1
 
+def buildingHistogram2Bins(ps, ns, result):
+    result[12]+=float(ps)
+    result[13]+=float(ns)
+
 def buildingHistogramDay(date, result):
     date_object = datetime.strptime(date, '%Y-%m-%d')
     day = date_object.strftime("%A")
@@ -88,7 +92,8 @@ class Histogram():
         
         starttime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
         
-        with open("data/dictionary/mydictionary_3bins.json") as dicObject3Bins, open("data/dictionary/mydictionary_6bins.json") as dicObject6Bins, open(filename) as fileObject:    
+        with open("data/dictionary/mydictionary_2bins.json") as dicObject2Bins, open("data/dictionary/mydictionary_3bins.json") as dicObject3Bins, open("data/dictionary/mydictionary_6bins.json") as dicObject6Bins, open(filename) as fileObject:    
+            dicData2Bins = json.load(dicObject2Bins)
             dicData3Bins = json.load(dicObject3Bins)
             dicData6Bins = json.load(dicObject6Bins)
             listOfHistogramAndRating = []
@@ -101,11 +106,15 @@ class Histogram():
                 print(i)
 
                 data = json.loads(line)
-                #Descripton [0-spos, 1-wpos, 2-sneu, 3-wneu, 4-sneg, 5-wneg, 6-pos, 7-neg, 8-negation, 9-len, 10-day, 11-vote]
-                result =    [0     , 0     , 0     , 0     , 0     , 0     , 0    , 0    , 0         , 0    , 0     , 0      ]
+                #Descripton [0-spos, 1-wpos, 2-sneu, 3-wneu, 4-sneg, 5-wneg, 6-pos, 7-neg, 8-negation, 9-len, 10-day, 11-vote, 12-ps, 13-ns]
+                result =    [0     , 0     , 0     , 0     , 0     , 0     , 0    , 0    , 0         , 0    , 0     , 0      , 0.0  , 0.0  ]
                 length =  0
                 for word in words(data["text"]):
                     length += 1
+
+                    for item in dicData2Bins:
+                        if word == item["word"]:
+                            buildingHistogram2Bins(item["pos"], item["neg"], result)
                     for item in dicData3Bins:
                         if word == item["word"]:
                             buildingHistogram3Bins(item["priorpolarity"], result)
