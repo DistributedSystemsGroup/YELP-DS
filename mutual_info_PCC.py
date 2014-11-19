@@ -21,7 +21,7 @@ def main():
    features = []
    labels = []
 
-   with open("data/output/histogram.json") as dataFile:
+   with open("bow/data/output/histogram_allFeatures.json") as dataFile:
        data = json.load(dataFile)
        for item in data:
            features.append(item["histogram"])

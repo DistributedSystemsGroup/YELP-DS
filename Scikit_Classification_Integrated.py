@@ -65,7 +65,7 @@ def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
         output_file.write(unicode(finalResultPercentage))
         print(" #Wrong: " + str(acc_rate[2]*1.0/testingSamples))
 
-def Data_Preparation(filename):
+def Data_Preparation(filename, selectedFeatures):
 
     global training_Features
     global training_Labels
@@ -79,8 +79,7 @@ def Data_Preparation(filename):
     with open(filename) as data_file:
         data = json.load(data_file)
         for item in data:
-            #histogram = item["histogram"]
-            #features.append([histogram[2]])
+            #features.append(list(item["histogram"][i] for i in selectedFeatures))
             features.append(item["histogram"])
             labels.append(item["rating"])
         #print(features)
@@ -139,10 +138,11 @@ def Scikit_SVM_CrossValidation_Classification(evaluation_file, kernel_Index):
         accuracy = Scikit_SVM_Model.score(X_test, y_test)
         print "SVM_Classification: "
         print accuracy
-
-    #the implementation of R_2 score measure 
-    r2Score = r2_score(testing_Labels, predict_Labels)
-    print("R2 Square score of SVM CrossValidation Classification: " + str(r2Score)) 
+        
+        #the implementation of R_2 score measure 
+        r2Score = r2_score(testing_Labels, predict_Labels)
+        print("R2 Square score of SVM CrossValidation Classification: " + str(r2Score)) 
+    
 
     #Result_Evaluation (evaluation_file, y_test, predict_Labels)
 
@@ -164,11 +164,16 @@ def Scikit_SVM_Regression(evaluation_file, kernel_Index):
     print "SVMRegression_Classification: "
     print accuracy
 
-    #the implementation of R_2 score measure 
+    #the implementation of R_2 score measure
+    #results = []
+    #for i in xrange(0, len(testing_Labels)):
+    #    results.append({'y_true': testing_Labels[i], 'y_pred': predict_Labels[i]})
+    #sortedList = sorted(results, key=lambda k: k['y_true'])
+    #print(sortedList)
     r2Score = r2_score(testing_Labels, predict_Labels)
     print("R2 Square score of SVM Regression Classification: " + str(r2Score)) 
 
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
+    #Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
 def Scikit_DecisionTree_Classification(evaluation_file):
     print("Starting Decision Tree Classification ...")
@@ -209,19 +214,39 @@ def Scikit_RandomForest_Classification(evaluation_file):
 
     Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
+   
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
 
-    inputfile = "data/output/histogram.json"
+    inputfile = "bow/data/output/histogram_allFeatures.json"
 
-    print("Preparing data ...")
-    Data_Preparation(inputfile)
+    #selectedFeatures = [0, 1, 2, 3, 4, 5, 8]
+    #selectedFeatures = [0, 1, 2, 3, 4, 5, 8, 9, 10, 11]
+    #selectedFeatures = [0, 1, 2, 3, 4, 5, 8, 14, 15, 16, 17, 18, 19]
+    #selectedFeatures = [0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19]
+    #selectedFeatures = [6, 7, 8]
+    #selectedFeatures = [6, 7, 8, 9, 10, 11]
+    #selectedFeatures = [6, 7, 8, 14, 15, 16, 17, 18, 19]
+    #selectedFeatures = [6, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19]
+    #selectedFeatures = [12, 13, 8]
+    #selectedFeatures = [12, 13, 8, 9, 10, 11]
+    #selectedFeatures = [12, 13, 8, 14, 15, 16, 17, 18, 19]
+    #selectedFeatures = [12, 13, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19]
+    #selectedFeatures = [20, 21, 22, 23, 24]
+    #selectedFeatures = [20, 21, 22, 23, 24, 9, 10, 11]
+    selectedFeatures = [20, 21, 22, 23, 24, 14, 15, 16, 17, 18, 19]
+    
+    
+    #print(features)
+    Data_Preparation(inputfile, selectedFeatures)
     print("Finished preparing data ...")
     #Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
-    Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
-    #Scikit_SVM_Regression('data/evaluation/evaluation_SVMR.txt', 1)
-    #Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
+    #Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
+    #Scikit_SVM_Regression('data/evaluation_result/evaluation_SVMR.txt', 1)
+    Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
     #Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
+
+
 
     endtime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     print(starttime)
