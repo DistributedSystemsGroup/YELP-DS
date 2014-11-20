@@ -184,6 +184,7 @@ def Scikit_DecisionTree_Classification(evaluation_file):
     print("Drawing tree ..")
     # Draw tree
     with open("data/output/others/tree.dot", 'w') as f:
+        
         f = tree.export_graphviz(Scikit_DecisionTree_Model, out_file=f)
 
     print("Testing ..")
