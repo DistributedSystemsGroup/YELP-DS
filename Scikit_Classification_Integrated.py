@@ -13,11 +13,10 @@ from sklearn import ensemble
 from sklearn import cross_validation
 from sklearn.metrics import r2_score
 
-import json
 import numpy as np
 
 import io, os
-
+import json
 
 features = []
 labels = []
@@ -327,7 +326,11 @@ def main():
     #selectedFeatures = [20, 21, 22, 23, 24, 14, 15, 16, 17, 18, 19]
 
     #selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
+<<<<<<< HEAD
     selectedFeatures = [6, 7]
+=======
+    selectedFeatures = [20, 21, 22, 23, 24]
+>>>>>>> f3de51f71036808e4a9024381876dafc1aaca00d
     
     #print(features)
     Data_Preparation(inputfile, selectedFeatures)
