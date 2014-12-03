@@ -13,13 +13,10 @@ from sklearn import ensemble
 from sklearn import cross_validation
 from sklearn.metrics import r2_score
 
-import json
 import numpy as np
 
 import io, os
-
-from sklearn.externals.six import StringIO
-import pydot
+import json
 
 features = []
 labels = []

@@ -331,11 +331,19 @@ def main():
     #print(features)
     Data_Preparation(inputfile, selectedFeatures)
     print("Finished preparing data ...")
+<<<<<<< HEAD
     Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
     #Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
     #Scikit_SVM_Regression('data/evaluation_result/evaluation_SVMR.txt', 1)
     #Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
     #Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
+=======
+    #Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
+    #Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
+    #Scikit_SVM_Regression('data/evaluation_result/evaluation_SVMR.txt', 1)
+    #Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
+    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
+>>>>>>> 33d410d53f9e0d1e6495e8bc22e2c1e2abdf77a2
 
 
 
