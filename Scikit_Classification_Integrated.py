@@ -78,8 +78,8 @@ def Data_Preparation(filename, selectedFeatures):
     with open(filename) as data_file:
         data = json.load(data_file)
         for item in data:
-            #features.append(list(item["histogram"][i] for i in selectedFeatures))
-            features.append(item["histogram"])
+            features.append(list(item["histogram"][i] for i in selectedFeatures))
+            #features.append(item["histogram"])
             labels.append(item["rating"])
         #print(features)
     #training
@@ -155,7 +155,8 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
 
 
     """
-    Scikit_SVM_Model = svm.SVC(C=1.0, kernel='linear', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
+    Scikit_SVM_Model = svm.SVC(kernel='linear')
+    #Scikit_SVM_Model = svm.SVC(C=1.0, kernel='linear', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
     
     #Scikit_SVM_Model = svm.LinearSVC(penalty='l2', loss='l2', dual=True, tol=0.0001, C=1.0, multi_class='ovr', fit_intercept=True, intercept_scaling=1, class_weight=None, verbose=0, random_state=None)
     
@@ -169,6 +170,7 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
     """
     print("Training ..")
     Scikit_SVM_Model.fit(training_Features, training_Labels)
+    print(training_Features)
     print("Testing ..")
     predict_Labels = Scikit_SVM_Model.predict(testing_Features)
     accuracy = Scikit_SVM_Model.score(testing_Features, testing_Labels)
@@ -283,7 +285,7 @@ def Scikit_RandomForest_Classification(evaluation_file):
        min_density: not mentioned
        compute_importances: not mentioned
     """
-    Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=10, criterion='gini', max_depth=None,
+    Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=500, criterion='gini', max_depth=None,
                                                                  min_samples_split=2, min_samples_leaf=1, max_features='auto',
                                                                  bootstrap=True, oob_score=False, n_jobs=1, random_state=None, verbose=0,
                                                                  min_density=None, compute_importances=None)
@@ -324,16 +326,17 @@ def main():
     #selectedFeatures = [20, 21, 22, 23, 24, 9, 10, 11]
     #selectedFeatures = [20, 21, 22, 23, 24, 14, 15, 16, 17, 18, 19]
 
-    selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
+    #selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
+    selectedFeatures = [6, 7]
     
     #print(features)
     Data_Preparation(inputfile, selectedFeatures)
     print("Finished preparing data ...")
-    #Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
+    Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
     #Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
     #Scikit_SVM_Regression('data/evaluation_result/evaluation_SVMR.txt', 1)
     #Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
-    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
+    #Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
 
 
 
