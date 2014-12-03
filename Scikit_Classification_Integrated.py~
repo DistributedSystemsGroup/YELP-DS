@@ -36,27 +36,28 @@ testingSamples = int(0.2 * numberOfSamples)
                                                   Wrong: else cases;
 """
 
-def Result_Evaluation (outputpath, testing_Labels, predict_Labels):
+def Result_Evaluation (outputpath, testing_Labels, predict_Labels, additional_info):
     acc_rate = [0, 0, 0]
 
-    if os.path.isfile(outputpath):
-        os.remove(outputpath)
+    #if os.path.isfile(outputpath):
+        #os.remove(outputpath)
     with io.open(outputpath, 'a', encoding='utf-8') as output_file:
         for i in xrange(0, testingSamples):
             rounded_result = int(round(predict_Labels[i]))
             if rounded_result == testing_Labels[i]:
                 acc_rate[0] += 1
                 result_item = str(i) + ": " + str(testing_Labels[i]) + " - " + str(predict_Labels[i]) + " - " + str(rounded_result) + " --> right\n"
-                output_file.write(unicode(result_item))
+                #output_file.write(unicode(result_item))
             elif abs(rounded_result - testing_Labels[i])<=1:
                 acc_rate[1] += 1
                 result_item = str(i) + ": " + str(testing_Labels[i]) + " - " + str(predict_Labels[i]) + " - " + str(rounded_result) + " --> nearlyright\n"
-                output_file.write(unicode(result_item))
+                #output_file.write(unicode(result_item))
             else:
                 acc_rate[2] += 1
                 result_item = str(i) + ": " + str(testing_Labels[i]) + " - " + str(predict_Labels[i]) + " - " + str(rounded_result) + " --> wrong\n"
-                output_file.write(unicode(result_item))
+                #output_file.write(unicode(result_item))
 
+        output_file.write(unicode(additional_info))
         finalResult = "#AbsolutelyRight: " + str(acc_rate[0]) + " #NearlyRight: " + str(acc_rate[1]) + " #Wrong: " + str(acc_rate[2]) + '\n'
         output_file.write(unicode(finalResult))
         finalResultPercentage = "#AbsolutelyRight: " + str(acc_rate[0]*1.0/testingSamples) + " #NearlyRight: " + str(acc_rate[1]*1.0/testingSamples) + " #Wrong: " + str(acc_rate[2]*1.0/testingSamples) + '\n'
@@ -89,6 +90,8 @@ def Data_Preparation(filename, selectedFeatures):
     testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
 
 def Scikit_SVM_Classification(evaluation_file, kernel_Index):
+    if os.path.isfile(evaluation_file):
+        os.remove(evaluation_file)
     print("Starting SVM Classification ...")
     """
     C: Penalty parameter C of the error term (default=1.0)
@@ -154,7 +157,7 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
 
 
     """
-    Scikit_SVM_Model = svm.SVC(kernel='linear')
+    
     #Scikit_SVM_Model = svm.SVC(C=1.0, kernel='linear', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
     
     #Scikit_SVM_Model = svm.LinearSVC(penalty='l2', loss='l2', dual=True, tol=0.0001, C=1.0, multi_class='ovr', fit_intercept=True, intercept_scaling=1, class_weight=None, verbose=0, random_state=None)
@@ -167,20 +170,27 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
     elif kernel_Index == 3:
         Scikit_SVM_Model = svm.SVC(kernel='poly', degree=3)
     """
-    print("Training ..")
-    Scikit_SVM_Model.fit(training_Features, training_Labels)
+    kernel = 'linear'
+    C = 0
+    for i in xrange (1, 100):
+        print(i)
+        C = C + 0.001
+        Scikit_SVM_Model = svm.SVC(C=C, kernel=kernel, degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
+        print("Training ..")
+        Scikit_SVM_Model.fit(training_Features, training_Labels)
 
-    print("Testing ..")
-    predict_Labels = Scikit_SVM_Model.predict(testing_Features)
-    accuracy = Scikit_SVM_Model.score(testing_Features, testing_Labels)
-    print "SVM_Classification: "
-    print accuracy
+        print("Testing ..")
+        predict_Labels = Scikit_SVM_Model.predict(testing_Features)
+        accuracy = Scikit_SVM_Model.score(testing_Features, testing_Labels)
+        print "SVM_Classification: "
+        print accuracy
     
-    #the implementation of R_2 score measure 
-    r2Score = r2_score(testing_Labels, predict_Labels)
-    print("R2 Square score of SVM Classification: " + str(r2Score)) 
-
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
+        #the implementation of R_2 score measure 
+        r2Score = r2_score(testing_Labels, predict_Labels)
+        print("R2 Square score of SVM Classification: " + str(r2Score)) 
+    
+        additional_info = "C=" + str(C) + '\n'
+        Result_Evaluation (evaluation_file, testing_Labels, predict_Labels, additional_info)
 
 def Scikit_SVM_CrossValidation_Classification(evaluation_file, kernel_Index):
     print("Starting SVM Classification ...")
@@ -246,6 +256,8 @@ def Scikit_SVM_Regression(evaluation_file, kernel_Index):
     #Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
 
 def Scikit_DecisionTree_Classification(evaluation_file):
+    if os.path.isfile(evaluation_file):
+        os.remove(evaluation_file)
     print("Starting Decision Tree Classification ...")
     Scikit_DecisionTree_Model = tree.DecisionTreeClassifier()
     print("Training ..")
@@ -265,9 +277,12 @@ def Scikit_DecisionTree_Classification(evaluation_file):
     r2Score = r2_score(testing_Labels, predict_Labels)
     print("R2 Square score of Decision Classification: " + str(r2Score)) 
 
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
+    additional_info = "" + '\n'
+    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels, additional_info)
 
 def Scikit_RandomForest_Classification(evaluation_file):
+    if os.path.isfile(evaluation_file):
+        os.remove(evaluation_file)    
     print("Starting Random Forest Classification ...")
     #Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=500)
     """n_estimators: The number of trees in the forest.
@@ -284,24 +299,29 @@ def Scikit_RandomForest_Classification(evaluation_file):
        min_density: not mentioned
        compute_importances: not mentioned
     """
-    Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=500, criterion='gini', max_depth=None,
+    n_estimators = 0
+    for i in xrange (1, 100):
+        print(i)
+        n_estimators = n_estimators + 10
+        Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=n_estimators, criterion='gini', max_depth=None,
                                                                  min_samples_split=2, min_samples_leaf=1, max_features='auto',
                                                                  bootstrap=True, oob_score=False, n_jobs=1, random_state=None, verbose=0,
                                                                  min_density=None, compute_importances=None)
-    print("Training ..")
-    Scikit_RandomForest_Model.fit(training_Features, training_Labels)
-    print("Testing ..")
-    predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
-    accuracy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
+        print("Training ..")
+        Scikit_RandomForest_Model.fit(training_Features, training_Labels)
+        print("Testing ..")
+        predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
+        accuracy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
 
-    print "RandomForest_Classification: "
-    print accuracy
+        print "RandomForest_Classification: "
+        print accuracy
 
-    #the implementation of R_2 score measure 
-    r2Score = r2_score(testing_Labels, predict_Labels)
-    print("R2 Square score of RandomForest Classification: " + str(r2Score)) 
+        #the implementation of R_2 score measure 
+        r2Score = r2_score(testing_Labels, predict_Labels)
+        print("R2 Square score of RandomForest Classification: " + str(r2Score)) 
 
-    Result_Evaluation (evaluation_file, testing_Labels, predict_Labels)
+        additional_info = "n_estimators=" + str(n_estimators) + '\n'
+        Result_Evaluation (evaluation_file, testing_Labels, predict_Labels, additional_info)
 
    
 def main():
@@ -326,7 +346,6 @@ def main():
     #selectedFeatures = [20, 21, 22, 23, 24, 14, 15, 16, 17, 18, 19]
 
     #selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
-
     selectedFeatures = [6, 7]
 
     
