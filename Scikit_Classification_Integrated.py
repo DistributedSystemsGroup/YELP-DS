@@ -169,7 +169,7 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
     """
     print("Training ..")
     Scikit_SVM_Model.fit(training_Features, training_Labels)
-    print(training_Features)
+
     print("Testing ..")
     predict_Labels = Scikit_SVM_Model.predict(testing_Features)
     accuracy = Scikit_SVM_Model.score(testing_Features, testing_Labels)
@@ -325,12 +325,9 @@ def main():
     #selectedFeatures = [20, 21, 22, 23, 24, 9, 10, 11]
     #selectedFeatures = [20, 21, 22, 23, 24, 14, 15, 16, 17, 18, 19]
 
-    #selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
-<<<<<<< HEAD
-    selectedFeatures = [6, 7]
-=======
-    selectedFeatures = [20, 21, 22, 23, 24]
->>>>>>> f3de51f71036808e4a9024381876dafc1aaca00d
+    selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
+
+
     
     #print(features)
     Data_Preparation(inputfile, selectedFeatures)
