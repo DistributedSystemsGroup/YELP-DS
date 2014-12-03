@@ -18,6 +18,8 @@ import numpy as np
 
 import io, os
 
+from sklearn.externals.six import StringIO
+import pydot
 
 features = []
 labels = []
