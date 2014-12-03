@@ -93,82 +93,12 @@ def Data_Preparation(filename, selectedFeatures):
 
 def Scikit_SVM_Classification(evaluation_file, kernel_Index):
     print("Starting SVM Classification ...")
-    """
-    C: Penalty parameter C of the error term (default=1.0)
-    kernel: It must be one of 'linear', 'poly', 'rbf', 'sigmoid', 'precomputed' or a callable.
-    degree: Degree of the polynomial kernel function ('poly')
-    gamma: Kernel coefficient for 'rbf', 'poly' and 'sigm'.
-    coef0: Independent term in kernel function. It is only significant in 'poly' and 'sigmoid'.
-    shrinking: Whether to use the shrinking heuristic
-    probability: Whether to enable probability estimates
-    tol: Tolerance for stopping criterion (default=1e-3)
-    cache_size: Specify the size of the kernel cache (in MB)
-    class_weight: {dict, 'auto'}, optional
-    verbose: bool, default: False
-    max_iter: Hard limit on iterations within solver, or -1 for no limit.
-    random_state: int seed, RandomState instance, or None (default)
-
-    LinearSVC: Similar to SVC with parameter kernel='linear', but implemented in terms of
-     |  liblinear rather than libsvm, so it has more flexibility in the choice of
-     |  penalties and loss functions and should scale better (to large numbers of
-     |  samples).
-     |  
-     |  This class supports both dense and sparse input and the multiclass support
-     |  is handled according to a one-vs-the-rest scheme.
-    NuSVC: Nu-Support Vector Classification.
-     |  
-     |  Similar to SVC but uses a parameter to control the number of support
-     |  vectors.
-     |  
-     |  The implementation is based on libsvm.
-    NuSVR: Nu Support Vector Regression.
-     |  
-     |  Similar to NuSVC, for regression, uses a parameter nu to control
-     |  the number of support vectors. However, unlike NuSVC, where nu
-     |  replaces C, here nu replaces with the parameter epsilon of SVR.
-     |  
-     |  The implementations is a based on libsvm.
-    OneClassSVM: Unsupervised Outliers Detection.
-     |  
-     |  Estimate the support of a high-dimensional distribution.
-     |  
-     |  The implementation is based on libsvm.
-    SVC: C-Support Vector Classification.
-     |  
-     |  The implementations is a based on libsvm. The fit time complexity
-     |  is more than quadratic with the number of samples which makes it hard
-     |  to scale to dataset with more than a couple of 10000 samples.
-     |  
-     |  The multiclass support is handled according to a one-vs-one scheme.
-     |  
-     |  For details on the precise mathematical formulation of the provided
-     |  kernel functions and how `gamma`, `coef0` and `degree` affect each,
-     |  see the corresponding section in the narrative documentation:
-     |  :ref:`svm_kernels`.
-     |  
-     |  .. The narrative documentation is available at http://scikit-learn.org
-    SVR: epsilon-Support Vector Regression.
-     |  
-     |  The free parameters in the model are C and epsilon.
-     |  
-     |  The implementations is a based on libsvm.
-
-
-
-
-    """
-    #Scikit_SVM_Model = svm.SVC(C=1.0, kernel='rbf', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
-    
-    Scikit_SVM_Model = svm.LinearSVR(kernel='rbf', degree=3, gamma=0.0, coef0=0.0, tol=0.001, C=1.0, epsilon=0.1, shrinking=True, probability=False, cache_size=200, verbose=False, max_iter=-1, random_state=None)
-    
-    """
     if kernel_Index == 1:
-        Scikit_SVM_Model = svm.SVC(kernel='linear')        
+        Scikit_SVM_Model = svm.SVC(kernel='linear')
     elif kernel_Index == 2:
         Scikit_SVM_Model = svm.SVC(kernel='rbf')
     elif kernel_Index == 3:
         Scikit_SVM_Model = svm.SVC(kernel='poly', degree=3)
-    """
     print("Training ..")
     Scikit_SVM_Model.fit(training_Features, training_Labels)
     print("Testing ..")
