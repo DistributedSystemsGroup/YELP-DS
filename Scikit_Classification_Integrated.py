@@ -157,9 +157,9 @@ def Scikit_SVM_Classification(evaluation_file, kernel_Index):
 
 
     """
-    #Scikit_SVM_Model = svm.SVC(C=1.0, kernel='rbf', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
+    Scikit_SVM_Model = svm.SVC(C=1.0, kernel='linear', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
     
-    Scikit_SVM_Model = svm.LinearSVC(penalty='l2', loss='l2', dual=True, tol=0.0001, C=1.0, multi_class='ovr', fit_intercept=True, intercept_scaling=1, class_weight=None, verbose=0, random_state=None)
+    #Scikit_SVM_Model = svm.LinearSVC(penalty='l2', loss='l2', dual=True, tol=0.0001, C=1.0, multi_class='ovr', fit_intercept=True, intercept_scaling=1, class_weight=None, verbose=0, random_state=None)
     
     """
     if kernel_Index == 1:
@@ -331,11 +331,11 @@ def main():
     #print(features)
     Data_Preparation(inputfile, selectedFeatures)
     print("Finished preparing data ...")
-    #Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
+    Scikit_SVM_Classification('data/evaluation_result/evaluation_SVM.txt', 1)
     #Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
     #Scikit_SVM_Regression('data/evaluation_result/evaluation_SVMR.txt', 1)
     #Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
-    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
+    #Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
 
 
 
