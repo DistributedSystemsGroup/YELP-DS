@@ -163,3 +163,135 @@ n_estimators=540
 n_estimators=550
 #AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
 #AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
+n_estimators=560
+#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
+#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
+n_estimators=570
+#AbsolutelyRight: 103 #NearlyRight: 69 #Wrong: 28
+#AbsolutelyRight: 0.515 #NearlyRight: 0.345 #Wrong: 0.14
+n_estimators=580
+#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
+#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
+n_estimators=590
+#AbsolutelyRight: 103 #NearlyRight: 68 #Wrong: 29
+#AbsolutelyRight: 0.515 #NearlyRight: 0.34 #Wrong: 0.145
+n_estimators=600
+#AbsolutelyRight: 99 #NearlyRight: 69 #Wrong: 32
+#AbsolutelyRight: 0.495 #NearlyRight: 0.345 #Wrong: 0.16
+n_estimators=610
+#AbsolutelyRight: 103 #NearlyRight: 67 #Wrong: 30
+#AbsolutelyRight: 0.515 #NearlyRight: 0.335 #Wrong: 0.15
+n_estimators=620
+#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
+#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
+n_estimators=630
+#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
+#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
+n_estimators=640
+#AbsolutelyRight: 104 #NearlyRight: 68 #Wrong: 28
+#AbsolutelyRight: 0.52 #NearlyRight: 0.34 #Wrong: 0.14
+n_estimators=650
+#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
+#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
+n_estimators=660
+#AbsolutelyRight: 99 #NearlyRight: 73 #Wrong: 28
+#AbsolutelyRight: 0.495 #NearlyRight: 0.365 #Wrong: 0.14
+n_estimators=670
+#AbsolutelyRight: 100 #NearlyRight: 72 #Wrong: 28
+#AbsolutelyRight: 0.5 #NearlyRight: 0.36 #Wrong: 0.14
+n_estimators=680
+#AbsolutelyRight: 98 #NearlyRight: 73 #Wrong: 29
+#AbsolutelyRight: 0.49 #NearlyRight: 0.365 #Wrong: 0.145
+n_estimators=690
+#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
+#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
+n_estimators=700
+#AbsolutelyRight: 99 #NearlyRight: 71 #Wrong: 30
+#AbsolutelyRight: 0.495 #NearlyRight: 0.355 #Wrong: 0.15
+n_estimators=710
+#AbsolutelyRight: 99 #NearlyRight: 72 #Wrong: 29
+#AbsolutelyRight: 0.495 #NearlyRight: 0.36 #Wrong: 0.145
+n_estimators=720
+#AbsolutelyRight: 100 #NearlyRight: 72 #Wrong: 28
+#AbsolutelyRight: 0.5 #NearlyRight: 0.36 #Wrong: 0.14
+n_estimators=730
+#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
+#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
+n_estimators=740
+#AbsolutelyRight: 100 #NearlyRight: 71 #Wrong: 29
+#AbsolutelyRight: 0.5 #NearlyRight: 0.355 #Wrong: 0.145
+n_estimators=750
+#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
+#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
+n_estimators=760
+#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
+#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
+n_estimators=770
+#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
+#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
+n_estimators=780
+#AbsolutelyRight: 98 #NearlyRight: 71 #Wrong: 31
+#AbsolutelyRight: 0.49 #NearlyRight: 0.355 #Wrong: 0.155
+n_estimators=790
+#AbsolutelyRight: 105 #NearlyRight: 68 #Wrong: 27
+#AbsolutelyRight: 0.525 #NearlyRight: 0.34 #Wrong: 0.135
+n_estimators=800
+#AbsolutelyRight: 104 #NearlyRight: 66 #Wrong: 30
+#AbsolutelyRight: 0.52 #NearlyRight: 0.33 #Wrong: 0.15
+n_estimators=810
+#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
+#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
+n_estimators=820
+#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
+#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
+n_estimators=830
+#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
+#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
+n_estimators=840
+#AbsolutelyRight: 104 #NearlyRight: 69 #Wrong: 27
+#AbsolutelyRight: 0.52 #NearlyRight: 0.345 #Wrong: 0.135
+n_estimators=850
+#AbsolutelyRight: 102 #NearlyRight: 71 #Wrong: 27
+#AbsolutelyRight: 0.51 #NearlyRight: 0.355 #Wrong: 0.135
+n_estimators=860
+#AbsolutelyRight: 100 #NearlyRight: 68 #Wrong: 32
+#AbsolutelyRight: 0.5 #NearlyRight: 0.34 #Wrong: 0.16
+n_estimators=870
+#AbsolutelyRight: 99 #NearlyRight: 71 #Wrong: 30
+#AbsolutelyRight: 0.495 #NearlyRight: 0.355 #Wrong: 0.15
+n_estimators=880
+#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
+#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
+n_estimators=890
+#AbsolutelyRight: 103 #NearlyRight: 70 #Wrong: 27
+#AbsolutelyRight: 0.515 #NearlyRight: 0.35 #Wrong: 0.135
+n_estimators=900
+#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
+#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
+n_estimators=910
+#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
+#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
+n_estimators=920
+#AbsolutelyRight: 103 #NearlyRight: 66 #Wrong: 31
+#AbsolutelyRight: 0.515 #NearlyRight: 0.33 #Wrong: 0.155
+n_estimators=930
+#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
+#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
+n_estimators=940
+#AbsolutelyRight: 103 #NearlyRight: 69 #Wrong: 28
+#AbsolutelyRight: 0.515 #NearlyRight: 0.345 #Wrong: 0.14
+n_estimators=950
+#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
+#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
+n_estimators=960
+#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
+#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
+n_estimators=970
+#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
+#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
+n_estimators=980
+#AbsolutelyRight: 101 #NearlyRight: 70 #Wrong: 29
+#AbsolutelyRight: 0.505 #NearlyRight: 0.35 #Wrong: 0.145
+n_estimators=990
+#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
+#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
