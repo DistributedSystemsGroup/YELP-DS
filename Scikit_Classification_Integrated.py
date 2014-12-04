@@ -310,13 +310,13 @@ def Scikit_RandomForest_Classification(evaluation_file):
        compute_importances: not mentioned
     """
     n_estimators = 0
-    for i in xrange (1, 1000):
+    for i in xrange (1, 100):
         print(i)
-        n_estimators = n_estimators + 1
+        n_estimators = n_estimators + 10
         #max_depth = randrange(1, 100)
         #min_samples_split = randrange(1, 100)
         #min_samples_leaf = randrange(1, 100)
-        #max_features= randrange(1, 11)
+        #max_features= randrange(1, 26)
 
         """Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=n_estimators, criterion='gini',
                                                                      max_depth=max_depth,
@@ -369,8 +369,8 @@ def main():
     #selectedFeatures = [20, 21, 22, 23, 24, 9, 10, 11]
     #selectedFeatures = [20, 21, 22, 23, 24, 14, 15, 16, 17, 18, 19]
 
-    selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
-    #selectedFeatures = [ 20, 21, 22, 23, 24]
+    #selectedFeatures = [8, 12, 13, 14, 17, 20, 21, 22, 23, 24]
+    selectedFeatures = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24]
 
     
     #print(features)
