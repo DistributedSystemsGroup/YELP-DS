@@ -310,13 +310,17 @@ def Scikit_RandomForest_Classification(evaluation_file):
        compute_importances: not mentioned
     """
     n_estimators = 0
-    for i in xrange (1, 100):
+    max_depth = 0
+    min_samples_split = 1
+    min_samples_leaf = 0
+    max_features = 0
+    for i in xrange (1, 20):
         print(i)
-        n_estimators = n_estimators + 10
-        #max_depth = randrange(1, 100)
-        #min_samples_split = randrange(1, 100)
-        #min_samples_leaf = randrange(1, 100)
-        #max_features= randrange(1, 26)
+        #n_estimators = n_estimators + 10
+        #max_depth = max_depth + 1
+        #min_samples_split = min_samples_split + 20
+        #min_samples_leaf = min_samples_leaf + 20
+        #max_features = max_features + 1
 
         """Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=n_estimators, criterion='gini',
                                                                      max_depth=max_depth,
@@ -325,9 +329,9 @@ def Scikit_RandomForest_Classification(evaluation_file):
                                                                      max_features=max_features,
                                                                      bootstrap=True, oob_score=False, n_jobs=-1, random_state=None, verbose=0,
                                                                      min_density=None, compute_importances=None)"""
-
-        Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=n_estimators, criterion='gini', max_depth=None,
-                                                                 min_samples_split=2, min_samples_leaf=1, max_features='auto',
+        #n_estimators=790
+        Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=510, criterion='gini', max_depth=7,
+                                                                 min_samples_split=2, min_samples_leaf=1, max_features=8,
                                                                  bootstrap=True, oob_score=False, n_jobs=-1, random_state=None, verbose=0,
                                                                  min_density=None, compute_importances=None)
         print("Training ..")
@@ -343,7 +347,7 @@ def Scikit_RandomForest_Classification(evaluation_file):
         r2Score = r2_score(testing_Labels, predict_Labels)
         print("R2 Square score of RandomForest Classification: " + str(r2Score)) 
 
-        additional_info = "n_estimators=" + str(n_estimators) + '\n'
+        additional_info = "max_features=" + str(max_features) + '\n'
         #additional_info = "n_estimators=" + str(n_estimators) + " ,max_depth=" + str(max_depth) +" ,min_samples_split=" + str(min_samples_split) + " ,min_samples_leaf=" + str(min_samples_leaf) + " ,max_features=" + str(max_features) + '\n'
         Result_Evaluation (evaluation_file, testing_Labels, predict_Labels, additional_info)
 
@@ -380,7 +384,7 @@ def main():
     #Scikit_SVM_CrossValidation_Classification('data/evaluation_result/evaluation_SVM_CV.txt', 1)
     #Scikit_SVM_Regression('data/evaluation_result/evaluation_SVMR.txt', 1)
     #Scikit_DecisionTree_Classification('data/evaluation_result/evaluation_DT.txt')
-    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF.txt')
+    Scikit_RandomForest_Classification('data/evaluation_result/evaluation_RF_final.txt')
 
 
 

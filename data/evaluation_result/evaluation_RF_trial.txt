@@ -1,0 +1,3 @@
+n_estimators=10
+#AbsolutelyRight: 99 #NearlyRight: 69 #Wrong: 32
+#AbsolutelyRight: 0.495 #NearlyRight: 0.345 #Wrong: 0.16

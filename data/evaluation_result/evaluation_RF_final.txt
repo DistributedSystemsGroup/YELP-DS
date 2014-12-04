@@ -1,0 +1,57 @@
+max_features=0
+#AbsolutelyRight: 103 #NearlyRight: 68 #Wrong: 29
+#AbsolutelyRight: 0.515 #NearlyRight: 0.34 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 67 #Wrong: 28
+#AbsolutelyRight: 0.525 #NearlyRight: 0.335 #Wrong: 0.14
+max_features=0
+#AbsolutelyRight: 103 #NearlyRight: 68 #Wrong: 29
+#AbsolutelyRight: 0.515 #NearlyRight: 0.34 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 104 #NearlyRight: 70 #Wrong: 26
+#AbsolutelyRight: 0.52 #NearlyRight: 0.35 #Wrong: 0.13
+max_features=0
+#AbsolutelyRight: 103 #NearlyRight: 67 #Wrong: 30
+#AbsolutelyRight: 0.515 #NearlyRight: 0.335 #Wrong: 0.15
+max_features=0
+#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
+#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
+max_features=0
+#AbsolutelyRight: 104 #NearlyRight: 67 #Wrong: 29
+#AbsolutelyRight: 0.52 #NearlyRight: 0.335 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 66 #Wrong: 29
+#AbsolutelyRight: 0.525 #NearlyRight: 0.33 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 66 #Wrong: 29
+#AbsolutelyRight: 0.525 #NearlyRight: 0.33 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 106 #NearlyRight: 66 #Wrong: 28
+#AbsolutelyRight: 0.53 #NearlyRight: 0.33 #Wrong: 0.14
+max_features=0
+#AbsolutelyRight: 106 #NearlyRight: 66 #Wrong: 28
+#AbsolutelyRight: 0.53 #NearlyRight: 0.33 #Wrong: 0.14
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 67 #Wrong: 28
+#AbsolutelyRight: 0.525 #NearlyRight: 0.335 #Wrong: 0.14
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 67 #Wrong: 28
+#AbsolutelyRight: 0.525 #NearlyRight: 0.335 #Wrong: 0.14
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 66 #Wrong: 29
+#AbsolutelyRight: 0.525 #NearlyRight: 0.33 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
+#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
+max_features=0
+#AbsolutelyRight: 104 #NearlyRight: 67 #Wrong: 29
+#AbsolutelyRight: 0.52 #NearlyRight: 0.335 #Wrong: 0.145
+max_features=0
+#AbsolutelyRight: 104 #NearlyRight: 68 #Wrong: 28
+#AbsolutelyRight: 0.52 #NearlyRight: 0.34 #Wrong: 0.14
+max_features=0
+#AbsolutelyRight: 106 #NearlyRight: 67 #Wrong: 27
+#AbsolutelyRight: 0.53 #NearlyRight: 0.335 #Wrong: 0.135
+max_features=0
+#AbsolutelyRight: 105 #NearlyRight: 66 #Wrong: 29
+#AbsolutelyRight: 0.525 #NearlyRight: 0.33 #Wrong: 0.145
