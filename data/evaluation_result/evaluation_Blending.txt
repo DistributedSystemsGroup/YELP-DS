@@ -1,0 +1,210 @@
+0: [4, 4] - 4 - 5 --> off by 1 star
+1: [4, 4] - 4 - 4 --> spot on!
+2: [2, 4] - 1 - 3 --> off by 2 star
+3: [4, 4] - 4 - 5 --> off by 1 star
+4: [2, 4] - 1 - 1 --> spot on!
+5: [4, 4] - 4 - 3 --> off by 1 star
+6: [1, 1] - 1 - 1 --> spot on!
+7: [4, 4] - 4 - 4 --> spot on!
+8: [5, 4] - 5 - 5 --> spot on!
+9: [4, 4] - 4 - 5 --> off by 1 star
+10: [1, 1] - 1 - 1 --> spot on!
+11: [5, 5] - 5 - 5 --> spot on!
+12: [4, 4] - 4 - 1 --> off by 3 star
+13: [4, 4] - 4 - 1 --> off by 3 star
+14: [4, 4] - 4 - 4 --> spot on!
+15: [5, 5] - 5 - 5 --> spot on!
+16: [4, 4] - 4 - 2 --> off by 2 star
+17: [4, 4] - 4 - 4 --> spot on!
+18: [5, 5] - 5 - 5 --> spot on!
+19: [5, 5] - 5 - 4 --> off by 1 star
+20: [4, 4] - 4 - 4 --> spot on!
+21: [4, 4] - 4 - 3 --> off by 1 star
+22: [4, 4] - 4 - 4 --> spot on!
+23: [5, 5] - 5 - 5 --> spot on!
+24: [4, 4] - 4 - 5 --> off by 1 star
+25: [4, 4] - 4 - 4 --> spot on!
+26: [1, 1] - 1 - 2 --> off by 1 star
+27: [4, 4] - 4 - 4 --> spot on!
+28: [1, 1] - 1 - 1 --> spot on!
+29: [5, 5] - 5 - 5 --> spot on!
+30: [5, 5] - 5 - 4 --> off by 1 star
+31: [4, 4] - 4 - 5 --> off by 1 star
+32: [5, 5] - 5 - 5 --> spot on!
+33: [5, 5] - 5 - 4 --> off by 1 star
+34: [4, 5] - 4 - 2 --> off by 2 star
+35: [4, 4] - 4 - 2 --> off by 2 star
+36: [4, 4] - 4 - 3 --> off by 1 star
+37: [5, 5] - 5 - 5 --> spot on!
+38: [5, 5] - 5 - 5 --> spot on!
+39: [4, 1] - 5 - 2 --> off by 3 star
+40: [4, 5] - 4 - 4 --> spot on!
+41: [5, 4] - 5 - 4 --> off by 1 star
+42: [5, 5] - 5 - 5 --> spot on!
+43: [1, 1] - 1 - 1 --> spot on!
+44: [5, 5] - 5 - 5 --> spot on!
+45: [4, 4] - 4 - 5 --> off by 1 star
+46: [4, 4] - 4 - 3 --> off by 1 star
+47: [5, 5] - 5 - 5 --> spot on!
+48: [5, 5] - 5 - 5 --> spot on!
+49: [1, 1] - 1 - 1 --> spot on!
+50: [5, 5] - 5 - 5 --> spot on!
+51: [4, 4] - 4 - 3 --> off by 1 star
+52: [5, 5] - 5 - 5 --> spot on!
+53: [4, 4] - 4 - 5 --> off by 1 star
+54: [4, 4] - 4 - 3 --> off by 1 star
+55: [1, 4] - 1 - 1 --> spot on!
+56: [3, 4] - 4 - 4 --> spot on!
+57: [4, 4] - 4 - 2 --> off by 2 star
+58: [5, 5] - 5 - 5 --> spot on!
+59: [5, 5] - 5 - 5 --> spot on!
+60: [4, 4] - 4 - 4 --> spot on!
+61: [4, 4] - 4 - 5 --> off by 1 star
+62: [1, 5] - 1 - 1 --> spot on!
+63: [5, 5] - 5 - 3 --> off by 2 star
+64: [5, 5] - 5 - 1 --> wrong
+65: [5, 5] - 5 - 5 --> spot on!
+66: [5, 5] - 5 - 4 --> off by 1 star
+67: [4, 4] - 4 - 3 --> off by 1 star
+68: [4, 5] - 4 - 2 --> off by 2 star
+69: [4, 4] - 4 - 5 --> off by 1 star
+70: [4, 4] - 4 - 4 --> spot on!
+71: [5, 5] - 5 - 5 --> spot on!
+72: [4, 4] - 4 - 1 --> off by 3 star
+73: [5, 4] - 5 - 4 --> off by 1 star
+74: [5, 5] - 5 - 5 --> spot on!
+75: [4, 4] - 4 - 4 --> spot on!
+76: [4, 4] - 4 - 4 --> spot on!
+77: [4, 4] - 4 - 4 --> spot on!
+78: [5, 4] - 5 - 3 --> off by 2 star
+79: [5, 5] - 5 - 5 --> spot on!
+80: [5, 5] - 5 - 5 --> spot on!
+81: [4, 4] - 4 - 2 --> off by 2 star
+82: [4, 4] - 4 - 2 --> off by 2 star
+83: [4, 4] - 4 - 1 --> off by 3 star
+84: [5, 5] - 5 - 5 --> spot on!
+85: [4, 4] - 4 - 5 --> off by 1 star
+86: [4, 4] - 4 - 2 --> off by 2 star
+87: [5, 4] - 5 - 4 --> off by 1 star
+88: [4, 4] - 4 - 1 --> off by 3 star
+89: [5, 5] - 5 - 5 --> spot on!
+90: [4, 4] - 4 - 3 --> off by 1 star
+91: [5, 5] - 5 - 5 --> spot on!
+92: [5, 5] - 5 - 5 --> spot on!
+93: [4, 4] - 4 - 4 --> spot on!
+94: [4, 4] - 4 - 4 --> spot on!
+95: [4, 4] - 4 - 5 --> off by 1 star
+96: [5, 5] - 5 - 5 --> spot on!
+97: [5, 5] - 5 - 5 --> spot on!
+98: [5, 5] - 5 - 4 --> off by 1 star
+99: [5, 5] - 5 - 4 --> off by 1 star
+100: [5, 4] - 5 - 5 --> spot on!
+101: [4, 4] - 4 - 4 --> spot on!
+102: [5, 5] - 5 - 4 --> off by 1 star
+103: [4, 4] - 4 - 3 --> off by 1 star
+104: [5, 5] - 5 - 4 --> off by 1 star
+105: [4, 4] - 4 - 3 --> off by 1 star
+106: [4, 4] - 4 - 2 --> off by 2 star
+107: [5, 5] - 5 - 4 --> off by 1 star
+108: [5, 5] - 5 - 5 --> spot on!
+109: [5, 5] - 5 - 4 --> off by 1 star
+110: [4, 4] - 4 - 4 --> spot on!
+111: [4, 4] - 4 - 3 --> off by 1 star
+112: [4, 4] - 4 - 5 --> off by 1 star
+113: [4, 4] - 4 - 4 --> spot on!
+114: [5, 5] - 5 - 5 --> spot on!
+115: [5, 5] - 5 - 4 --> off by 1 star
+116: [5, 5] - 5 - 5 --> spot on!
+117: [4, 4] - 4 - 4 --> spot on!
+118: [5, 5] - 5 - 5 --> spot on!
+119: [4, 4] - 4 - 5 --> off by 1 star
+120: [4, 5] - 4 - 4 --> spot on!
+121: [5, 5] - 5 - 5 --> spot on!
+122: [4, 4] - 4 - 3 --> off by 1 star
+123: [5, 5] - 5 - 4 --> off by 1 star
+124: [4, 4] - 4 - 3 --> off by 1 star
+125: [5, 5] - 5 - 5 --> spot on!
+126: [4, 4] - 4 - 4 --> spot on!
+127: [4, 4] - 4 - 1 --> off by 3 star
+128: [4, 4] - 4 - 3 --> off by 1 star
+129: [5, 5] - 5 - 4 --> off by 1 star
+130: [4, 4] - 4 - 5 --> off by 1 star
+131: [4, 4] - 4 - 2 --> off by 2 star
+132: [4, 5] - 4 - 3 --> off by 1 star
+133: [1, 5] - 1 - 1 --> spot on!
+134: [4, 4] - 4 - 5 --> off by 1 star
+135: [5, 4] - 5 - 5 --> spot on!
+136: [5, 5] - 5 - 4 --> off by 1 star
+137: [4, 4] - 4 - 2 --> off by 2 star
+138: [4, 4] - 4 - 4 --> spot on!
+139: [5, 5] - 5 - 5 --> spot on!
+140: [4, 4] - 4 - 5 --> off by 1 star
+141: [4, 4] - 4 - 4 --> spot on!
+142: [4, 4] - 4 - 4 --> spot on!
+143: [4, 4] - 4 - 2 --> off by 2 star
+144: [4, 4] - 4 - 4 --> spot on!
+145: [4, 4] - 4 - 5 --> off by 1 star
+146: [4, 4] - 4 - 4 --> spot on!
+147: [5, 5] - 5 - 5 --> spot on!
+148: [5, 5] - 5 - 5 --> spot on!
+149: [4, 4] - 4 - 4 --> spot on!
+150: [5, 5] - 5 - 5 --> spot on!
+151: [5, 5] - 5 - 5 --> spot on!
+152: [1, 5] - 1 - 5 --> wrong
+153: [5, 5] - 5 - 5 --> spot on!
+154: [5, 5] - 5 - 3 --> off by 2 star
+155: [5, 5] - 5 - 5 --> spot on!
+156: [5, 5] - 5 - 5 --> spot on!
+157: [5, 5] - 5 - 5 --> spot on!
+158: [5, 5] - 5 - 5 --> spot on!
+159: [5, 5] - 5 - 5 --> spot on!
+160: [4, 4] - 4 - 5 --> off by 1 star
+161: [5, 3] - 5 - 1 --> wrong
+162: [1, 5] - 1 - 5 --> wrong
+163: [5, 5] - 5 - 5 --> spot on!
+164: [4, 4] - 4 - 4 --> spot on!
+165: [4, 4] - 4 - 2 --> off by 2 star
+166: [5, 4] - 5 - 4 --> off by 1 star
+167: [4, 4] - 4 - 4 --> spot on!
+168: [5, 5] - 5 - 5 --> spot on!
+169: [4, 4] - 4 - 4 --> spot on!
+170: [5, 5] - 5 - 5 --> spot on!
+171: [1, 5] - 1 - 2 --> off by 1 star
+172: [5, 5] - 5 - 5 --> spot on!
+173: [5, 5] - 5 - 5 --> spot on!
+174: [5, 5] - 5 - 4 --> off by 1 star
+175: [5, 5] - 5 - 5 --> spot on!
+176: [4, 5] - 4 - 5 --> off by 1 star
+177: [4, 4] - 4 - 4 --> spot on!
+178: [5, 5] - 5 - 5 --> spot on!
+179: [5, 4] - 5 - 4 --> off by 1 star
+180: [2, 4] - 1 - 1 --> spot on!
+181: [5, 5] - 5 - 5 --> spot on!
+182: [5, 5] - 5 - 4 --> off by 1 star
+183: [5, 5] - 5 - 5 --> spot on!
+184: [4, 4] - 4 - 5 --> off by 1 star
+185: [5, 5] - 5 - 4 --> off by 1 star
+186: [4, 4] - 4 - 5 --> off by 1 star
+187: [5, 5] - 5 - 5 --> spot on!
+188: [4, 5] - 4 - 5 --> off by 1 star
+189: [1, 5] - 1 - 1 --> spot on!
+190: [4, 4] - 4 - 5 --> off by 1 star
+191: [4, 4] - 4 - 5 --> off by 1 star
+192: [4, 4] - 4 - 5 --> off by 1 star
+193: [4, 4] - 4 - 1 --> off by 3 star
+194: [4, 4] - 4 - 5 --> off by 1 star
+195: [5, 5] - 5 - 5 --> spot on!
+196: [4, 4] - 4 - 2 --> off by 2 star
+197: [5, 5] - 5 - 5 --> spot on!
+198: [5, 4] - 5 - 5 --> spot on!
+199: [5, 5] - 5 - 5 --> spot on!
+#spot on: 105
+ #off by 1 star: 65
+ #off by 2 star: 18
+ #off by 3 star: 8
+ #Wrong: 4
+#spot on: 0.525
+ #off by 1 star: 0.325
+ #off by 2 star: 0.09
+ #off by 3 star: 0.04
+ #Wrong: 0.02
