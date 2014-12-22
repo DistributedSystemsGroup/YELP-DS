@@ -147,4 +147,4 @@ class Histogram():
 
 
 if __name__ == "__main__":
-    Histogram().run("data/input/1000samples.json")
+    Histogram().run("data/input/10000samples.json")
