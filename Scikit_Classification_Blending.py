@@ -130,24 +130,24 @@ def Scikit_Blending_Classification(evaluation_file):
 
 
     print("Training ..")
-    Scikit_AdaBoostDecisionTree_Model.fit(training_Features, training_Labels)
+    #Scikit_AdaBoostDecisionTree_Model.fit(training_Features, training_Labels)
     Scikit_RandomForest_Model.fit(training_Features, training_Labels)
-    Scikit_NaiveBayes_Model.fit(training_Features, training_Labels)
+    #Scikit_NaiveBayes_Model.fit(training_Features, training_Labels)
     Scikit_SVM_Model.fit(svm_training_Features, training_Labels)
     #Scikit_BaggingSVM_Model.fit(svm_training_Features, training_Labels)
 
     print("Testing ..")
     #predict_Labels = Scikit_NaiveBayes_Model.predict(testing_Features)
-    AdaBoostDecisionTree_Predict_Probas = Scikit_AdaBoostDecisionTree_Model.predict_proba(training_Features)
+    #AdaBoostDecisionTree_Predict_Probas = Scikit_AdaBoostDecisionTree_Model.predict_proba(training_Features)
     RandomForest_Predict_Probas = Scikit_RandomForest_Model.predict_proba(training_Features)
-    NaiveBayes_Predict_Probas = Scikit_NaiveBayes_Model.predict_proba(training_Features)
+    #NaiveBayes_Predict_Probas = Scikit_NaiveBayes_Model.predict_proba(training_Features)
     SVM_Predict_Probas = Scikit_SVM_Model.predict_proba(svm_training_Features)
     #BaggingSVM_Predict_Probas = Scikit_BaggingSVM_Model.predict_proba(svm_training_Features)
 
     #Predict labels
-    AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(training_Features)
+    #AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(training_Features)
     RandomForest_Predict_Labels = Scikit_RandomForest_Model.predict(training_Features)
-    NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(training_Features)
+    #NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(training_Features)
     SVM_Predict_Labels = Scikit_SVM_Model.predict(svm_training_Features)
     #BaggingSVM_Predict_Labels = Scikit_BaggingSVM_Model.predict(svm_training_Features)
     
@@ -155,11 +155,11 @@ def Scikit_Blending_Classification(evaluation_file):
         blending_item = [
                          #AdaBoostDecisionTree_Predict_Labels[i],
                          RandomForest_Predict_Labels[i],
-                         NaiveBayes_Predict_Probas[i][0],
-                         NaiveBayes_Predict_Probas[i][1],
-                         NaiveBayes_Predict_Probas[i][2],
-                         NaiveBayes_Predict_Probas[i][3],
-                         NaiveBayes_Predict_Probas[i][4],
+                         #NaiveBayes_Predict_Probas[i][0],
+                         #NaiveBayes_Predict_Probas[i][1],
+                         #NaiveBayes_Predict_Probas[i][2],
+                         #NaiveBayes_Predict_Probas[i][3],
+                         #NaiveBayes_Predict_Probas[i][4],
                          SVM_Predict_Labels[i]
                         ]
         """blending_item = np.concatenate((AdaBoostDecisionTree_Predict_Probas[i], RandomForest_Predict_Probas[i], NaiveBayes_Predict_Probas[i], SVM_Predict_Probas[i], BaggingSVM_Predict_Probas[i]), axis=0)
@@ -175,27 +175,29 @@ def Scikit_Blending_Classification(evaluation_file):
     #print(training_Features[1])
     Scikit_LogisticRegression_Model.fit(blending_training_Features, training_Labels)
 
-    AdaBoostDecisionTree_Predict_Probas = Scikit_AdaBoostDecisionTree_Model.predict_proba(testing_Features)
+    #AdaBoostDecisionTree_Predict_Probas = Scikit_AdaBoostDecisionTree_Model.predict_proba(testing_Features)
     RandomForest_Predict_Probas = Scikit_RandomForest_Model.predict_proba(testing_Features)
-    NaiveBayes_Predict_Probas = Scikit_NaiveBayes_Model.predict_proba(testing_Features)
+    #NaiveBayes_Predict_Probas = Scikit_NaiveBayes_Model.predict_proba(testing_Features)
     SVM_Predict_Probas = Scikit_SVM_Model.predict_proba(svm_testing_Features)
     #BaggingSVM_Predict_Probas = Scikit_BaggingSVM_Model.predict_proba(svm_testing_Features)
 
     #Predict labels
+    """
     AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(testing_Features)
     AdaBoostDecisionTree_Accuracy = Scikit_AdaBoostDecisionTree_Model.score(testing_Features, testing_Labels)
     print ("AdaBoostDecisionTree_Accuracy: ")
-    print (AdaBoostDecisionTree_Accuracy)
+    print (AdaBoostDecisionTree_Accuracy)"""
 
     RandomForest_Predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
     RandomForest_Accuracy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
     print ("RandomForest_Accuracy: ")
     print (RandomForest_Accuracy)
 
+    """
     NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(testing_Features)
     NaiveBayes_Accuracy = Scikit_NaiveBayes_Model.score(testing_Features, testing_Labels)
     print ("NaiveBayes_Accuracy: ")
-    print (NaiveBayes_Accuracy)
+    print (NaiveBayes_Accuracy)"""
 
     SVM_Predict_Labels = Scikit_SVM_Model.predict(svm_testing_Features)
     SVM_Accuracy = Scikit_SVM_Model.score(svm_testing_Features, testing_Labels)
@@ -211,11 +213,11 @@ def Scikit_Blending_Classification(evaluation_file):
         blending_item = [
                          #AdaBoostDecisionTree_Predict_Labels[i],
                          RandomForest_Predict_Labels[i],
-                         NaiveBayes_Predict_Probas[i][0],
-                         NaiveBayes_Predict_Probas[i][1],
-                         NaiveBayes_Predict_Probas[i][2],
-                         NaiveBayes_Predict_Probas[i][3],
-                         NaiveBayes_Predict_Probas[i][4],
+                         #NaiveBayes_Predict_Probas[i][0],
+                         #NaiveBayes_Predict_Probas[i][1],
+                         #NaiveBayes_Predict_Probas[i][2],
+                         #NaiveBayes_Predict_Probas[i][3],
+                         #NaiveBayes_Predict_Probas[i][4],
                          SVM_Predict_Labels[i]
                         ]
         """blending_item = np.concatenate((AdaBoostDecisionTree_Predict_Probas[i], RandomForest_Predict_Probas[i], NaiveBayes_Predict_Probas[i], SVM_Predict_Probas[i], BaggingSVM_Predict_Probas[i]), axis=0)

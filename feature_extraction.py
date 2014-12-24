@@ -70,7 +70,7 @@ def buildingHistogramLength(length, result):
 
 starttime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-filenames = ['bow/data/input/1StarsSamples.json', 'bow/data/input/2StarsSamples.json', 'bow/data/input/3StarsSamples.json', 'bow/data/input/4StarsSamples.json', 'bow/data/input/5StarsSamples.json']
+filenames = ['data/input/bow/1StarsSamples.json', 'data/input/bow/2StarsSamples.json', 'data/input/bow/3StarsSamples.json', 'data/input/bow/4StarsSamples.json', 'data/input/bow/5StarsSamples.json']
 
 vectorizer = CountVectorizer(input='filename', ngram_range=(1,3), stop_words='english', strip_accents='unicode', token_pattern=ur'\b\w+\b')
 
@@ -81,7 +81,12 @@ vocab = np.array(vectorizer.get_feature_names())
 _vectorizer = CountVectorizer(input='content', ngram_range=(1,3), stop_words='english', strip_accents='unicode', token_pattern=ur'\b\w+\b')
 analyze = _vectorizer.build_analyzer()
 
-with open('/data/input/10000samples.json') as fileobject, open("/data/dictionary/mydictionary_2bins_reduced.json") as dicObject2Bins, open("/data/dictionary/mydictionary_3bins.json") as dicObject3Bins, open("/data/dictionary/mydictionary_6bins.json") as dicObject6Bins:
+#Edit input and output file here
+filename = '40000trainingSamples.json'
+inputFile = 'data/input/' + filename
+outputFile = 'data/output/histogram' + filename
+
+with open(inputFile) as fileobject, open("data/dictionary/mydictionary_2bins.json") as dicObject2Bins, open("data/dictionary/mydictionary_3bins.json") as dicObject3Bins, open("data/dictionary/mydictionary_6bins.json") as dicObject6Bins:
     dicData2Bins = json.load(dicObject2Bins)
     dicData3Bins = json.load(dicObject3Bins)
     dicData6Bins = json.load(dicObject6Bins)
@@ -169,7 +174,7 @@ with open('/data/input/10000samples.json') as fileobject, open("/data/dictionary
 
         
         listOfHistogramAndRating.append({'rating': data["stars"], 'histogram': final_result})
-    with io.open('data/output/histogram_allFeatures.json', 'w', encoding='utf-8') as outfile:
+    with io.open(outputFile, 'w', encoding='utf-8') as outfile:
         outfile.write(unicode(json.dumps(listOfHistogramAndRating, ensure_ascii=False)))
 
 

@@ -4,16 +4,27 @@ import io, os
 import random, json
 
 numberOfData = 1125458
-numberOfSample = 10000
 
-inputfile = '../data/input/source/yelp_academic_dataset_review.json'
-outputfile5star = 'data/input/5StarsSamples.json'
-outputfile4star = 'data/input/4StarsSamples.json'
-outputfile3star = 'data/input/3StarsSamples.json'
-outputfile2star = 'data/input/2StarsSamples.json'
-outputfile1star = 'data/input/1StarsSamples.json'
+trainingRange = 800000
+validationRange = 900000
+testingRangex = 1000000
 
-randomSelectionList = random.sample(xrange(0, numberOfData), numberOfSample)
+inputfile = 'data/input/source/yelp_academic_dataset_review.json'
+
+
+# Use this function to split data
+
+#Build Bag of Words dictionary
+
+outputfile5star = 'data/input/bow/5StarsSamples.json'
+outputfile4star = 'data/input/bow/4StarsSamples.json'
+outputfile3star = 'data/input/bow/3StarsSamples.json'
+outputfile2star = 'data/input/bow/2StarsSamples.json'
+outputfile1star = 'data/input/bow/1StarsSamples.json'
+
+bow_NumberOfSample = 5000
+
+bow_RandomSelectionList = random.sample(xrange(0, trainingRange), bow_NumberOfSample)
 
 for i in xrange(1,6):
     if os.path.isfile('data/input' + str(i) + 'StarsSamples.json'):
@@ -22,7 +33,7 @@ for i in xrange(1,6):
 with open(outputfile5star, 'a') as _5starfile, open(outputfile4star, 'a') as _4starfile, open(outputfile3star, 'a') as _3starfile, open(outputfile2star, 'a') as _2starfile, open(outputfile1star, 'a') as _1starfile:
     with open(inputfile) as inputfileobject:
         for i, line in enumerate(inputfileobject):
-           if i in randomSelectionList:
+           if i in bow_RandomSelectionList:
                if line == '\n':
                     break
                data = json.loads(line)
@@ -39,3 +50,33 @@ with open(outputfile5star, 'a') as _5starfile, open(outputfile4star, 'a') as _4s
                elif (data["stars"] == 1):
                    _1starfile.write((data["text"].encode('utf-8')))
 
+#Training, validation, testing set selection
+
+training_NumberOfSample = 40000
+training_Outputfile = 'data/input/' + str(training_NumberOfSample) + 'trainingSamples.json'
+training_RandomSelectionList = random.sample(xrange(0, trainingRange), training_NumberOfSample)
+
+validation_NumberOfSample = 5000
+validation_Outputfile = 'data/input/' + str(validation_NumberOfSample) + 'validationSamples.json'
+validation_RandomSelectionList = random.sample(xrange(trainingRange, validationRange), training_NumberOfSample)
+
+testing_NumberOfSample = 5000
+testing_Outputfile = 'data/input/' + str(testing_NumberOfSample) + 'testingSamples.json'
+testing_RandomSelectionList = random.sample(xrange(validationRange, testingRange), training_NumberOfSample)
+
+if os.path.isfile(training_Outputfile):
+    os.remove(training_Outputfile)
+if os.path.isfile(validation_Outputfile):
+    os.remove(validation_Outputfile)
+if os.path.isfile(testing_Outputfile):
+    os.remove(testing_Outputfile)
+
+with open(training_Outputfile, 'a', encoding='utf-8') as training_Outfile, open(validation_Outputfile, 'a', encoding='utf-8') as validation_Outfile, open(testing_Outputfile, 'a', encoding='utf-8') as testing_Outfile:
+    with open(inputfile) as fileobject:
+       for i, line in enumerate(fileobject):
+           if i in training_RandomSelectionList:
+               training_Outfile.write(unicode(line))
+           if i in validation_RandomSelectionList:
+               validation_Outfile.write(unicode(line))
+           if i in testing_RandomSelectionList:
+               testing_Outfile.write(unicode(line))
