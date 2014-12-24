@@ -70,7 +70,7 @@ def buildingHistogramLength(length, result):
 
 starttime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 
-filenames = ['data/input/1StarsSamples.json', 'data/input/2StarsSamples.json', 'data/input/3StarsSamples.json', 'data/input/4StarsSamples.json', 'data/input/5StarsSamples.json']
+filenames = ['bow/data/input/1StarsSamples.json', 'bow/data/input/2StarsSamples.json', 'bow/data/input/3StarsSamples.json', 'bow/data/input/4StarsSamples.json', 'bow/data/input/5StarsSamples.json']
 
 vectorizer = CountVectorizer(input='filename', ngram_range=(1,3), stop_words='english', strip_accents='unicode', token_pattern=ur'\b\w+\b')
 
@@ -81,24 +81,11 @@ vocab = np.array(vectorizer.get_feature_names())
 _vectorizer = CountVectorizer(input='content', ngram_range=(1,3), stop_words='english', strip_accents='unicode', token_pattern=ur'\b\w+\b')
 analyze = _vectorizer.build_analyzer()
 
-with open('../data/input/10000samples.json') as fileobject, open("../data/dictionary/mydictionary_2bins.json") as dicObject2Bins, open("../data/dictionary/mydictionary_3bins.json") as dicObject3Bins, open("../data/dictionary/mydictionary_6bins.json") as dicObject6Bins:
+with open('/data/input/10000samples.json') as fileobject, open("/data/dictionary/mydictionary_2bins_reduced.json") as dicObject2Bins, open("/data/dictionary/mydictionary_3bins.json") as dicObject3Bins, open("/data/dictionary/mydictionary_6bins.json") as dicObject6Bins:
     dicData2Bins = json.load(dicObject2Bins)
     dicData3Bins = json.load(dicObject3Bins)
     dicData6Bins = json.load(dicObject6Bins)
     listOfHistogramAndRating = []
-
-    i1Star = 0
-    i2Star = 0
-    i3Star = 0
-    i4Star = 0
-    i5Star = 0
-
-    listOfHistogram1Star = []
-    listOfHistogram2Star = []
-    listOfHistogram3Star = []
-    listOfHistogram4Star = []
-    listOfHistogram5Star = []
-
 
     for i, line in enumerate(fileobject):
 

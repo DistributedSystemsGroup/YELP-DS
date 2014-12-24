@@ -155,7 +155,11 @@ def Scikit_Blending_Classification(evaluation_file):
         blending_item = [
                          #AdaBoostDecisionTree_Predict_Labels[i],
                          RandomForest_Predict_Labels[i],
-                         #NaiveBayes_Predict_Labels[i],
+                         NaiveBayes_Predict_Probas[i][0],
+                         NaiveBayes_Predict_Probas[i][1],
+                         NaiveBayes_Predict_Probas[i][2],
+                         NaiveBayes_Predict_Probas[i][3],
+                         NaiveBayes_Predict_Probas[i][4],
                          SVM_Predict_Labels[i]
                         ]
         """blending_item = np.concatenate((AdaBoostDecisionTree_Predict_Probas[i], RandomForest_Predict_Probas[i], NaiveBayes_Predict_Probas[i], SVM_Predict_Probas[i], BaggingSVM_Predict_Probas[i]), axis=0)
@@ -207,7 +211,11 @@ def Scikit_Blending_Classification(evaluation_file):
         blending_item = [
                          #AdaBoostDecisionTree_Predict_Labels[i],
                          RandomForest_Predict_Labels[i],
-                         #NaiveBayes_Predict_Labels[i],
+                         NaiveBayes_Predict_Probas[i][0],
+                         NaiveBayes_Predict_Probas[i][1],
+                         NaiveBayes_Predict_Probas[i][2],
+                         NaiveBayes_Predict_Probas[i][3],
+                         NaiveBayes_Predict_Probas[i][4],
                          SVM_Predict_Labels[i]
                         ]
         """blending_item = np.concatenate((AdaBoostDecisionTree_Predict_Probas[i], RandomForest_Predict_Probas[i], NaiveBayes_Predict_Probas[i], SVM_Predict_Probas[i], BaggingSVM_Predict_Probas[i]), axis=0)
