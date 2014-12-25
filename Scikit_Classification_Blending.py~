@@ -32,8 +32,8 @@ svm_testing_Features = []
 
 #numberOfSamples = 1000
 # the number of training and testing samples
-trainingSamples = 400000
-testingSamples = 50000
+trainingSamples = 0
+testingSamples = 0
 
 def Data_Preparation(training_Filename, testing_Filename, selectedFeatures):
 
@@ -41,6 +41,9 @@ def Data_Preparation(training_Filename, testing_Filename, selectedFeatures):
     global training_Labels
     global testing_Features
     global testing_Labels
+
+    global trainingSamples
+    global testingSamples
 
     global svm_training_Features
     global svm_testing_Features
@@ -57,25 +60,28 @@ def Data_Preparation(training_Filename, testing_Filename, selectedFeatures):
     with open(training_Filename) as data_file:
         data = json.load(data_file)
         for item in data:
-            features.append(item["histogram"])
-            svm_features.append(list(item["histogram"][i] for i in selectedFeatures))
-            labels.append(item["rating"])        
+            train_features.append(item["histogram"])
+            svm_train_features.append(list(item["histogram"][i] for i in selectedFeatures))
+            train_labels.append(item["rating"])        
     
-    training_Features = features
-    svm_training_Features = svm_features
-    training_Labels = labels
+    training_Features = train_features
+    svm_training_Features = svm_train_features
+    training_Labels = train_labels
+    training_Samples = len(train_features)
+    print(training_Samples)
 
     # testing
     with open(testing_Filename) as data_file:
         data = json.load(data_file)
         for item in data:
-            features.append(item["histogram"])
-            svm_features.append(list(item["histogram"][i] for i in selectedFeatures))
-            labels.append(item["rating"])
+            test_features.append(item["histogram"])
+            svm_test_features.append(list(item["histogram"][i] for i in selectedFeatures))
+            test_labels.append(item["rating"])
 
-    testing_Features = features
-    svm_testing_Features = svm_features
-    testing_Labels = labels
+    testing_Features = test_features
+    svm_testing_Features = svm_test_features
+    testing_Labels = test_labels
+    testing_Samples = len(test_features)
 
 def Result_Evaluation (outputpath, testing_Labels, predict_Labels, blending_testing_Features):
     acc_rate = [0, 0, 0, 0, 0]
@@ -119,7 +125,7 @@ def Scikit_Blending_Classification(evaluation_file):
     if os.path.isfile(evaluation_file):
         os.remove(evaluation_file)
     print("Starting Blending Classification ...")
-
+    #Configure models
     Scikit_AdaBoostDecisionTree_Model = ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier(max_depth=7, max_features='sqrt'),
                                                       n_estimators=600, learning_rate=1)
     Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=510, criterion='gini', max_depth=7,
@@ -135,18 +141,20 @@ def Scikit_Blending_Classification(evaluation_file):
 
     Scikit_LogisticRegression_Model = LogisticRegression()
 
+
     blending_training_Features = []
     blending_testing_Features = []
 
-
+    #Train models
     print("Training ..")
+
     #Scikit_AdaBoostDecisionTree_Model.fit(training_Features, training_Labels)
     Scikit_RandomForest_Model.fit(training_Features, training_Labels)
     #Scikit_NaiveBayes_Model.fit(training_Features, training_Labels)
     Scikit_SVM_Model.fit(svm_training_Features, training_Labels)
     #Scikit_BaggingSVM_Model.fit(svm_training_Features, training_Labels)
 
-    print("Testing ..")
+    print("Get predicted probabilities ..")
     #predict_Labels = Scikit_NaiveBayes_Model.predict(testing_Features)
     #AdaBoostDecisionTree_Predict_Probas = Scikit_AdaBoostDecisionTree_Model.predict_proba(training_Features)
     RandomForest_Predict_Probas = Scikit_RandomForest_Model.predict_proba(training_Features)
@@ -155,6 +163,7 @@ def Scikit_Blending_Classification(evaluation_file):
     #BaggingSVM_Predict_Probas = Scikit_BaggingSVM_Model.predict_proba(svm_training_Features)
 
     #Predict labels
+    print("Get predicted labels ..")
     #AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(training_Features)
     RandomForest_Predict_Labels = Scikit_RandomForest_Model.predict(training_Features)
     #NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(training_Features)
@@ -184,6 +193,9 @@ def Scikit_Blending_Classification(evaluation_file):
     #print(blending_training_Features[1])
     #print(training_Features[1])
     Scikit_LogisticRegression_Model.fit(blending_training_Features, training_Labels)
+    
+
+    #Testing models
 
     #AdaBoostDecisionTree_Predict_Probas = Scikit_AdaBoostDecisionTree_Model.predict_proba(testing_Features)
     RandomForest_Predict_Probas = Scikit_RandomForest_Model.predict_proba(testing_Features)

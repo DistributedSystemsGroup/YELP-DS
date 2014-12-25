@@ -262,7 +262,7 @@ def Scikit_Blending_Classification(evaluation_file):
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
 
-    training_Inputfile = "bow/data/output/histogram_400000trainingSamples.json"
+    training_Inputfile = "bow/data/output/histogram_350000trainingSamples.json"
     testing_Inputfile = "bow/data/output/histogram_50000testingSamples.json"
 
     #selectedFeatures = [0, 1, 2, 3, 4, 5, 8]
