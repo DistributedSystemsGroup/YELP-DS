@@ -82,7 +82,7 @@ _vectorizer = CountVectorizer(input='content', ngram_range=(1,3), stop_words='en
 analyze = _vectorizer.build_analyzer()
 
 #Edit input and output file here
-filename = '40000trainingSamples.json'
+filename = '400000trainingSamples.json'
 inputFile = 'data/input/' + filename
 outputFile = 'data/output/histogram' + filename
 

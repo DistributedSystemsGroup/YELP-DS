@@ -30,12 +30,12 @@ testing_Labels = []
 svm_training_Features = []
 svm_testing_Features = []
 
-numberOfSamples = 1000
+#numberOfSamples = 1000
 # the number of training and testing samples
-trainingSamples = int(0.8 * numberOfSamples)
-testingSamples = int(0.2 * numberOfSamples)
+trainingSamples = 400000
+testingSamples = 50000
 
-def Data_Preparation(filename, selectedFeatures):
+def Data_Preparation(training_Filename, testing_Filename, selectedFeatures):
 
     global training_Features
     global training_Labels
@@ -46,26 +46,36 @@ def Data_Preparation(filename, selectedFeatures):
     global svm_testing_Features
 
 
-    features = []
-    svm_features = []
-    labels = []
+    train_features = []
+    test_features = []
+    svm_train_features = []
+    svm_test_features = []
+    train_labels = []
+    test_labels = []
 
-    # read training and testing data
-    with open(filename) as data_file:
+    #training
+    with open(training_Filename) as data_file:
+        data = json.load(data_file)
+        for item in data:
+            features.append(item["histogram"])
+            svm_features.append(list(item["histogram"][i] for i in selectedFeatures))
+            labels.append(item["rating"])        
+    
+    training_Features = features
+    svm_training_Features = svm_features
+    training_Labels = labels
+
+    # testing
+    with open(testing_Filename) as data_file:
         data = json.load(data_file)
         for item in data:
             features.append(item["histogram"])
             svm_features.append(list(item["histogram"][i] for i in selectedFeatures))
             labels.append(item["rating"])
-        #print(features)
-    #training
-    training_Features = features[0:trainingSamples]
-    svm_training_Features = svm_features[0:trainingSamples]
-    training_Labels = labels[0:trainingSamples]
-    # testing
-    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
-    svm_testing_Features = svm_features[trainingSamples:trainingSamples + testingSamples]
-    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
+
+    testing_Features = features
+    svm_testing_Features = svm_features
+    testing_Labels = labels
 
 def Result_Evaluation (outputpath, testing_Labels, predict_Labels, blending_testing_Features):
     acc_rate = [0, 0, 0, 0, 0]
@@ -240,7 +250,8 @@ def Scikit_Blending_Classification(evaluation_file):
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
 
-    inputfile = "bow/data/output/histogram_allFeatures.json"
+    training_Inputfile = "bow/data/output/histogram_400000trainingSamples.json"
+    testing_Inputfile = "bow/data/output/histogram_50000testingSamples.json"
 
     #selectedFeatures = [0, 1, 2, 3, 4, 5, 8]
     #selectedFeatures = [0, 1, 2, 3, 4, 5, 8, 9, 10, 11]
@@ -264,7 +275,7 @@ def main():
 
     
     #print(features)
-    Data_Preparation(inputfile, selectedFeatures)
+    Data_Preparation(training_Inputfile, testing_Inputfile, selectedFeatures)
     print("Finished preparing data ...")
     
     Scikit_Blending_Classification('data/evaluation_result/evaluation_Blending.txt')
