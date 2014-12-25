@@ -19,6 +19,10 @@ outputfile3star = 'data/input/bow/3StarsSamples.json'
 outputfile2star = 'data/input/bow/2StarsSamples.json'
 outputfile1star = 'data/input/bow/1StarsSamples.json'
 
+training_NumberOfSample = 350000
+validation_NumberOfSample = 50000
+testing_NumberOfSample = 50000
+
 training_Outputfile = 'data/input/' + str(training_NumberOfSample) + 'trainingSamples.json'
 validation_Outputfile = 'data/input/' + str(validation_NumberOfSample) + 'validationSamples.json'
 testing_Outputfile = 'data/input/' + str(testing_NumberOfSample) + 'testingSamples.json'
@@ -40,11 +44,7 @@ if os.path.isfile(validation_Outputfile):
 if os.path.isfile(testing_Outputfile):
     os.remove(testing_Outputfile)
 
-with open(outputfile5star, 'a') as _5starfile, open(outputfile4star, 'a') as _4starfile, open(outputfile3star, 'a') as _3starfile, open(outputfile2star, 'a') as _2starfile, open(outputfile1star, 'a') as _1starfile,
-open(training_Outputfile, 'a') as training_Outfile,
-open(validation_Outputfile, 'a') as validation_Outfile,
-open(testing_Outputfile, 'a') as testing_Outfile,
-open(inputfile) as inputfileobject:
+with open(outputfile5star, 'a') as _5starfile, open(outputfile4star, 'a') as _4starfile, open(outputfile3star, 'a') as _3starfile, open(outputfile2star, 'a') as _2starfile, open(outputfile1star, 'a') as _1starfile, open(training_Outputfile, 'a') as training_Outfile, open(validation_Outputfile, 'a') as validation_Outfile, open(testing_Outputfile, 'a') as testing_Outfile, open(inputfile) as inputfileobject:
     for i, line in enumerate(inputfileobject):
         print(i)
         if i in training_RandomSelectionList:
