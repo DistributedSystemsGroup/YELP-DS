@@ -20,8 +20,8 @@ def main():
 
    features = []
    labels = []
-
-   with open("bow/data/output/histogram_allFeatures.json") as dataFile:
+   datafile = "data/output/histogram_allFeatures.json"
+   with open(datafile) as dataFile:
        data = json.load(dataFile)
        for item in data:
            features.append(item["histogram"])

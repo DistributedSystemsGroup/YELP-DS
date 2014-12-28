@@ -13,7 +13,8 @@ def drawROCCurve(features, output):
     X = []
     y = []
     # read training and testing data
-    with open("bow/data/output/histogram_allFeatures.json") as data_file:
+    fileinput = "data/output/histogram_allFeatures.json"
+    with open(fileinput) as data_file:
         data = json.load(data_file)
         for item in data:
             X.append(list(item["histogram"][i] for i in features))

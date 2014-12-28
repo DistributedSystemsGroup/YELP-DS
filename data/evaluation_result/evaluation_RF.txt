@@ -1,297 +1,210 @@
-n_estimators=10
-#AbsolutelyRight: 81 #NearlyRight: 75 #Wrong: 44
-#AbsolutelyRight: 0.405 #NearlyRight: 0.375 #Wrong: 0.22
-n_estimators=20
-#AbsolutelyRight: 99 #NearlyRight: 68 #Wrong: 33
-#AbsolutelyRight: 0.495 #NearlyRight: 0.34 #Wrong: 0.165
-n_estimators=30
-#AbsolutelyRight: 97 #NearlyRight: 72 #Wrong: 31
-#AbsolutelyRight: 0.485 #NearlyRight: 0.36 #Wrong: 0.155
-n_estimators=40
-#AbsolutelyRight: 103 #NearlyRight: 70 #Wrong: 27
-#AbsolutelyRight: 0.515 #NearlyRight: 0.35 #Wrong: 0.135
-n_estimators=50
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=60
-#AbsolutelyRight: 91 #NearlyRight: 78 #Wrong: 31
-#AbsolutelyRight: 0.455 #NearlyRight: 0.39 #Wrong: 0.155
-n_estimators=70
-#AbsolutelyRight: 97 #NearlyRight: 73 #Wrong: 30
-#AbsolutelyRight: 0.485 #NearlyRight: 0.365 #Wrong: 0.15
-n_estimators=80
-#AbsolutelyRight: 93 #NearlyRight: 78 #Wrong: 29
-#AbsolutelyRight: 0.465 #NearlyRight: 0.39 #Wrong: 0.145
-n_estimators=90
-#AbsolutelyRight: 104 #NearlyRight: 67 #Wrong: 29
-#AbsolutelyRight: 0.52 #NearlyRight: 0.335 #Wrong: 0.145
-n_estimators=100
-#AbsolutelyRight: 97 #NearlyRight: 74 #Wrong: 29
-#AbsolutelyRight: 0.485 #NearlyRight: 0.37 #Wrong: 0.145
-n_estimators=110
-#AbsolutelyRight: 101 #NearlyRight: 70 #Wrong: 29
-#AbsolutelyRight: 0.505 #NearlyRight: 0.35 #Wrong: 0.145
-n_estimators=120
-#AbsolutelyRight: 99 #NearlyRight: 73 #Wrong: 28
-#AbsolutelyRight: 0.495 #NearlyRight: 0.365 #Wrong: 0.14
-n_estimators=130
-#AbsolutelyRight: 96 #NearlyRight: 76 #Wrong: 28
-#AbsolutelyRight: 0.48 #NearlyRight: 0.38 #Wrong: 0.14
-n_estimators=140
-#AbsolutelyRight: 96 #NearlyRight: 72 #Wrong: 32
-#AbsolutelyRight: 0.48 #NearlyRight: 0.36 #Wrong: 0.16
-n_estimators=150
-#AbsolutelyRight: 97 #NearlyRight: 76 #Wrong: 27
-#AbsolutelyRight: 0.485 #NearlyRight: 0.38 #Wrong: 0.135
-n_estimators=160
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=170
-#AbsolutelyRight: 97 #NearlyRight: 77 #Wrong: 26
-#AbsolutelyRight: 0.485 #NearlyRight: 0.385 #Wrong: 0.13
-n_estimators=180
-#AbsolutelyRight: 100 #NearlyRight: 73 #Wrong: 27
-#AbsolutelyRight: 0.5 #NearlyRight: 0.365 #Wrong: 0.135
-n_estimators=190
-#AbsolutelyRight: 103 #NearlyRight: 70 #Wrong: 27
-#AbsolutelyRight: 0.515 #NearlyRight: 0.35 #Wrong: 0.135
-n_estimators=200
-#AbsolutelyRight: 103 #NearlyRight: 68 #Wrong: 29
-#AbsolutelyRight: 0.515 #NearlyRight: 0.34 #Wrong: 0.145
-n_estimators=210
-#AbsolutelyRight: 100 #NearlyRight: 72 #Wrong: 28
-#AbsolutelyRight: 0.5 #NearlyRight: 0.36 #Wrong: 0.14
-n_estimators=220
-#AbsolutelyRight: 106 #NearlyRight: 63 #Wrong: 31
-#AbsolutelyRight: 0.53 #NearlyRight: 0.315 #Wrong: 0.155
-n_estimators=230
-#AbsolutelyRight: 98 #NearlyRight: 73 #Wrong: 29
-#AbsolutelyRight: 0.49 #NearlyRight: 0.365 #Wrong: 0.145
-n_estimators=240
-#AbsolutelyRight: 100 #NearlyRight: 71 #Wrong: 29
-#AbsolutelyRight: 0.5 #NearlyRight: 0.355 #Wrong: 0.145
-n_estimators=250
-#AbsolutelyRight: 101 #NearlyRight: 73 #Wrong: 26
-#AbsolutelyRight: 0.505 #NearlyRight: 0.365 #Wrong: 0.13
-n_estimators=260
-#AbsolutelyRight: 100 #NearlyRight: 71 #Wrong: 29
-#AbsolutelyRight: 0.5 #NearlyRight: 0.355 #Wrong: 0.145
-n_estimators=270
-#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
-#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
-n_estimators=280
-#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
-#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
-n_estimators=290
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=300
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=310
-#AbsolutelyRight: 105 #NearlyRight: 64 #Wrong: 31
-#AbsolutelyRight: 0.525 #NearlyRight: 0.32 #Wrong: 0.155
-n_estimators=320
-#AbsolutelyRight: 100 #NearlyRight: 72 #Wrong: 28
-#AbsolutelyRight: 0.5 #NearlyRight: 0.36 #Wrong: 0.14
-n_estimators=330
-#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
-#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
-n_estimators=340
-#AbsolutelyRight: 99 #NearlyRight: 72 #Wrong: 29
-#AbsolutelyRight: 0.495 #NearlyRight: 0.36 #Wrong: 0.145
-n_estimators=350
-#AbsolutelyRight: 102 #NearlyRight: 66 #Wrong: 32
-#AbsolutelyRight: 0.51 #NearlyRight: 0.33 #Wrong: 0.16
-n_estimators=360
-#AbsolutelyRight: 107 #NearlyRight: 63 #Wrong: 30
-#AbsolutelyRight: 0.535 #NearlyRight: 0.315 #Wrong: 0.15
-n_estimators=370
-#AbsolutelyRight: 99 #NearlyRight: 73 #Wrong: 28
-#AbsolutelyRight: 0.495 #NearlyRight: 0.365 #Wrong: 0.14
-n_estimators=380
-#AbsolutelyRight: 103 #NearlyRight: 69 #Wrong: 28
-#AbsolutelyRight: 0.515 #NearlyRight: 0.345 #Wrong: 0.14
-n_estimators=390
-#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
-#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
-n_estimators=400
-#AbsolutelyRight: 99 #NearlyRight: 72 #Wrong: 29
-#AbsolutelyRight: 0.495 #NearlyRight: 0.36 #Wrong: 0.145
-n_estimators=410
-#AbsolutelyRight: 101 #NearlyRight: 72 #Wrong: 27
-#AbsolutelyRight: 0.505 #NearlyRight: 0.36 #Wrong: 0.135
-n_estimators=420
-#AbsolutelyRight: 100 #NearlyRight: 71 #Wrong: 29
-#AbsolutelyRight: 0.5 #NearlyRight: 0.355 #Wrong: 0.145
-n_estimators=430
-#AbsolutelyRight: 104 #NearlyRight: 66 #Wrong: 30
-#AbsolutelyRight: 0.52 #NearlyRight: 0.33 #Wrong: 0.15
-n_estimators=440
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=450
-#AbsolutelyRight: 100 #NearlyRight: 71 #Wrong: 29
-#AbsolutelyRight: 0.5 #NearlyRight: 0.355 #Wrong: 0.145
-n_estimators=460
-#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
-#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
-n_estimators=470
-#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
-#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
-n_estimators=480
-#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
-#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
-n_estimators=490
-#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
-#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
-n_estimators=500
-#AbsolutelyRight: 99 #NearlyRight: 70 #Wrong: 31
-#AbsolutelyRight: 0.495 #NearlyRight: 0.35 #Wrong: 0.155
-n_estimators=510
-#AbsolutelyRight: 102 #NearlyRight: 72 #Wrong: 26
-#AbsolutelyRight: 0.51 #NearlyRight: 0.36 #Wrong: 0.13
-n_estimators=520
-#AbsolutelyRight: 102 #NearlyRight: 70 #Wrong: 28
-#AbsolutelyRight: 0.51 #NearlyRight: 0.35 #Wrong: 0.14
-n_estimators=530
-#AbsolutelyRight: 99 #NearlyRight: 71 #Wrong: 30
-#AbsolutelyRight: 0.495 #NearlyRight: 0.355 #Wrong: 0.15
-n_estimators=540
-#AbsolutelyRight: 98 #NearlyRight: 71 #Wrong: 31
-#AbsolutelyRight: 0.49 #NearlyRight: 0.355 #Wrong: 0.155
-n_estimators=550
-#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
-#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
-n_estimators=560
-#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
-#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
-n_estimators=570
-#AbsolutelyRight: 103 #NearlyRight: 69 #Wrong: 28
-#AbsolutelyRight: 0.515 #NearlyRight: 0.345 #Wrong: 0.14
-n_estimators=580
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=590
-#AbsolutelyRight: 103 #NearlyRight: 68 #Wrong: 29
-#AbsolutelyRight: 0.515 #NearlyRight: 0.34 #Wrong: 0.145
-n_estimators=600
-#AbsolutelyRight: 99 #NearlyRight: 69 #Wrong: 32
-#AbsolutelyRight: 0.495 #NearlyRight: 0.345 #Wrong: 0.16
-n_estimators=610
-#AbsolutelyRight: 103 #NearlyRight: 67 #Wrong: 30
-#AbsolutelyRight: 0.515 #NearlyRight: 0.335 #Wrong: 0.15
-n_estimators=620
-#AbsolutelyRight: 101 #NearlyRight: 71 #Wrong: 28
-#AbsolutelyRight: 0.505 #NearlyRight: 0.355 #Wrong: 0.14
-n_estimators=630
-#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
-#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
-n_estimators=640
-#AbsolutelyRight: 104 #NearlyRight: 68 #Wrong: 28
-#AbsolutelyRight: 0.52 #NearlyRight: 0.34 #Wrong: 0.14
-n_estimators=650
-#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
-#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
-n_estimators=660
-#AbsolutelyRight: 99 #NearlyRight: 73 #Wrong: 28
-#AbsolutelyRight: 0.495 #NearlyRight: 0.365 #Wrong: 0.14
-n_estimators=670
-#AbsolutelyRight: 100 #NearlyRight: 72 #Wrong: 28
-#AbsolutelyRight: 0.5 #NearlyRight: 0.36 #Wrong: 0.14
-n_estimators=680
-#AbsolutelyRight: 98 #NearlyRight: 73 #Wrong: 29
-#AbsolutelyRight: 0.49 #NearlyRight: 0.365 #Wrong: 0.145
-n_estimators=690
-#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
-#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
-n_estimators=700
-#AbsolutelyRight: 99 #NearlyRight: 71 #Wrong: 30
-#AbsolutelyRight: 0.495 #NearlyRight: 0.355 #Wrong: 0.15
-n_estimators=710
-#AbsolutelyRight: 99 #NearlyRight: 72 #Wrong: 29
-#AbsolutelyRight: 0.495 #NearlyRight: 0.36 #Wrong: 0.145
-n_estimators=720
-#AbsolutelyRight: 100 #NearlyRight: 72 #Wrong: 28
-#AbsolutelyRight: 0.5 #NearlyRight: 0.36 #Wrong: 0.14
-n_estimators=730
-#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
-#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
-n_estimators=740
-#AbsolutelyRight: 100 #NearlyRight: 71 #Wrong: 29
-#AbsolutelyRight: 0.5 #NearlyRight: 0.355 #Wrong: 0.145
-n_estimators=750
-#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
-#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
-n_estimators=760
-#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
-#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
-n_estimators=770
-#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
-#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
-n_estimators=780
-#AbsolutelyRight: 98 #NearlyRight: 71 #Wrong: 31
-#AbsolutelyRight: 0.49 #NearlyRight: 0.355 #Wrong: 0.155
-n_estimators=790
-#AbsolutelyRight: 105 #NearlyRight: 68 #Wrong: 27
-#AbsolutelyRight: 0.525 #NearlyRight: 0.34 #Wrong: 0.135
-n_estimators=800
-#AbsolutelyRight: 104 #NearlyRight: 66 #Wrong: 30
-#AbsolutelyRight: 0.52 #NearlyRight: 0.33 #Wrong: 0.15
-n_estimators=810
-#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
-#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
-n_estimators=820
-#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
-#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
-n_estimators=830
-#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
-#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
-n_estimators=840
-#AbsolutelyRight: 104 #NearlyRight: 69 #Wrong: 27
-#AbsolutelyRight: 0.52 #NearlyRight: 0.345 #Wrong: 0.135
-n_estimators=850
-#AbsolutelyRight: 102 #NearlyRight: 71 #Wrong: 27
-#AbsolutelyRight: 0.51 #NearlyRight: 0.355 #Wrong: 0.135
-n_estimators=860
-#AbsolutelyRight: 100 #NearlyRight: 68 #Wrong: 32
-#AbsolutelyRight: 0.5 #NearlyRight: 0.34 #Wrong: 0.16
-n_estimators=870
-#AbsolutelyRight: 99 #NearlyRight: 71 #Wrong: 30
-#AbsolutelyRight: 0.495 #NearlyRight: 0.355 #Wrong: 0.15
-n_estimators=880
-#AbsolutelyRight: 101 #NearlyRight: 69 #Wrong: 30
-#AbsolutelyRight: 0.505 #NearlyRight: 0.345 #Wrong: 0.15
-n_estimators=890
-#AbsolutelyRight: 103 #NearlyRight: 70 #Wrong: 27
-#AbsolutelyRight: 0.515 #NearlyRight: 0.35 #Wrong: 0.135
-n_estimators=900
-#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
-#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
-n_estimators=910
-#AbsolutelyRight: 102 #NearlyRight: 68 #Wrong: 30
-#AbsolutelyRight: 0.51 #NearlyRight: 0.34 #Wrong: 0.15
-n_estimators=920
-#AbsolutelyRight: 103 #NearlyRight: 66 #Wrong: 31
-#AbsolutelyRight: 0.515 #NearlyRight: 0.33 #Wrong: 0.155
-n_estimators=930
-#AbsolutelyRight: 100 #NearlyRight: 70 #Wrong: 30
-#AbsolutelyRight: 0.5 #NearlyRight: 0.35 #Wrong: 0.15
-n_estimators=940
-#AbsolutelyRight: 103 #NearlyRight: 69 #Wrong: 28
-#AbsolutelyRight: 0.515 #NearlyRight: 0.345 #Wrong: 0.14
-n_estimators=950
-#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
-#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
-n_estimators=960
-#AbsolutelyRight: 101 #NearlyRight: 68 #Wrong: 31
-#AbsolutelyRight: 0.505 #NearlyRight: 0.34 #Wrong: 0.155
-n_estimators=970
-#AbsolutelyRight: 102 #NearlyRight: 69 #Wrong: 29
-#AbsolutelyRight: 0.51 #NearlyRight: 0.345 #Wrong: 0.145
-n_estimators=980
-#AbsolutelyRight: 101 #NearlyRight: 70 #Wrong: 29
-#AbsolutelyRight: 0.505 #NearlyRight: 0.35 #Wrong: 0.145
-n_estimators=990
-#AbsolutelyRight: 102 #NearlyRight: 67 #Wrong: 31
-#AbsolutelyRight: 0.51 #NearlyRight: 0.335 #Wrong: 0.155
+0: 4 - 5 --> off by 1 star
+1: 4 - 4 --> spot on!
+2: 2 - 3 --> off by 1 star
+3: 4 - 5 --> off by 1 star
+4: 2 - 1 --> off by 1 star
+5: 4 - 3 --> off by 1 star
+6: 1 - 1 --> spot on!
+7: 3 - 4 --> off by 1 star
+8: 5 - 5 --> spot on!
+9: 4 - 5 --> off by 1 star
+10: 1 - 1 --> spot on!
+11: 5 - 5 --> spot on!
+12: 4 - 1 --> off by 3 star
+13: 4 - 1 --> off by 3 star
+14: 4 - 4 --> spot on!
+15: 5 - 5 --> spot on!
+16: 4 - 2 --> off by 2 star
+17: 5 - 4 --> off by 1 star
+18: 5 - 5 --> spot on!
+19: 1 - 4 --> off by 3 star
+20: 4 - 4 --> spot on!
+21: 4 - 3 --> off by 1 star
+22: 5 - 4 --> off by 1 star
+23: 5 - 5 --> spot on!
+24: 4 - 5 --> off by 1 star
+25: 4 - 4 --> spot on!
+26: 1 - 2 --> off by 1 star
+27: 4 - 4 --> spot on!
+28: 1 - 1 --> spot on!
+29: 5 - 5 --> spot on!
+30: 5 - 4 --> off by 1 star
+31: 4 - 5 --> off by 1 star
+32: 5 - 5 --> spot on!
+33: 5 - 4 --> off by 1 star
+34: 5 - 2 --> off by 3 star
+35: 3 - 2 --> off by 1 star
+36: 4 - 3 --> off by 1 star
+37: 5 - 5 --> spot on!
+38: 5 - 5 --> spot on!
+39: 4 - 2 --> off by 2 star
+40: 4 - 4 --> spot on!
+41: 5 - 4 --> off by 1 star
+42: 5 - 5 --> spot on!
+43: 1 - 1 --> spot on!
+44: 5 - 5 --> spot on!
+45: 4 - 5 --> off by 1 star
+46: 4 - 3 --> off by 1 star
+47: 5 - 5 --> spot on!
+48: 5 - 5 --> spot on!
+49: 1 - 1 --> spot on!
+50: 5 - 5 --> spot on!
+51: 4 - 3 --> off by 1 star
+52: 5 - 5 --> spot on!
+53: 4 - 5 --> off by 1 star
+54: 4 - 3 --> off by 1 star
+55: 1 - 1 --> spot on!
+56: 3 - 4 --> off by 1 star
+57: 4 - 2 --> off by 2 star
+58: 5 - 5 --> spot on!
+59: 5 - 5 --> spot on!
+60: 4 - 4 --> spot on!
+61: 4 - 5 --> off by 1 star
+62: 1 - 1 --> spot on!
+63: 5 - 3 --> off by 2 star
+64: 5 - 1 --> off by 4 star
+65: 5 - 5 --> spot on!
+66: 5 - 4 --> off by 1 star
+67: 4 - 3 --> off by 1 star
+68: 4 - 2 --> off by 2 star
+69: 4 - 5 --> off by 1 star
+70: 4 - 4 --> spot on!
+71: 5 - 5 --> spot on!
+72: 4 - 1 --> off by 3 star
+73: 5 - 4 --> off by 1 star
+74: 5 - 5 --> spot on!
+75: 4 - 4 --> spot on!
+76: 4 - 4 --> spot on!
+77: 4 - 4 --> spot on!
+78: 5 - 3 --> off by 2 star
+79: 5 - 5 --> spot on!
+80: 5 - 5 --> spot on!
+81: 4 - 2 --> off by 2 star
+82: 4 - 2 --> off by 2 star
+83: 4 - 1 --> off by 3 star
+84: 4 - 5 --> off by 1 star
+85: 5 - 5 --> spot on!
+86: 4 - 2 --> off by 2 star
+87: 5 - 4 --> off by 1 star
+88: 4 - 1 --> off by 3 star
+89: 5 - 5 --> spot on!
+90: 4 - 3 --> off by 1 star
+91: 5 - 5 --> spot on!
+92: 5 - 5 --> spot on!
+93: 4 - 4 --> spot on!
+94: 4 - 4 --> spot on!
+95: 4 - 5 --> off by 1 star
+96: 5 - 5 --> spot on!
+97: 5 - 5 --> spot on!
+98: 5 - 4 --> off by 1 star
+99: 5 - 4 --> off by 1 star
+100: 5 - 5 --> spot on!
+101: 4 - 4 --> spot on!
+102: 5 - 4 --> off by 1 star
+103: 4 - 3 --> off by 1 star
+104: 5 - 4 --> off by 1 star
+105: 4 - 3 --> off by 1 star
+106: 4 - 2 --> off by 2 star
+107: 5 - 4 --> off by 1 star
+108: 5 - 5 --> spot on!
+109: 5 - 4 --> off by 1 star
+110: 1 - 4 --> off by 3 star
+111: 4 - 3 --> off by 1 star
+112: 4 - 5 --> off by 1 star
+113: 4 - 4 --> spot on!
+114: 5 - 5 --> spot on!
+115: 5 - 4 --> off by 1 star
+116: 5 - 5 --> spot on!
+117: 4 - 4 --> spot on!
+118: 5 - 5 --> spot on!
+119: 4 - 5 --> off by 1 star
+120: 4 - 4 --> spot on!
+121: 5 - 5 --> spot on!
+122: 4 - 3 --> off by 1 star
+123: 5 - 4 --> off by 1 star
+124: 4 - 3 --> off by 1 star
+125: 5 - 5 --> spot on!
+126: 4 - 4 --> spot on!
+127: 4 - 1 --> off by 3 star
+128: 4 - 3 --> off by 1 star
+129: 5 - 4 --> off by 1 star
+130: 4 - 5 --> off by 1 star
+131: 4 - 2 --> off by 2 star
+132: 4 - 3 --> off by 1 star
+133: 1 - 1 --> spot on!
+134: 4 - 5 --> off by 1 star
+135: 5 - 5 --> spot on!
+136: 5 - 4 --> off by 1 star
+137: 4 - 2 --> off by 2 star
+138: 4 - 4 --> spot on!
+139: 5 - 5 --> spot on!
+140: 4 - 5 --> off by 1 star
+141: 4 - 4 --> spot on!
+142: 4 - 4 --> spot on!
+143: 4 - 2 --> off by 2 star
+144: 4 - 4 --> spot on!
+145: 5 - 5 --> spot on!
+146: 4 - 4 --> spot on!
+147: 5 - 5 --> spot on!
+148: 5 - 5 --> spot on!
+149: 4 - 4 --> spot on!
+150: 5 - 5 --> spot on!
+151: 5 - 5 --> spot on!
+152: 1 - 5 --> off by 4 star
+153: 5 - 5 --> spot on!
+154: 4 - 3 --> off by 1 star
+155: 5 - 5 --> spot on!
+156: 5 - 5 --> spot on!
+157: 5 - 5 --> spot on!
+158: 5 - 5 --> spot on!
+159: 5 - 5 --> spot on!
+160: 4 - 5 --> off by 1 star
+161: 5 - 1 --> off by 4 star
+162: 1 - 5 --> off by 4 star
+163: 5 - 5 --> spot on!
+164: 4 - 4 --> spot on!
+165: 4 - 2 --> off by 2 star
+166: 5 - 4 --> off by 1 star
+167: 4 - 4 --> spot on!
+168: 5 - 5 --> spot on!
+169: 4 - 4 --> spot on!
+170: 5 - 5 --> spot on!
+171: 1 - 2 --> off by 1 star
+172: 5 - 5 --> spot on!
+173: 5 - 5 --> spot on!
+174: 5 - 4 --> off by 1 star
+175: 5 - 5 --> spot on!
+176: 4 - 5 --> off by 1 star
+177: 4 - 4 --> spot on!
+178: 5 - 5 --> spot on!
+179: 5 - 4 --> off by 1 star
+180: 1 - 1 --> spot on!
+181: 5 - 5 --> spot on!
+182: 5 - 4 --> off by 1 star
+183: 5 - 5 --> spot on!
+184: 4 - 5 --> off by 1 star
+185: 5 - 4 --> off by 1 star
+186: 5 - 5 --> spot on!
+187: 5 - 5 --> spot on!
+188: 4 - 5 --> off by 1 star
+189: 1 - 1 --> spot on!
+190: 4 - 5 --> off by 1 star
+191: 4 - 5 --> off by 1 star
+192: 4 - 5 --> off by 1 star
+193: 2 - 1 --> off by 1 star
+194: 4 - 5 --> off by 1 star
+195: 5 - 5 --> spot on!
+196: 3 - 2 --> off by 1 star
+197: 5 - 5 --> spot on!
+198: 5 - 5 --> spot on!
+199: 5 - 5 --> spot on!
+ #spot on: 101
+ #off by 1 star: 72
+ #off by 2 star: 14
+ #off by 3 star: 9
+ #off by 4 star: 4
+ #spot on: 0.505
+ #off by 1 star: 0.36
+ #off by 2 star: 0.07
+ #off by 3 star: 0.045
+ #off by 4 star: 0.02

@@ -32,18 +32,18 @@ svm_testing_Features = []
 
 #numberOfSamples = 1000
 # the number of training and testing samples
-trainingSamples = 0
-testingSamples = 0
+training_Samples = 800
+testing_Samples = 200
 
-def Data_Preparation(training_Filename, testing_Filename, selectedFeatures):
+def Data_Preparation(input_Filename, selectedFeatures):
 
     global training_Features
     global training_Labels
     global testing_Features
     global testing_Labels
 
-    global trainingSamples
-    global testingSamples
+    global training_Samples
+    global testing_Samples
 
     global svm_training_Features
     global svm_testing_Features
@@ -57,31 +57,36 @@ def Data_Preparation(training_Filename, testing_Filename, selectedFeatures):
     test_labels = []
 
     #training
-    with open(training_Filename) as data_file:
+    with open(input_Filename) as data_file:
         data = json.load(data_file)
-        for item in data:
-            train_features.append(item["histogram"])
-            svm_train_features.append(list(item["histogram"][i] for i in selectedFeatures))
-            train_labels.append(item["rating"])        
+        for i, item in enumerate(data):
+            if i < training_Samples:
+                train_features.append(item["histogram"])
+                svm_train_features.append(list(item["histogram"][i] for i in selectedFeatures))
+                train_labels.append(item["rating"])        
+            else:
+                test_features.append(item["histogram"])
+                svm_test_features.append(list(item["histogram"][i] for i in selectedFeatures))
+                test_labels.append(item["rating"])
     
     training_Features = train_features
     svm_training_Features = svm_train_features
     training_Labels = train_labels
-    training_Samples = len(train_features)
+    #training_Samples = len(train_features)
     print(training_Samples)
-
     # testing
+    """
     with open(testing_Filename) as data_file:
         data = json.load(data_file)
         for item in data:
             test_features.append(item["histogram"])
             svm_test_features.append(list(item["histogram"][i] for i in selectedFeatures))
             test_labels.append(item["rating"])
-
+    """
     testing_Features = test_features
     svm_testing_Features = svm_test_features
     testing_Labels = test_labels
-    testing_Samples = len(test_features)
+    #testing_Samples = len(test_features)
 
 def Result_Evaluation (outputpath, testing_Labels, predict_Labels, blending_testing_Features):
     acc_rate = [0, 0, 0, 0, 0]
@@ -89,7 +94,7 @@ def Result_Evaluation (outputpath, testing_Labels, predict_Labels, blending_test
     #if os.path.isfile(outputpath):
         #os.remove(outputpath)
     with io.open(outputpath, 'a', encoding='utf-8') as output_file:
-        for i in xrange(0, testingSamples):
+        for i in xrange(0, testing_Samples):
             rounded_result = int(round(predict_Labels[i]))
             if rounded_result == testing_Labels[i]:
                 acc_rate[0] += 1
@@ -116,9 +121,9 @@ def Result_Evaluation (outputpath, testing_Labels, predict_Labels, blending_test
         finalResult = "#spot on: " + str(acc_rate[0]) + '\n' + " #off by 1 star: " + str(acc_rate[1]) + '\n' + " #off by 2 star: " + str(acc_rate[2]) + '\n' + " #off by 3 star: " + str(acc_rate[3]) + '\n' + " #Wrong: " + str(acc_rate[4]) + '\n'
         output_file.write(unicode(finalResult))
 
-        finalResultPercentage = "#spot on: " + str(acc_rate[0]*1.0/testingSamples) + '\n' + " #off by 1 star: " + str(acc_rate[1]*1.0/testingSamples) + '\n' + " #off by 2 star: " + str(acc_rate[2]*1.0/testingSamples) + '\n' + " #off by 3 star: " + str(acc_rate[3]*1.0/testingSamples) + '\n' + " #Wrong: " + str(acc_rate[4]*1.0/testingSamples) + '\n'
+        finalResultPercentage = "#spot on: " + str(acc_rate[0]*1.0/testing_Samples) + '\n' + " #off by 1 star: " + str(acc_rate[1]*1.0/testing_Samples) + '\n' + " #off by 2 star: " + str(acc_rate[2]*1.0/testing_Samples) + '\n' + " #off by 3 star: " + str(acc_rate[3]*1.0/testing_Samples) + '\n' + " #Wrong: " + str(acc_rate[4]*1.0/testing_Samples) + '\n'
         output_file.write(unicode(finalResultPercentage))
-        print(" #Wrong: " + str((acc_rate[2]+acc_rate[3]+acc_rate[4])*1.0/testingSamples))
+        print(" #Wrong: " + str((acc_rate[2]+acc_rate[3]+acc_rate[4])*1.0/testing_Samples))
 
 
 def Scikit_Blending_Classification(evaluation_file):
@@ -148,11 +153,11 @@ def Scikit_Blending_Classification(evaluation_file):
     #Train models
     print("Training ..")
 
-    #Scikit_AdaBoostDecisionTree_Model.fit(training_Features, training_Labels)
+    Scikit_AdaBoostDecisionTree_Model.fit(training_Features, training_Labels)
     Scikit_RandomForest_Model.fit(training_Features, training_Labels)
-    #Scikit_NaiveBayes_Model.fit(training_Features, training_Labels)
+    Scikit_NaiveBayes_Model.fit(training_Features, training_Labels)
     Scikit_SVM_Model.fit(svm_training_Features, training_Labels)
-    #Scikit_BaggingSVM_Model.fit(svm_training_Features, training_Labels)
+    Scikit_BaggingSVM_Model.fit(svm_training_Features, training_Labels)
 
     print("Get predicted probabilities ..")
     #predict_Labels = Scikit_NaiveBayes_Model.predict(testing_Features)
@@ -164,25 +169,23 @@ def Scikit_Blending_Classification(evaluation_file):
 
     #Predict labels
     print("Get predicted labels ..")
-    #AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(training_Features)
+    AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(training_Features)
     RandomForest_Predict_Labels = Scikit_RandomForest_Model.predict(training_Features)
-    #NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(training_Features)
+    NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(training_Features)
     SVM_Predict_Labels = Scikit_SVM_Model.predict(svm_training_Features)
-    #BaggingSVM_Predict_Labels = Scikit_BaggingSVM_Model.predict(svm_training_Features)
+    BaggingSVM_Predict_Labels = Scikit_BaggingSVM_Model.predict(svm_training_Features)
     
-    for i in xrange(0, trainingSamples):
+    for i in xrange(0, training_Samples):        
         blending_item = [
-                         #AdaBoostDecisionTree_Predict_Labels[i],
+                         AdaBoostDecisionTree_Predict_Labels[i],
                          RandomForest_Predict_Labels[i],
-                         #NaiveBayes_Predict_Probas[i][0],
-                         #NaiveBayes_Predict_Probas[i][1],
-                         #NaiveBayes_Predict_Probas[i][2],
-                         #NaiveBayes_Predict_Probas[i][3],
-                         #NaiveBayes_Predict_Probas[i][4],
-                         SVM_Predict_Labels[i]
+                         NaiveBayes_Predict_Labels[i],
+                         SVM_Predict_Labels[i],
+                         BaggingSVM_Predict_Labels[i]
                         ]
         """blending_item = np.concatenate((AdaBoostDecisionTree_Predict_Probas[i], RandomForest_Predict_Probas[i], NaiveBayes_Predict_Probas[i], SVM_Predict_Probas[i], BaggingSVM_Predict_Probas[i]), axis=0)
         blending_training_Features.append(list(blending_item))"""
+        
         blending_training_Features.append(blending_item)
         """for j, item in enumerate(blending_item):
             blending_training_Features[j].append(item)
@@ -204,43 +207,40 @@ def Scikit_Blending_Classification(evaluation_file):
     #BaggingSVM_Predict_Probas = Scikit_BaggingSVM_Model.predict_proba(svm_testing_Features)
 
     #Predict labels
-    """
+    
     AdaBoostDecisionTree_Predict_Labels = Scikit_AdaBoostDecisionTree_Model.predict(testing_Features)
     AdaBoostDecisionTree_Accuracy = Scikit_AdaBoostDecisionTree_Model.score(testing_Features, testing_Labels)
     print ("AdaBoostDecisionTree_Accuracy: ")
-    print (AdaBoostDecisionTree_Accuracy)"""
+    print (AdaBoostDecisionTree_Accuracy)
 
     RandomForest_Predict_Labels = Scikit_RandomForest_Model.predict(testing_Features)
     RandomForest_Accuracy = Scikit_RandomForest_Model.score(testing_Features, testing_Labels)
     print ("RandomForest_Accuracy: ")
     print (RandomForest_Accuracy)
 
-    """
+    
     NaiveBayes_Predict_Labels = Scikit_NaiveBayes_Model.predict(testing_Features)
     NaiveBayes_Accuracy = Scikit_NaiveBayes_Model.score(testing_Features, testing_Labels)
     print ("NaiveBayes_Accuracy: ")
-    print (NaiveBayes_Accuracy)"""
+    print (NaiveBayes_Accuracy)
 
     SVM_Predict_Labels = Scikit_SVM_Model.predict(svm_testing_Features)
     SVM_Accuracy = Scikit_SVM_Model.score(svm_testing_Features, testing_Labels)
     print ("SVM_Accuracy: ")
     print (SVM_Accuracy)
      
-    """BaggingSVM_Predict_Labels = Scikit_BaggingSVM_Model.predict(svm_testing_Features)
+    BaggingSVM_Predict_Labels = Scikit_BaggingSVM_Model.predict(svm_testing_Features)
     BaggingSVM_Accuracy = Scikit_BaggingSVM_Model.score(svm_testing_Features, testing_Labels)
     print ("BaggingSVM_Accuracy: ")
-    print (BaggingSVM_Accuracy)"""
+    print (BaggingSVM_Accuracy)
 
-    for i in xrange(0, testingSamples):
+    for i in xrange(0, testing_Samples):
         blending_item = [
-                         #AdaBoostDecisionTree_Predict_Labels[i],
+                         AdaBoostDecisionTree_Predict_Labels[i],
                          RandomForest_Predict_Labels[i],
-                         #NaiveBayes_Predict_Probas[i][0],
-                         #NaiveBayes_Predict_Probas[i][1],
-                         #NaiveBayes_Predict_Probas[i][2],
-                         #NaiveBayes_Predict_Probas[i][3],
-                         #NaiveBayes_Predict_Probas[i][4],
-                         SVM_Predict_Labels[i]
+                         NaiveBayes_Predict_Labels[i],
+                         SVM_Predict_Labels[i],
+                         BaggingSVM_Predict_Labels[i]
                         ]
         """blending_item = np.concatenate((AdaBoostDecisionTree_Predict_Probas[i], RandomForest_Predict_Probas[i], NaiveBayes_Predict_Probas[i], SVM_Predict_Probas[i], BaggingSVM_Predict_Probas[i]), axis=0)
         blending_testing_Features.append(list(blending_item))"""
@@ -262,8 +262,8 @@ def Scikit_Blending_Classification(evaluation_file):
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
 
-    training_Inputfile = "bow/data/output/histogram_400000trainingSamples.json"
-    testing_Inputfile = "bow/data/output/histogram_50000testingSamples.json"
+    inputfile = "data/output/histogram_allFeatures.json"
+    #testing_Inputfile = "data/output/histogram_5000testingSamples.json"
 
     #selectedFeatures = [0, 1, 2, 3, 4, 5, 8]
     #selectedFeatures = [0, 1, 2, 3, 4, 5, 8, 9, 10, 11]
@@ -287,7 +287,7 @@ def main():
 
     
     #print(features)
-    Data_Preparation(training_Inputfile, testing_Inputfile, selectedFeatures)
+    Data_Preparation(inputfile, selectedFeatures)
     print("Finished preparing data ...")
     
     Scikit_Blending_Classification('data/evaluation_result/evaluation_Blending.txt')

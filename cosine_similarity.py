@@ -14,35 +14,35 @@ def drawCOSFigure(features, output):
     nSamples = 100
     metricType = 'cosine'
     
-    with open("bow/data/output/cosine_similarity/histogram_1star.json") as oneStarFile:
+    with open("data/output/cosine_similarity/histogram_1star.json") as oneStarFile:
         data = json.load(oneStarFile)
         for i, item in enumerate(data):
             if i > nSamples:
                 break
             histogram1Star.append(list(item["histogram"][i] for i in features))
     
-    with open("bow/data/output/cosine_similarity/histogram_2star.json") as twoStarFile:
+    with open("data/output/cosine_similarity/histogram_2star.json") as twoStarFile:
         data = json.load(twoStarFile)
         for i, item in enumerate(data):
             if i > nSamples:
                 break
             histogram2Star.append(list(item["histogram"][i] for i in features))
     
-    with open("bow/data/output/cosine_similarity/histogram_3star.json") as threeStarFile:
+    with open("data/output/cosine_similarity/histogram_3star.json") as threeStarFile:
         data = json.load(threeStarFile)
         for i, item in enumerate(data):
             if i > nSamples:
                 break
             histogram3Star.append(list(item["histogram"][i] for i in features))
     
-    with open("bow/data/output/cosine_similarity/histogram_4star.json") as fourStarFile:
+    with open("data/output/cosine_similarity/histogram_4star.json") as fourStarFile:
         data = json.load(fourStarFile)
         for i, item in enumerate(data):
             if i > nSamples:
                 break
             histogram4Star.append(list(item["histogram"][i] for i in features))
     
-    with open("bow/data/output/cosine_similarity/histogram_5star.json") as fiveStarFile:
+    with open("data/output/cosine_similarity/histogram_5star.json") as fiveStarFile:
         data = json.load(fiveStarFile)
         for i, item in enumerate(data):
             if i > nSamples:
