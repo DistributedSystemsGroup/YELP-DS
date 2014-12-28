@@ -4,7 +4,7 @@ import io, os
 import random, json
 
 config = {}
-execfile("params.conf", config)
+execfile("params.conf", config) 
 
 numberOfData = config["totalData"]
 

@@ -21,11 +21,14 @@ def main():
 
     config = {}
     execfile("params.conf", config)
-    inputfile = config["histogram_dataset"]    
-    trainingSamples = config["trainingSamples"]
-    testingSamples = config["testingSamples"]
+
+    inputfile = config["histogram_dataset"]
+    
 
     selectedFeatures = "all"
+    
+    trainingSamples = config["trainingSamples"]
+    testingSamples = config["testingSamples"]
     features, labels = sc.Data_Preparation(inputfile, selectedFeatures)
 
     Scikit_RandomForest_Model = ensemble.RandomForestClassifier(n_estimators=510, criterion='gini', max_depth=None,

@@ -182,8 +182,6 @@ if __name__  == "__main__":
 
     starttime = strftime("%Y-%m-%d %H:%M:%S", gmtime())
     
-    config = {}
-    execfile("params.conf", config)
     #Change input and output file here
     inputFile = 'data/input/' + str(config["dataset_Samples"]) + 'Samples.json'
     outputFile = 'data/output/histogram_' + str(config["dataset_Samples"]) + 'Samples.json'

@@ -5,7 +5,7 @@
 4: 2 - 1 --> off by 1 star
 5: 4 - 3 --> off by 1 star
 6: 1 - 1 --> spot on!
-7: 3 - 4 --> off by 1 star
+7: 4 - 4 --> spot on!
 8: 5 - 5 --> spot on!
 9: 4 - 5 --> off by 1 star
 10: 1 - 1 --> spot on!
@@ -14,14 +14,14 @@
 13: 4 - 1 --> off by 3 star
 14: 4 - 4 --> spot on!
 15: 5 - 5 --> spot on!
-16: 4 - 2 --> off by 2 star
+16: 5 - 2 --> off by 3 star
 17: 5 - 4 --> off by 1 star
 18: 5 - 5 --> spot on!
 19: 1 - 4 --> off by 3 star
 20: 4 - 4 --> spot on!
 21: 4 - 3 --> off by 1 star
-22: 5 - 4 --> off by 1 star
-23: 5 - 5 --> spot on!
+22: 4 - 4 --> spot on!
+23: 4 - 5 --> off by 1 star
 24: 4 - 5 --> off by 1 star
 25: 4 - 4 --> spot on!
 26: 1 - 2 --> off by 1 star
@@ -32,8 +32,8 @@
 31: 4 - 5 --> off by 1 star
 32: 5 - 5 --> spot on!
 33: 5 - 4 --> off by 1 star
-34: 5 - 2 --> off by 3 star
-35: 3 - 2 --> off by 1 star
+34: 4 - 2 --> off by 2 star
+35: 5 - 2 --> off by 3 star
 36: 4 - 3 --> off by 1 star
 37: 5 - 5 --> spot on!
 38: 5 - 5 --> spot on!
@@ -81,7 +81,7 @@
 80: 5 - 5 --> spot on!
 81: 4 - 2 --> off by 2 star
 82: 4 - 2 --> off by 2 star
-83: 4 - 1 --> off by 3 star
+83: 2 - 1 --> off by 1 star
 84: 4 - 5 --> off by 1 star
 85: 5 - 5 --> spot on!
 86: 4 - 2 --> off by 2 star
@@ -108,7 +108,7 @@
 107: 5 - 4 --> off by 1 star
 108: 5 - 5 --> spot on!
 109: 5 - 4 --> off by 1 star
-110: 1 - 4 --> off by 3 star
+110: 4 - 4 --> spot on!
 111: 4 - 3 --> off by 1 star
 112: 4 - 5 --> off by 1 star
 113: 4 - 4 --> spot on!
@@ -125,12 +125,12 @@
 124: 4 - 3 --> off by 1 star
 125: 5 - 5 --> spot on!
 126: 4 - 4 --> spot on!
-127: 4 - 1 --> off by 3 star
+127: 1 - 1 --> spot on!
 128: 4 - 3 --> off by 1 star
 129: 5 - 4 --> off by 1 star
 130: 4 - 5 --> off by 1 star
 131: 4 - 2 --> off by 2 star
-132: 4 - 3 --> off by 1 star
+132: 5 - 3 --> off by 2 star
 133: 1 - 1 --> spot on!
 134: 4 - 5 --> off by 1 star
 135: 5 - 5 --> spot on!
@@ -152,7 +152,7 @@
 151: 5 - 5 --> spot on!
 152: 1 - 5 --> off by 4 star
 153: 5 - 5 --> spot on!
-154: 4 - 3 --> off by 1 star
+154: 5 - 3 --> off by 2 star
 155: 5 - 5 --> spot on!
 156: 5 - 5 --> spot on!
 157: 5 - 5 --> spot on!
@@ -188,23 +188,23 @@
 187: 5 - 5 --> spot on!
 188: 4 - 5 --> off by 1 star
 189: 1 - 1 --> spot on!
-190: 4 - 5 --> off by 1 star
+190: 3 - 5 --> off by 2 star
 191: 4 - 5 --> off by 1 star
 192: 4 - 5 --> off by 1 star
-193: 2 - 1 --> off by 1 star
+193: 4 - 1 --> off by 3 star
 194: 4 - 5 --> off by 1 star
 195: 5 - 5 --> spot on!
-196: 3 - 2 --> off by 1 star
+196: 4 - 2 --> off by 2 star
 197: 5 - 5 --> spot on!
-198: 5 - 5 --> spot on!
+198: 4 - 5 --> off by 1 star
 199: 5 - 5 --> spot on!
- #spot on: 101
- #off by 1 star: 72
- #off by 2 star: 14
- #off by 3 star: 9
+ #spot on: 103
+ #off by 1 star: 67
+ #off by 2 star: 18
+ #off by 3 star: 8
  #off by 4 star: 4
- #spot on: 0.505
- #off by 1 star: 0.36
- #off by 2 star: 0.07
- #off by 3 star: 0.045
+ #spot on: 0.515
+ #off by 1 star: 0.335
+ #off by 2 star: 0.09
+ #off by 3 star: 0.04
  #off by 4 star: 0.02

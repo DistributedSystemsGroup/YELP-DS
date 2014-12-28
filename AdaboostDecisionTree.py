@@ -20,12 +20,14 @@ def main():
 
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     
-    inputfile = "data/output/histogram_allFeatures.json"
+    config = {}
+    execfile("params.conf", config)
+    inputfile = config["histogram_dataset"]    
+    trainingSamples = config["trainingSamples"]
+    testingSamples = config["testingSamples"]
 
     selectedFeatures = "all"
-    
-    trainingSamples = 800
-    testingSamples = 200
+
     features, labels = sc.Data_Preparation(inputfile, selectedFeatures)
 
     Scikit_AdaBoostDecisionTree_Model = ensemble.AdaBoostClassifier(tree.DecisionTreeClassifier(max_depth=7, max_features='sqrt'),

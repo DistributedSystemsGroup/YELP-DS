@@ -18,12 +18,9 @@ labels = []
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     
-    config = {}
-    execfile("params.conf", config)
-    inputfile = config["histogram_dataset"]    
-    trainingSamples = config["trainingSamples"]
-    testingSamples = config["testingSamples"]
-
+    inputfile = "data/output/histogram_allFeatures.json"
+    trainingSamples = 800
+    testingSamples = 200
     numberOfSamples = trainingSamples + testingSamples
 
     rf_selectedFeatures = "all"

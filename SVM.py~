@@ -20,14 +20,12 @@ labels = []
 def main():
     starttime = strftime("%Y-%m-%d %H:%M:%S",gmtime())
     
-    config = {}
-    execfile("params.conf", config)
-    inputfile = config["histogram_dataset"]    
-    trainingSamples = config["trainingSamples"]
-    testingSamples = config["testingSamples"]
+    inputfile = "data/output/histogram_allFeatures.json"
 
     selectedFeatures = [20, 21, 22, 23, 24]
 
+    trainingSamples = 800
+    testingSamples = 200
     features, labels = sc.Data_Preparation(inputfile, selectedFeatures)
 
     Scikit_SVM_Model = svm.SVC(C=1.0, kernel='rbf', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=True, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
