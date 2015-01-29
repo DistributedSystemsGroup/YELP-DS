@@ -6,7 +6,7 @@ from time import gmtime, strftime
 from sklearn import cross_validation
 from sklearn.metrics import r2_score
 from sklearn.linear_model import LogisticRegression
-
+from sklearn.metrics import mean_squared_error as mse
 import numpy as np
 
 import io, os
@@ -51,6 +51,7 @@ def Result_Evaluation (outputpath, accuracy, testing_Labels, predict_Labels):
         print(" #Wrong: " + str((acc_rate[2]+acc_rate[3]+acc_rate[4])*1.0/testingSamples) + '\n')
         r2Score = r2_score(testing_Labels, predict_Labels)
         print(" #R2 score: " + str(r2Score))
+        print (" #sqrt(mse): {:f}".format(np.sqrt(mse(testing_Labels, predict_Labels))))
         print("Look at the evaluation_file for details!")
 
 def Data_Preparation(filename, selectedFeatures):
@@ -136,6 +137,124 @@ def Classification(model, features, labels, trainingSamples, testingSamples):
 
     return accuracy, testing_Labels, predict_Labels
 
+def Classification_Bagging(model, features, labels, trainingSamples, testingSamples):
+
+    training_Features = features[0:trainingSamples]
+    training_Labels = labels[0:trainingSamples]
+    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
+    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
+    
+    bagging = BaggingClassifier(model, max_samples=0.5, max_features=1.0, n_estimators=10)
+
+    print("Training ..")
+    bagging.fit(training_Features, training_Labels)
+
+    print("Testing ..")
+    predict_Labels = bagging.predict(testing_Features)
+    accuracy = bagging.score(testing_Features, testing_Labels)
+
+    return accuracy, testing_Labels, predict_Labels
+
+def Classification_Boosting(model, features, labels, trainingSamples, testingSamples):
+
+    training_Features = features[0:trainingSamples]
+    training_Labels = labels[0:trainingSamples]
+    testing_Features = features[trainingSamples:trainingSamples + testingSamples]
+    testing_Labels = labels[trainingSamples:trainingSamples + testingSamples]
+    
+    boosting = ensemble.AdaBoostClassifier(model, n_estimators=60, learning_rate=1)
+
+    print("Training ..")
+    boosting.fit(training_Features, training_Labels)
+
+    print("Testing ..")
+    predict_Labels = boosting.predict(testing_Features)
+    accuracy = boosting.score(testing_Features, testing_Labels)
+
+    return accuracy, testing_Labels, predict_Labels
+
+def Classification_Stacking_Label(clfs, clfs_features, clfs_labels, stacking_model, trainingSamples, testingSamples):
+
+    blending_training_Features = []
+    blending_testing_Features = []
+
+    training_Labels = clfs_labels[0:trainingSamples]
+    testing_Labels = clfs_labels[trainingSamples:trainingSamples + testingSamples]
+
+    numberOfClassifiers = len(clfs)
+
+    training_Features = [0 for u in xrange(0, numberOfClassifiers)]
+    testing_Features = [0 for u in xrange(0, numberOfClassifiers)]    
+    clfs_Predict_Labels_Training = [0 for u in xrange(0, numberOfClassifiers)]
+    clfs_Predict_Labels_Testing = [0 for u in xrange(0, numberOfClassifiers)]
+    
+
+
+    for i in xrange(0, numberOfClassifiers):
+        training_Features[i] = clfs_features[i][0:trainingSamples]
+        clfs[i].fit(training_Features[i], training_Labels)
+        clfs_Predict_Labels_Training[i] = clfs[i].predict(training_Features[i])
+        testing_Features[i] = clfs_features[i][trainingSamples:trainingSamples + testingSamples]
+        clfs_Predict_Labels_Testing[i] = clfs[i].predict(testing_Features[i])
+
+    
+    for i in xrange(0, trainingSamples):        
+        blending_item = [clfs_Predict_Labels_Training[u][i] for u in xrange(0, numberOfClassifiers)]        
+        blending_training_Features.append(blending_item)
+
+    stacking_model.fit(blending_training_Features, training_Labels)
+
+    for i in xrange(0, testingSamples):        
+        blending_item = [clfs_Predict_Labels_Testing[u][i] for u in xrange(0, numberOfClassifiers)]
+        blending_testing_Features.append(blending_item)
+
+    predict_Labels = stacking_model.predict(blending_testing_Features)
+    accuracy = stacking_model.score(blending_testing_Features, testing_Labels)
+
+    return accuracy, testing_Labels, predict_Labels
+
+
+def Classification_Stacking_Proba(clfs, clfs_features, clfs_labels, stacking_model, trainingSamples, testingSamples):
+
+    blending_training_Features = []
+    blending_testing_Features = []
+
+    training_Labels = clfs_labels[0:trainingSamples]
+    testing_Labels = clfs_labels[trainingSamples:trainingSamples + testingSamples]
+
+    numberOfClassifiers = len(clfs)
+
+    training_Features = [0 for u in xrange(0, numberOfClassifiers)]
+    testing_Features = [0 for u in xrange(0, numberOfClassifiers)]    
+    clfs_Predict_Labels_Training = [0 for u in xrange(0, numberOfClassifiers)]
+    clfs_Predict_Labels_Testing = [0 for u in xrange(0, numberOfClassifiers)]
+    
+
+
+    for i in xrange(0, numberOfClassifiers):
+        training_Features[i] = clfs_features[i][0:trainingSamples]
+        clfs[i].fit(training_Features[i], training_Labels)
+        clfs_Predict_Labels_Training[i] = clfs[i].predict_proba(training_Features[i])
+        testing_Features[i] = clfs_features[i][trainingSamples:trainingSamples + testingSamples]
+        clfs_Predict_Labels_Testing[i] = clfs[i].predict_proba(testing_Features[i])
+
+    
+    for i in xrange(0, trainingSamples):
+        blending_item = [clfs_Predict_Labels_Training[u][i][j] for u in xrange(0, numberOfClassifiers) for j in xrange(0, 5)]
+        #print(blending_item)
+        blending_training_Features.append(blending_item)
+
+    stacking_model.fit(blending_training_Features, training_Labels)
+
+    for i in xrange(0, testingSamples):        
+        blending_item = [clfs_Predict_Labels_Testing[u][i][j] for u in xrange(0, numberOfClassifiers) for j in xrange(0, 5)]
+        blending_testing_Features.append(blending_item)
+
+    predict_Labels = stacking_model.predict(blending_testing_Features)
+    accuracy = stacking_model.score(blending_testing_Features, testing_Labels)
+
+    return accuracy, testing_Labels, predict_Labels
+
 def Classification_Blending(model1, features1, labels1, model2, features2, labels2, trainingSamples, testingSamples):
     Scikit_LogisticRegression_Model = LogisticRegression()
 
@@ -146,7 +265,6 @@ def Classification_Blending(model1, features1, labels1, model2, features2, label
     training_Labels1 = labels1[0:trainingSamples]
     model1.fit(training_Features1, training_Labels1)
     model1_Predict_Labels = model1.predict(training_Features1)
-    #model1_Predict_Probas = model1.predict_proba(training_Features1)
 
     testing_Features1 = features1[trainingSamples:trainingSamples + testingSamples]
     testing_Labels1 = labels1[trainingSamples:trainingSamples + testingSamples]
@@ -155,7 +273,7 @@ def Classification_Blending(model1, features1, labels1, model2, features2, label
     training_Labels2 = labels2[0:trainingSamples]
     model2.fit(training_Features2, training_Labels2)
     model2_Predict_Labels = model2.predict(training_Features2)
-    #model2_Predict_Probas = model2.predict_proba(training_Features2)
+
 
     testing_Features2 = features2[trainingSamples:trainingSamples + testingSamples]
     testing_Labels2 = labels2[trainingSamples:trainingSamples + testingSamples]
@@ -164,40 +282,19 @@ def Classification_Blending(model1, features1, labels1, model2, features2, label
         blending_item = [
                          model1_Predict_Labels[i],
                          model2_Predict_Labels[i]
-                         #model1_Predict_Probas[i][0],
-                         #model1_Predict_Probas[i][1],
-                         #model1_Predict_Probas[i][2],
-                         #model1_Predict_Probas[i][3],
-                         #model1_Predict_Probas[i][4],
-                         #model2_Predict_Probas[i][0],
-                         #model2_Predict_Probas[i][1],
-                         #model2_Predict_Probas[i][2],
-                         #model2_Predict_Probas[i][3],
-                         #model2_Predict_Probas[i][4]
                         ]
         blending_training_Features.append(blending_item)
 
     Scikit_LogisticRegression_Model.fit(blending_training_Features, training_Labels1)
 
     model1_Predict_Labels = model1.predict(testing_Features1)
-    #model1_Predict_Probas = model1.predict_proba(testing_Features1)
     model2_Predict_Labels = model2.predict(testing_Features2)
-    #model2_Predict_Probas = model2.predict_proba(training_Features2)
+
 
     for i in xrange(0, testingSamples):        
         blending_item = [
                          model1_Predict_Labels[i],
                          model2_Predict_Labels[i]
-                         #model1_Predict_Probas[i][0],
-                         #model1_Predict_Probas[i][1],
-                         #model1_Predict_Probas[i][2],
-                         #model1_Predict_Probas[i][3],
-                         #model1_Predict_Probas[i][4],
-                         #model2_Predict_Probas[i][0],
-                         #model2_Predict_Probas[i][1],
-                         #model2_Predict_Probas[i][2],
-                         #model2_Predict_Probas[i][3],
-                         #model2_Predict_Probas[i][4]
                         ]
         blending_testing_Features.append(blending_item)
 
@@ -233,7 +330,6 @@ def Classification_CrossValidation(model, features, labels, numberOfSamples, n_f
     print(reduce(lambda x, y: x + y, accList) / len(accList))
     predicted_Labels = []
     for i, item in enumerate(prediction_Labels):
-        #print(i)
         predicted_Labels.append(max(set(prediction_Labels[i]), key=prediction_Labels[i].count))
     print(predicted_Labels)
     accuracy = model.score(X_test, predicted_Labels)

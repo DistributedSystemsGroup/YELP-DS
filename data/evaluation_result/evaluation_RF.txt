@@ -1,210 +1,2010 @@
-0: 4 - 5 --> off by 1 star
-1: 4 - 4 --> spot on!
-2: 2 - 3 --> off by 1 star
-3: 4 - 5 --> off by 1 star
-4: 2 - 1 --> off by 1 star
-5: 4 - 3 --> off by 1 star
-6: 1 - 1 --> spot on!
-7: 4 - 4 --> spot on!
-8: 5 - 5 --> spot on!
+0: 5 - 5 --> spot on!
+1: 4 - 3 --> off by 1 star
+2: 5 - 2 --> off by 3 star
+3: 4 - 2 --> off by 2 star
+4: 4 - 4 --> spot on!
+5: 5 - 3 --> off by 2 star
+6: 5 - 5 --> spot on!
+7: 5 - 5 --> spot on!
+8: 4 - 5 --> off by 1 star
 9: 4 - 5 --> off by 1 star
-10: 1 - 1 --> spot on!
-11: 5 - 5 --> spot on!
-12: 4 - 1 --> off by 3 star
-13: 4 - 1 --> off by 3 star
-14: 4 - 4 --> spot on!
-15: 5 - 5 --> spot on!
-16: 5 - 2 --> off by 3 star
-17: 5 - 4 --> off by 1 star
-18: 5 - 5 --> spot on!
-19: 1 - 4 --> off by 3 star
-20: 4 - 4 --> spot on!
-21: 4 - 3 --> off by 1 star
-22: 4 - 4 --> spot on!
-23: 4 - 5 --> off by 1 star
-24: 4 - 5 --> off by 1 star
-25: 4 - 4 --> spot on!
-26: 1 - 2 --> off by 1 star
-27: 4 - 4 --> spot on!
-28: 1 - 1 --> spot on!
+10: 4 - 5 --> off by 1 star
+11: 5 - 4 --> off by 1 star
+12: 5 - 5 --> spot on!
+13: 3 - 4 --> off by 1 star
+14: 5 - 5 --> spot on!
+15: 1 - 1 --> spot on!
+16: 5 - 5 --> spot on!
+17: 4 - 5 --> off by 1 star
+18: 4 - 1 --> off by 3 star
+19: 1 - 1 --> spot on!
+20: 4 - 5 --> off by 1 star
+21: 5 - 4 --> off by 1 star
+22: 4 - 3 --> off by 1 star
+23: 5 - 5 --> spot on!
+24: 5 - 5 --> spot on!
+25: 5 - 5 --> spot on!
+26: 5 - 3 --> off by 2 star
+27: 4 - 3 --> off by 1 star
+28: 5 - 5 --> spot on!
 29: 5 - 5 --> spot on!
-30: 5 - 4 --> off by 1 star
-31: 4 - 5 --> off by 1 star
-32: 5 - 5 --> spot on!
-33: 5 - 4 --> off by 1 star
-34: 4 - 2 --> off by 2 star
-35: 5 - 2 --> off by 3 star
-36: 4 - 3 --> off by 1 star
-37: 5 - 5 --> spot on!
-38: 5 - 5 --> spot on!
-39: 4 - 2 --> off by 2 star
-40: 4 - 4 --> spot on!
+30: 4 - 3 --> off by 1 star
+31: 5 - 3 --> off by 2 star
+32: 4 - 4 --> spot on!
+33: 1 - 2 --> off by 1 star
+34: 5 - 5 --> spot on!
+35: 5 - 5 --> spot on!
+36: 5 - 2 --> off by 3 star
+37: 4 - 3 --> off by 1 star
+38: 2 - 1 --> off by 1 star
+39: 5 - 5 --> spot on!
+40: 4 - 1 --> off by 3 star
 41: 5 - 4 --> off by 1 star
 42: 5 - 5 --> spot on!
-43: 1 - 1 --> spot on!
-44: 5 - 5 --> spot on!
-45: 4 - 5 --> off by 1 star
-46: 4 - 3 --> off by 1 star
+43: 4 - 4 --> spot on!
+44: 5 - 4 --> off by 1 star
+45: 4 - 4 --> spot on!
+46: 4 - 5 --> off by 1 star
 47: 5 - 5 --> spot on!
-48: 5 - 5 --> spot on!
-49: 1 - 1 --> spot on!
-50: 5 - 5 --> spot on!
-51: 4 - 3 --> off by 1 star
-52: 5 - 5 --> spot on!
-53: 4 - 5 --> off by 1 star
-54: 4 - 3 --> off by 1 star
-55: 1 - 1 --> spot on!
-56: 3 - 4 --> off by 1 star
-57: 4 - 2 --> off by 2 star
+48: 5 - 2 --> off by 3 star
+49: 1 - 4 --> off by 3 star
+50: 4 - 4 --> spot on!
+51: 4 - 5 --> off by 1 star
+52: 5 - 4 --> off by 1 star
+53: 5 - 5 --> spot on!
+54: 5 - 2 --> off by 3 star
+55: 5 - 5 --> spot on!
+56: 4 - 3 --> off by 1 star
+57: 5 - 5 --> spot on!
 58: 5 - 5 --> spot on!
 59: 5 - 5 --> spot on!
-60: 4 - 4 --> spot on!
-61: 4 - 5 --> off by 1 star
-62: 1 - 1 --> spot on!
-63: 5 - 3 --> off by 2 star
-64: 5 - 1 --> off by 4 star
-65: 5 - 5 --> spot on!
+60: 3 - 4 --> off by 1 star
+61: 5 - 5 --> spot on!
+62: 5 - 4 --> off by 1 star
+63: 5 - 5 --> spot on!
+64: 4 - 5 --> off by 1 star
+65: 3 - 5 --> off by 2 star
 66: 5 - 4 --> off by 1 star
-67: 4 - 3 --> off by 1 star
-68: 4 - 2 --> off by 2 star
-69: 4 - 5 --> off by 1 star
-70: 4 - 4 --> spot on!
-71: 5 - 5 --> spot on!
-72: 4 - 1 --> off by 3 star
-73: 5 - 4 --> off by 1 star
+67: 5 - 4 --> off by 1 star
+68: 1 - 5 --> off by 4 star
+69: 5 - 5 --> spot on!
+70: 5 - 5 --> spot on!
+71: 4 - 4 --> spot on!
+72: 4 - 2 --> off by 2 star
+73: 5 - 5 --> spot on!
 74: 5 - 5 --> spot on!
 75: 4 - 4 --> spot on!
-76: 4 - 4 --> spot on!
-77: 4 - 4 --> spot on!
-78: 5 - 3 --> off by 2 star
-79: 5 - 5 --> spot on!
-80: 5 - 5 --> spot on!
-81: 4 - 2 --> off by 2 star
-82: 4 - 2 --> off by 2 star
-83: 2 - 1 --> off by 1 star
-84: 4 - 5 --> off by 1 star
-85: 5 - 5 --> spot on!
-86: 4 - 2 --> off by 2 star
-87: 5 - 4 --> off by 1 star
-88: 4 - 1 --> off by 3 star
-89: 5 - 5 --> spot on!
-90: 4 - 3 --> off by 1 star
-91: 5 - 5 --> spot on!
-92: 5 - 5 --> spot on!
-93: 4 - 4 --> spot on!
+76: 5 - 5 --> spot on!
+77: 3 - 5 --> off by 2 star
+78: 4 - 4 --> spot on!
+79: 4 - 4 --> spot on!
+80: 5 - 4 --> off by 1 star
+81: 5 - 5 --> spot on!
+82: 4 - 1 --> off by 3 star
+83: 5 - 5 --> spot on!
+84: 5 - 4 --> off by 1 star
+85: 4 - 5 --> off by 1 star
+86: 5 - 2 --> off by 3 star
+87: 4 - 5 --> off by 1 star
+88: 4 - 4 --> spot on!
+89: 4 - 4 --> spot on!
+90: 4 - 5 --> off by 1 star
+91: 5 - 1 --> off by 4 star
+92: 1 - 5 --> off by 4 star
+93: 5 - 5 --> spot on!
 94: 4 - 4 --> spot on!
-95: 4 - 5 --> off by 1 star
-96: 5 - 5 --> spot on!
-97: 5 - 5 --> spot on!
+95: 5 - 5 --> spot on!
+96: 3 - 3 --> spot on!
+97: 5 - 4 --> off by 1 star
 98: 5 - 4 --> off by 1 star
-99: 5 - 4 --> off by 1 star
-100: 5 - 5 --> spot on!
-101: 4 - 4 --> spot on!
-102: 5 - 4 --> off by 1 star
-103: 4 - 3 --> off by 1 star
+99: 4 - 3 --> off by 1 star
+100: 4 - 5 --> off by 1 star
+101: 5 - 5 --> spot on!
+102: 4 - 2 --> off by 2 star
+103: 3 - 3 --> spot on!
 104: 5 - 4 --> off by 1 star
-105: 4 - 3 --> off by 1 star
-106: 4 - 2 --> off by 2 star
-107: 5 - 4 --> off by 1 star
-108: 5 - 5 --> spot on!
-109: 5 - 4 --> off by 1 star
-110: 4 - 4 --> spot on!
-111: 4 - 3 --> off by 1 star
-112: 4 - 5 --> off by 1 star
-113: 4 - 4 --> spot on!
+105: 4 - 2 --> off by 2 star
+106: 4 - 3 --> off by 1 star
+107: 4 - 5 --> off by 1 star
+108: 5 - 3 --> off by 2 star
+109: 4 - 5 --> off by 1 star
+110: 5 - 4 --> off by 1 star
+111: 5 - 5 --> spot on!
+112: 5 - 5 --> spot on!
+113: 5 - 5 --> spot on!
 114: 5 - 5 --> spot on!
-115: 5 - 4 --> off by 1 star
+115: 4 - 3 --> off by 1 star
 116: 5 - 5 --> spot on!
-117: 4 - 4 --> spot on!
-118: 5 - 5 --> spot on!
-119: 4 - 5 --> off by 1 star
-120: 4 - 4 --> spot on!
-121: 5 - 5 --> spot on!
-122: 4 - 3 --> off by 1 star
-123: 5 - 4 --> off by 1 star
-124: 4 - 3 --> off by 1 star
+117: 4 - 1 --> off by 3 star
+118: 4 - 4 --> spot on!
+119: 5 - 5 --> spot on!
+120: 5 - 4 --> off by 1 star
+121: 3 - 4 --> off by 1 star
+122: 5 - 5 --> spot on!
+123: 4 - 5 --> off by 1 star
+124: 4 - 4 --> spot on!
 125: 5 - 5 --> spot on!
-126: 4 - 4 --> spot on!
-127: 1 - 1 --> spot on!
-128: 4 - 3 --> off by 1 star
-129: 5 - 4 --> off by 1 star
-130: 4 - 5 --> off by 1 star
-131: 4 - 2 --> off by 2 star
-132: 5 - 3 --> off by 2 star
-133: 1 - 1 --> spot on!
-134: 4 - 5 --> off by 1 star
-135: 5 - 5 --> spot on!
-136: 5 - 4 --> off by 1 star
-137: 4 - 2 --> off by 2 star
-138: 4 - 4 --> spot on!
-139: 5 - 5 --> spot on!
-140: 4 - 5 --> off by 1 star
-141: 4 - 4 --> spot on!
-142: 4 - 4 --> spot on!
-143: 4 - 2 --> off by 2 star
-144: 4 - 4 --> spot on!
+126: 3 - 3 --> spot on!
+127: 5 - 5 --> spot on!
+128: 4 - 5 --> off by 1 star
+129: 3 - 4 --> off by 1 star
+130: 4 - 4 --> spot on!
+131: 5 - 5 --> spot on!
+132: 5 - 5 --> spot on!
+133: 4 - 5 --> off by 1 star
+134: 4 - 1 --> off by 3 star
+135: 1 - 5 --> off by 4 star
+136: 5 - 5 --> spot on!
+137: 5 - 5 --> spot on!
+138: 4 - 2 --> off by 2 star
+139: 4 - 3 --> off by 1 star
+140: 4 - 3 --> off by 1 star
+141: 2 - 2 --> spot on!
+142: 4 - 1 --> off by 3 star
+143: 3 - 3 --> spot on!
+144: 5 - 5 --> spot on!
 145: 5 - 5 --> spot on!
-146: 4 - 4 --> spot on!
+146: 5 - 5 --> spot on!
 147: 5 - 5 --> spot on!
-148: 5 - 5 --> spot on!
-149: 4 - 4 --> spot on!
+148: 3 - 5 --> off by 2 star
+149: 5 - 1 --> off by 4 star
 150: 5 - 5 --> spot on!
 151: 5 - 5 --> spot on!
-152: 1 - 5 --> off by 4 star
-153: 5 - 5 --> spot on!
-154: 5 - 3 --> off by 2 star
+152: 2 - 3 --> off by 1 star
+153: 4 - 4 --> spot on!
+154: 5 - 5 --> spot on!
 155: 5 - 5 --> spot on!
-156: 5 - 5 --> spot on!
-157: 5 - 5 --> spot on!
-158: 5 - 5 --> spot on!
-159: 5 - 5 --> spot on!
-160: 4 - 5 --> off by 1 star
-161: 5 - 1 --> off by 4 star
-162: 1 - 5 --> off by 4 star
-163: 5 - 5 --> spot on!
-164: 4 - 4 --> spot on!
-165: 4 - 2 --> off by 2 star
-166: 5 - 4 --> off by 1 star
-167: 4 - 4 --> spot on!
-168: 5 - 5 --> spot on!
+156: 3 - 4 --> off by 1 star
+157: 5 - 4 --> off by 1 star
+158: 4 - 4 --> spot on!
+159: 4 - 2 --> off by 2 star
+160: 5 - 5 --> spot on!
+161: 3 - 3 --> spot on!
+162: 4 - 2 --> off by 2 star
+163: 5 - 4 --> off by 1 star
+164: 5 - 5 --> spot on!
+165: 5 - 5 --> spot on!
+166: 5 - 5 --> spot on!
+167: 1 - 4 --> off by 3 star
+168: 5 - 4 --> off by 1 star
 169: 4 - 4 --> spot on!
-170: 5 - 5 --> spot on!
-171: 1 - 2 --> off by 1 star
+170: 5 - 4 --> off by 1 star
+171: 5 - 5 --> spot on!
 172: 5 - 5 --> spot on!
-173: 5 - 5 --> spot on!
-174: 5 - 4 --> off by 1 star
-175: 5 - 5 --> spot on!
-176: 4 - 5 --> off by 1 star
-177: 4 - 4 --> spot on!
-178: 5 - 5 --> spot on!
-179: 5 - 4 --> off by 1 star
-180: 1 - 1 --> spot on!
-181: 5 - 5 --> spot on!
-182: 5 - 4 --> off by 1 star
-183: 5 - 5 --> spot on!
-184: 4 - 5 --> off by 1 star
-185: 5 - 4 --> off by 1 star
-186: 5 - 5 --> spot on!
+173: 4 - 4 --> spot on!
+174: 1 - 1 --> spot on!
+175: 5 - 1 --> off by 4 star
+176: 3 - 4 --> off by 1 star
+177: 4 - 3 --> off by 1 star
+178: 5 - 2 --> off by 3 star
+179: 5 - 5 --> spot on!
+180: 5 - 5 --> spot on!
+181: 4 - 4 --> spot on!
+182: 5 - 3 --> off by 2 star
+183: 4 - 4 --> spot on!
+184: 1 - 1 --> spot on!
+185: 1 - 3 --> off by 2 star
+186: 3 - 3 --> spot on!
 187: 5 - 5 --> spot on!
-188: 4 - 5 --> off by 1 star
-189: 1 - 1 --> spot on!
-190: 3 - 5 --> off by 2 star
-191: 4 - 5 --> off by 1 star
-192: 4 - 5 --> off by 1 star
-193: 4 - 1 --> off by 3 star
-194: 4 - 5 --> off by 1 star
+188: 5 - 5 --> spot on!
+189: 5 - 3 --> off by 2 star
+190: 4 - 3 --> off by 1 star
+191: 5 - 5 --> spot on!
+192: 5 - 4 --> off by 1 star
+193: 3 - 2 --> off by 1 star
+194: 5 - 5 --> spot on!
 195: 5 - 5 --> spot on!
-196: 4 - 2 --> off by 2 star
-197: 5 - 5 --> spot on!
+196: 5 - 5 --> spot on!
+197: 4 - 4 --> spot on!
 198: 4 - 5 --> off by 1 star
 199: 5 - 5 --> spot on!
- #spot on: 103
- #off by 1 star: 67
- #off by 2 star: 18
- #off by 3 star: 8
- #off by 4 star: 4
- #spot on: 0.515
- #off by 1 star: 0.335
- #off by 2 star: 0.09
- #off by 3 star: 0.04
- #off by 4 star: 0.02
+200: 5 - 5 --> spot on!
+201: 5 - 5 --> spot on!
+202: 3 - 3 --> spot on!
+203: 5 - 5 --> spot on!
+204: 5 - 5 --> spot on!
+205: 4 - 3 --> off by 1 star
+206: 4 - 4 --> spot on!
+207: 4 - 4 --> spot on!
+208: 5 - 5 --> spot on!
+209: 5 - 5 --> spot on!
+210: 1 - 4 --> off by 3 star
+211: 5 - 5 --> spot on!
+212: 3 - 4 --> off by 1 star
+213: 4 - 5 --> off by 1 star
+214: 4 - 3 --> off by 1 star
+215: 4 - 5 --> off by 1 star
+216: 4 - 3 --> off by 1 star
+217: 4 - 4 --> spot on!
+218: 1 - 4 --> off by 3 star
+219: 3 - 2 --> off by 1 star
+220: 4 - 3 --> off by 1 star
+221: 4 - 5 --> off by 1 star
+222: 4 - 3 --> off by 1 star
+223: 4 - 4 --> spot on!
+224: 5 - 5 --> spot on!
+225: 5 - 5 --> spot on!
+226: 5 - 5 --> spot on!
+227: 5 - 1 --> off by 4 star
+228: 5 - 5 --> spot on!
+229: 5 - 2 --> off by 3 star
+230: 4 - 4 --> spot on!
+231: 5 - 5 --> spot on!
+232: 4 - 3 --> off by 1 star
+233: 5 - 5 --> spot on!
+234: 1 - 1 --> spot on!
+235: 5 - 2 --> off by 3 star
+236: 5 - 5 --> spot on!
+237: 5 - 5 --> spot on!
+238: 5 - 5 --> spot on!
+239: 5 - 5 --> spot on!
+240: 5 - 5 --> spot on!
+241: 5 - 4 --> off by 1 star
+242: 4 - 2 --> off by 2 star
+243: 2 - 5 --> off by 3 star
+244: 5 - 5 --> spot on!
+245: 5 - 4 --> off by 1 star
+246: 4 - 4 --> spot on!
+247: 4 - 3 --> off by 1 star
+248: 5 - 3 --> off by 2 star
+249: 5 - 5 --> spot on!
+250: 5 - 5 --> spot on!
+251: 4 - 3 --> off by 1 star
+252: 4 - 4 --> spot on!
+253: 4 - 4 --> spot on!
+254: 4 - 5 --> off by 1 star
+255: 4 - 4 --> spot on!
+256: 4 - 4 --> spot on!
+257: 5 - 5 --> spot on!
+258: 4 - 1 --> off by 3 star
+259: 4 - 4 --> spot on!
+260: 1 - 1 --> spot on!
+261: 4 - 4 --> spot on!
+262: 4 - 5 --> off by 1 star
+263: 3 - 5 --> off by 2 star
+264: 5 - 5 --> spot on!
+265: 5 - 5 --> spot on!
+266: 5 - 5 --> spot on!
+267: 5 - 4 --> off by 1 star
+268: 4 - 2 --> off by 2 star
+269: 5 - 1 --> off by 4 star
+270: 1 - 2 --> off by 1 star
+271: 5 - 5 --> spot on!
+272: 5 - 5 --> spot on!
+273: 4 - 4 --> spot on!
+274: 1 - 2 --> off by 1 star
+275: 2 - 5 --> off by 3 star
+276: 5 - 4 --> off by 1 star
+277: 4 - 5 --> off by 1 star
+278: 5 - 4 --> off by 1 star
+279: 3 - 3 --> spot on!
+280: 5 - 4 --> off by 1 star
+281: 1 - 5 --> off by 4 star
+282: 4 - 5 --> off by 1 star
+283: 5 - 4 --> off by 1 star
+284: 4 - 5 --> off by 1 star
+285: 5 - 2 --> off by 3 star
+286: 1 - 5 --> off by 4 star
+287: 1 - 1 --> spot on!
+288: 3 - 3 --> spot on!
+289: 5 - 5 --> spot on!
+290: 5 - 2 --> off by 3 star
+291: 4 - 3 --> off by 1 star
+292: 4 - 4 --> spot on!
+293: 5 - 5 --> spot on!
+294: 5 - 5 --> spot on!
+295: 5 - 5 --> spot on!
+296: 5 - 5 --> spot on!
+297: 4 - 5 --> off by 1 star
+298: 5 - 4 --> off by 1 star
+299: 3 - 5 --> off by 2 star
+300: 5 - 5 --> spot on!
+301: 4 - 2 --> off by 2 star
+302: 5 - 4 --> off by 1 star
+303: 5 - 2 --> off by 3 star
+304: 5 - 5 --> spot on!
+305: 3 - 4 --> off by 1 star
+306: 5 - 5 --> spot on!
+307: 5 - 5 --> spot on!
+308: 5 - 3 --> off by 2 star
+309: 4 - 4 --> spot on!
+310: 4 - 5 --> off by 1 star
+311: 1 - 5 --> off by 4 star
+312: 5 - 4 --> off by 1 star
+313: 4 - 5 --> off by 1 star
+314: 5 - 2 --> off by 3 star
+315: 4 - 4 --> spot on!
+316: 5 - 4 --> off by 1 star
+317: 5 - 5 --> spot on!
+318: 4 - 4 --> spot on!
+319: 3 - 4 --> off by 1 star
+320: 5 - 5 --> spot on!
+321: 4 - 5 --> off by 1 star
+322: 3 - 3 --> spot on!
+323: 5 - 4 --> off by 1 star
+324: 5 - 5 --> spot on!
+325: 4 - 3 --> off by 1 star
+326: 5 - 4 --> off by 1 star
+327: 3 - 3 --> spot on!
+328: 4 - 4 --> spot on!
+329: 5 - 3 --> off by 2 star
+330: 5 - 2 --> off by 3 star
+331: 4 - 3 --> off by 1 star
+332: 5 - 5 --> spot on!
+333: 5 - 5 --> spot on!
+334: 5 - 5 --> spot on!
+335: 4 - 5 --> off by 1 star
+336: 5 - 5 --> spot on!
+337: 5 - 5 --> spot on!
+338: 5 - 5 --> spot on!
+339: 4 - 4 --> spot on!
+340: 5 - 5 --> spot on!
+341: 5 - 5 --> spot on!
+342: 4 - 5 --> off by 1 star
+343: 5 - 5 --> spot on!
+344: 5 - 5 --> spot on!
+345: 4 - 1 --> off by 3 star
+346: 5 - 4 --> off by 1 star
+347: 4 - 4 --> spot on!
+348: 5 - 5 --> spot on!
+349: 1 - 1 --> spot on!
+350: 4 - 5 --> off by 1 star
+351: 5 - 5 --> spot on!
+352: 3 - 2 --> off by 1 star
+353: 3 - 5 --> off by 2 star
+354: 5 - 4 --> off by 1 star
+355: 5 - 5 --> spot on!
+356: 4 - 2 --> off by 2 star
+357: 4 - 4 --> spot on!
+358: 1 - 5 --> off by 4 star
+359: 5 - 5 --> spot on!
+360: 4 - 4 --> spot on!
+361: 5 - 1 --> off by 4 star
+362: 5 - 5 --> spot on!
+363: 5 - 5 --> spot on!
+364: 5 - 5 --> spot on!
+365: 5 - 4 --> off by 1 star
+366: 4 - 3 --> off by 1 star
+367: 1 - 5 --> off by 4 star
+368: 5 - 4 --> off by 1 star
+369: 5 - 3 --> off by 2 star
+370: 5 - 4 --> off by 1 star
+371: 5 - 1 --> off by 4 star
+372: 5 - 5 --> spot on!
+373: 4 - 3 --> off by 1 star
+374: 5 - 5 --> spot on!
+375: 5 - 1 --> off by 4 star
+376: 5 - 2 --> off by 3 star
+377: 5 - 4 --> off by 1 star
+378: 4 - 4 --> spot on!
+379: 4 - 4 --> spot on!
+380: 4 - 4 --> spot on!
+381: 4 - 5 --> off by 1 star
+382: 4 - 5 --> off by 1 star
+383: 4 - 4 --> spot on!
+384: 3 - 2 --> off by 1 star
+385: 5 - 5 --> spot on!
+386: 5 - 4 --> off by 1 star
+387: 4 - 3 --> off by 1 star
+388: 4 - 4 --> spot on!
+389: 5 - 4 --> off by 1 star
+390: 4 - 1 --> off by 3 star
+391: 4 - 4 --> spot on!
+392: 4 - 2 --> off by 2 star
+393: 4 - 5 --> off by 1 star
+394: 4 - 4 --> spot on!
+395: 5 - 5 --> spot on!
+396: 4 - 4 --> spot on!
+397: 5 - 5 --> spot on!
+398: 5 - 5 --> spot on!
+399: 1 - 1 --> spot on!
+400: 3 - 4 --> off by 1 star
+401: 5 - 5 --> spot on!
+402: 5 - 5 --> spot on!
+403: 1 - 1 --> spot on!
+404: 5 - 4 --> off by 1 star
+405: 5 - 5 --> spot on!
+406: 4 - 2 --> off by 2 star
+407: 4 - 4 --> spot on!
+408: 4 - 5 --> off by 1 star
+409: 5 - 4 --> off by 1 star
+410: 5 - 5 --> spot on!
+411: 5 - 5 --> spot on!
+412: 1 - 2 --> off by 1 star
+413: 5 - 4 --> off by 1 star
+414: 4 - 5 --> off by 1 star
+415: 5 - 5 --> spot on!
+416: 5 - 5 --> spot on!
+417: 5 - 4 --> off by 1 star
+418: 2 - 4 --> off by 2 star
+419: 4 - 5 --> off by 1 star
+420: 4 - 4 --> spot on!
+421: 5 - 4 --> off by 1 star
+422: 4 - 4 --> spot on!
+423: 4 - 3 --> off by 1 star
+424: 5 - 5 --> spot on!
+425: 1 - 1 --> spot on!
+426: 5 - 4 --> off by 1 star
+427: 4 - 5 --> off by 1 star
+428: 5 - 4 --> off by 1 star
+429: 5 - 5 --> spot on!
+430: 5 - 5 --> spot on!
+431: 5 - 5 --> spot on!
+432: 5 - 4 --> off by 1 star
+433: 4 - 5 --> off by 1 star
+434: 5 - 5 --> spot on!
+435: 5 - 5 --> spot on!
+436: 3 - 5 --> off by 2 star
+437: 4 - 1 --> off by 3 star
+438: 5 - 5 --> spot on!
+439: 1 - 1 --> spot on!
+440: 5 - 5 --> spot on!
+441: 4 - 3 --> off by 1 star
+442: 4 - 4 --> spot on!
+443: 5 - 5 --> spot on!
+444: 5 - 4 --> off by 1 star
+445: 1 - 5 --> off by 4 star
+446: 5 - 1 --> off by 4 star
+447: 4 - 3 --> off by 1 star
+448: 5 - 5 --> spot on!
+449: 4 - 2 --> off by 2 star
+450: 4 - 3 --> off by 1 star
+451: 4 - 2 --> off by 2 star
+452: 5 - 4 --> off by 1 star
+453: 5 - 5 --> spot on!
+454: 4 - 2 --> off by 2 star
+455: 5 - 2 --> off by 3 star
+456: 5 - 4 --> off by 1 star
+457: 5 - 5 --> spot on!
+458: 2 - 3 --> off by 1 star
+459: 4 - 2 --> off by 2 star
+460: 4 - 5 --> off by 1 star
+461: 5 - 1 --> off by 4 star
+462: 3 - 2 --> off by 1 star
+463: 5 - 4 --> off by 1 star
+464: 5 - 5 --> spot on!
+465: 5 - 5 --> spot on!
+466: 5 - 5 --> spot on!
+467: 5 - 5 --> spot on!
+468: 4 - 5 --> off by 1 star
+469: 4 - 1 --> off by 3 star
+470: 4 - 4 --> spot on!
+471: 4 - 3 --> off by 1 star
+472: 5 - 4 --> off by 1 star
+473: 5 - 2 --> off by 3 star
+474: 4 - 3 --> off by 1 star
+475: 5 - 1 --> off by 4 star
+476: 1 - 2 --> off by 1 star
+477: 5 - 3 --> off by 2 star
+478: 4 - 5 --> off by 1 star
+479: 5 - 5 --> spot on!
+480: 5 - 5 --> spot on!
+481: 4 - 5 --> off by 1 star
+482: 5 - 5 --> spot on!
+483: 4 - 5 --> off by 1 star
+484: 4 - 5 --> off by 1 star
+485: 4 - 4 --> spot on!
+486: 5 - 5 --> spot on!
+487: 4 - 3 --> off by 1 star
+488: 5 - 5 --> spot on!
+489: 5 - 5 --> spot on!
+490: 4 - 2 --> off by 2 star
+491: 5 - 5 --> spot on!
+492: 4 - 5 --> off by 1 star
+493: 5 - 5 --> spot on!
+494: 4 - 5 --> off by 1 star
+495: 5 - 5 --> spot on!
+496: 4 - 2 --> off by 2 star
+497: 4 - 2 --> off by 2 star
+498: 4 - 3 --> off by 1 star
+499: 4 - 1 --> off by 3 star
+500: 3 - 4 --> off by 1 star
+501: 3 - 4 --> off by 1 star
+502: 5 - 5 --> spot on!
+503: 4 - 4 --> spot on!
+504: 5 - 4 --> off by 1 star
+505: 5 - 5 --> spot on!
+506: 1 - 1 --> spot on!
+507: 4 - 5 --> off by 1 star
+508: 5 - 5 --> spot on!
+509: 5 - 2 --> off by 3 star
+510: 4 - 4 --> spot on!
+511: 4 - 2 --> off by 2 star
+512: 5 - 5 --> spot on!
+513: 4 - 5 --> off by 1 star
+514: 2 - 2 --> spot on!
+515: 5 - 4 --> off by 1 star
+516: 4 - 5 --> off by 1 star
+517: 5 - 5 --> spot on!
+518: 5 - 5 --> spot on!
+519: 5 - 5 --> spot on!
+520: 5 - 5 --> spot on!
+521: 5 - 2 --> off by 3 star
+522: 5 - 5 --> spot on!
+523: 4 - 3 --> off by 1 star
+524: 3 - 4 --> off by 1 star
+525: 3 - 2 --> off by 1 star
+526: 4 - 4 --> spot on!
+527: 5 - 1 --> off by 4 star
+528: 5 - 5 --> spot on!
+529: 1 - 1 --> spot on!
+530: 5 - 3 --> off by 2 star
+531: 5 - 1 --> off by 4 star
+532: 4 - 4 --> spot on!
+533: 4 - 2 --> off by 2 star
+534: 4 - 5 --> off by 1 star
+535: 5 - 1 --> off by 4 star
+536: 5 - 5 --> spot on!
+537: 4 - 3 --> off by 1 star
+538: 4 - 4 --> spot on!
+539: 4 - 5 --> off by 1 star
+540: 4 - 2 --> off by 2 star
+541: 5 - 4 --> off by 1 star
+542: 5 - 5 --> spot on!
+543: 2 - 1 --> off by 1 star
+544: 4 - 5 --> off by 1 star
+545: 5 - 1 --> off by 4 star
+546: 4 - 5 --> off by 1 star
+547: 4 - 3 --> off by 1 star
+548: 5 - 5 --> spot on!
+549: 5 - 5 --> spot on!
+550: 4 - 5 --> off by 1 star
+551: 4 - 5 --> off by 1 star
+552: 5 - 5 --> spot on!
+553: 4 - 5 --> off by 1 star
+554: 5 - 1 --> off by 4 star
+555: 5 - 5 --> spot on!
+556: 4 - 1 --> off by 3 star
+557: 4 - 5 --> off by 1 star
+558: 5 - 4 --> off by 1 star
+559: 3 - 4 --> off by 1 star
+560: 1 - 1 --> spot on!
+561: 4 - 5 --> off by 1 star
+562: 2 - 4 --> off by 2 star
+563: 4 - 4 --> spot on!
+564: 4 - 3 --> off by 1 star
+565: 5 - 5 --> spot on!
+566: 5 - 5 --> spot on!
+567: 3 - 4 --> off by 1 star
+568: 4 - 5 --> off by 1 star
+569: 5 - 5 --> spot on!
+570: 5 - 5 --> spot on!
+571: 4 - 4 --> spot on!
+572: 5 - 3 --> off by 2 star
+573: 4 - 1 --> off by 3 star
+574: 5 - 5 --> spot on!
+575: 4 - 3 --> off by 1 star
+576: 2 - 5 --> off by 3 star
+577: 1 - 1 --> spot on!
+578: 4 - 5 --> off by 1 star
+579: 3 - 2 --> off by 1 star
+580: 1 - 1 --> spot on!
+581: 4 - 5 --> off by 1 star
+582: 4 - 1 --> off by 3 star
+583: 5 - 5 --> spot on!
+584: 5 - 5 --> spot on!
+585: 5 - 5 --> spot on!
+586: 4 - 4 --> spot on!
+587: 3 - 4 --> off by 1 star
+588: 5 - 5 --> spot on!
+589: 4 - 2 --> off by 2 star
+590: 4 - 4 --> spot on!
+591: 4 - 2 --> off by 2 star
+592: 1 - 1 --> spot on!
+593: 5 - 5 --> spot on!
+594: 4 - 5 --> off by 1 star
+595: 4 - 5 --> off by 1 star
+596: 5 - 2 --> off by 3 star
+597: 1 - 1 --> spot on!
+598: 5 - 5 --> spot on!
+599: 4 - 4 --> spot on!
+600: 5 - 5 --> spot on!
+601: 3 - 3 --> spot on!
+602: 5 - 5 --> spot on!
+603: 4 - 1 --> off by 3 star
+604: 4 - 4 --> spot on!
+605: 5 - 5 --> spot on!
+606: 5 - 4 --> off by 1 star
+607: 4 - 1 --> off by 3 star
+608: 4 - 4 --> spot on!
+609: 5 - 5 --> spot on!
+610: 1 - 1 --> spot on!
+611: 5 - 5 --> spot on!
+612: 3 - 3 --> spot on!
+613: 4 - 3 --> off by 1 star
+614: 5 - 5 --> spot on!
+615: 5 - 5 --> spot on!
+616: 4 - 5 --> off by 1 star
+617: 3 - 5 --> off by 2 star
+618: 3 - 3 --> spot on!
+619: 4 - 4 --> spot on!
+620: 5 - 5 --> spot on!
+621: 1 - 1 --> spot on!
+622: 5 - 4 --> off by 1 star
+623: 5 - 5 --> spot on!
+624: 3 - 5 --> off by 2 star
+625: 5 - 5 --> spot on!
+626: 5 - 5 --> spot on!
+627: 4 - 4 --> spot on!
+628: 4 - 5 --> off by 1 star
+629: 5 - 5 --> spot on!
+630: 4 - 4 --> spot on!
+631: 5 - 5 --> spot on!
+632: 1 - 1 --> spot on!
+633: 5 - 5 --> spot on!
+634: 5 - 5 --> spot on!
+635: 5 - 5 --> spot on!
+636: 5 - 5 --> spot on!
+637: 5 - 4 --> off by 1 star
+638: 4 - 4 --> spot on!
+639: 5 - 3 --> off by 2 star
+640: 1 - 5 --> off by 4 star
+641: 2 - 2 --> spot on!
+642: 4 - 4 --> spot on!
+643: 4 - 4 --> spot on!
+644: 5 - 5 --> spot on!
+645: 2 - 1 --> off by 1 star
+646: 5 - 1 --> off by 4 star
+647: 4 - 4 --> spot on!
+648: 4 - 4 --> spot on!
+649: 4 - 3 --> off by 1 star
+650: 4 - 3 --> off by 1 star
+651: 3 - 3 --> spot on!
+652: 4 - 5 --> off by 1 star
+653: 5 - 5 --> spot on!
+654: 4 - 3 --> off by 1 star
+655: 5 - 2 --> off by 3 star
+656: 5 - 4 --> off by 1 star
+657: 1 - 5 --> off by 4 star
+658: 4 - 2 --> off by 2 star
+659: 5 - 5 --> spot on!
+660: 5 - 5 --> spot on!
+661: 1 - 1 --> spot on!
+662: 4 - 3 --> off by 1 star
+663: 5 - 4 --> off by 1 star
+664: 5 - 4 --> off by 1 star
+665: 5 - 5 --> spot on!
+666: 4 - 5 --> off by 1 star
+667: 5 - 5 --> spot on!
+668: 5 - 5 --> spot on!
+669: 4 - 4 --> spot on!
+670: 4 - 4 --> spot on!
+671: 5 - 1 --> off by 4 star
+672: 4 - 4 --> spot on!
+673: 5 - 4 --> off by 1 star
+674: 4 - 4 --> spot on!
+675: 4 - 2 --> off by 2 star
+676: 4 - 4 --> spot on!
+677: 5 - 5 --> spot on!
+678: 1 - 1 --> spot on!
+679: 5 - 4 --> off by 1 star
+680: 5 - 5 --> spot on!
+681: 5 - 5 --> spot on!
+682: 5 - 4 --> off by 1 star
+683: 5 - 5 --> spot on!
+684: 5 - 4 --> off by 1 star
+685: 5 - 4 --> off by 1 star
+686: 4 - 3 --> off by 1 star
+687: 1 - 1 --> spot on!
+688: 5 - 4 --> off by 1 star
+689: 5 - 5 --> spot on!
+690: 4 - 2 --> off by 2 star
+691: 4 - 4 --> spot on!
+692: 4 - 5 --> off by 1 star
+693: 3 - 4 --> off by 1 star
+694: 3 - 4 --> off by 1 star
+695: 3 - 3 --> spot on!
+696: 3 - 3 --> spot on!
+697: 2 - 4 --> off by 2 star
+698: 4 - 2 --> off by 2 star
+699: 5 - 5 --> spot on!
+700: 5 - 5 --> spot on!
+701: 4 - 5 --> off by 1 star
+702: 5 - 5 --> spot on!
+703: 1 - 5 --> off by 4 star
+704: 4 - 4 --> spot on!
+705: 4 - 5 --> off by 1 star
+706: 5 - 5 --> spot on!
+707: 4 - 5 --> off by 1 star
+708: 5 - 5 --> spot on!
+709: 5 - 5 --> spot on!
+710: 5 - 5 --> spot on!
+711: 2 - 5 --> off by 3 star
+712: 5 - 5 --> spot on!
+713: 4 - 3 --> off by 1 star
+714: 1 - 4 --> off by 3 star
+715: 5 - 5 --> spot on!
+716: 4 - 4 --> spot on!
+717: 5 - 5 --> spot on!
+718: 5 - 1 --> off by 4 star
+719: 1 - 1 --> spot on!
+720: 4 - 2 --> off by 2 star
+721: 5 - 4 --> off by 1 star
+722: 4 - 2 --> off by 2 star
+723: 5 - 4 --> off by 1 star
+724: 5 - 5 --> spot on!
+725: 2 - 4 --> off by 2 star
+726: 2 - 2 --> spot on!
+727: 4 - 3 --> off by 1 star
+728: 5 - 5 --> spot on!
+729: 5 - 5 --> spot on!
+730: 5 - 2 --> off by 3 star
+731: 5 - 5 --> spot on!
+732: 4 - 5 --> off by 1 star
+733: 5 - 5 --> spot on!
+734: 5 - 5 --> spot on!
+735: 4 - 5 --> off by 1 star
+736: 4 - 4 --> spot on!
+737: 4 - 5 --> off by 1 star
+738: 4 - 4 --> spot on!
+739: 5 - 5 --> spot on!
+740: 1 - 5 --> off by 4 star
+741: 4 - 5 --> off by 1 star
+742: 5 - 5 --> spot on!
+743: 4 - 4 --> spot on!
+744: 4 - 4 --> spot on!
+745: 5 - 4 --> off by 1 star
+746: 5 - 4 --> off by 1 star
+747: 5 - 2 --> off by 3 star
+748: 4 - 4 --> spot on!
+749: 5 - 5 --> spot on!
+750: 5 - 3 --> off by 2 star
+751: 5 - 3 --> off by 2 star
+752: 4 - 5 --> off by 1 star
+753: 5 - 4 --> off by 1 star
+754: 5 - 5 --> spot on!
+755: 4 - 5 --> off by 1 star
+756: 5 - 3 --> off by 2 star
+757: 5 - 5 --> spot on!
+758: 4 - 5 --> off by 1 star
+759: 5 - 4 --> off by 1 star
+760: 4 - 2 --> off by 2 star
+761: 3 - 4 --> off by 1 star
+762: 5 - 4 --> off by 1 star
+763: 2 - 3 --> off by 1 star
+764: 5 - 5 --> spot on!
+765: 5 - 4 --> off by 1 star
+766: 5 - 5 --> spot on!
+767: 5 - 5 --> spot on!
+768: 4 - 5 --> off by 1 star
+769: 4 - 1 --> off by 3 star
+770: 4 - 5 --> off by 1 star
+771: 4 - 4 --> spot on!
+772: 5 - 4 --> off by 1 star
+773: 2 - 4 --> off by 2 star
+774: 4 - 4 --> spot on!
+775: 5 - 5 --> spot on!
+776: 5 - 4 --> off by 1 star
+777: 5 - 4 --> off by 1 star
+778: 4 - 5 --> off by 1 star
+779: 4 - 5 --> off by 1 star
+780: 5 - 4 --> off by 1 star
+781: 5 - 5 --> spot on!
+782: 4 - 4 --> spot on!
+783: 5 - 3 --> off by 2 star
+784: 5 - 5 --> spot on!
+785: 5 - 5 --> spot on!
+786: 2 - 1 --> off by 1 star
+787: 1 - 1 --> spot on!
+788: 4 - 3 --> off by 1 star
+789: 4 - 4 --> spot on!
+790: 3 - 3 --> spot on!
+791: 4 - 1 --> off by 3 star
+792: 1 - 4 --> off by 3 star
+793: 4 - 4 --> spot on!
+794: 4 - 4 --> spot on!
+795: 4 - 4 --> spot on!
+796: 5 - 5 --> spot on!
+797: 4 - 4 --> spot on!
+798: 4 - 2 --> off by 2 star
+799: 4 - 5 --> off by 1 star
+800: 5 - 5 --> spot on!
+801: 4 - 5 --> off by 1 star
+802: 5 - 5 --> spot on!
+803: 5 - 5 --> spot on!
+804: 5 - 4 --> off by 1 star
+805: 5 - 5 --> spot on!
+806: 5 - 1 --> off by 4 star
+807: 3 - 2 --> off by 1 star
+808: 5 - 4 --> off by 1 star
+809: 5 - 5 --> spot on!
+810: 4 - 5 --> off by 1 star
+811: 4 - 3 --> off by 1 star
+812: 5 - 5 --> spot on!
+813: 4 - 2 --> off by 2 star
+814: 5 - 5 --> spot on!
+815: 5 - 5 --> spot on!
+816: 5 - 5 --> spot on!
+817: 4 - 4 --> spot on!
+818: 4 - 5 --> off by 1 star
+819: 1 - 1 --> spot on!
+820: 5 - 5 --> spot on!
+821: 4 - 5 --> off by 1 star
+822: 5 - 5 --> spot on!
+823: 5 - 1 --> off by 4 star
+824: 5 - 4 --> off by 1 star
+825: 4 - 5 --> off by 1 star
+826: 4 - 2 --> off by 2 star
+827: 5 - 4 --> off by 1 star
+828: 5 - 1 --> off by 4 star
+829: 5 - 5 --> spot on!
+830: 4 - 5 --> off by 1 star
+831: 5 - 4 --> off by 1 star
+832: 5 - 5 --> spot on!
+833: 4 - 4 --> spot on!
+834: 1 - 5 --> off by 4 star
+835: 5 - 2 --> off by 3 star
+836: 4 - 3 --> off by 1 star
+837: 1 - 1 --> spot on!
+838: 4 - 2 --> off by 2 star
+839: 5 - 5 --> spot on!
+840: 4 - 3 --> off by 1 star
+841: 5 - 5 --> spot on!
+842: 4 - 5 --> off by 1 star
+843: 4 - 5 --> off by 1 star
+844: 4 - 4 --> spot on!
+845: 4 - 2 --> off by 2 star
+846: 4 - 5 --> off by 1 star
+847: 5 - 5 --> spot on!
+848: 5 - 5 --> spot on!
+849: 4 - 5 --> off by 1 star
+850: 4 - 3 --> off by 1 star
+851: 4 - 5 --> off by 1 star
+852: 4 - 3 --> off by 1 star
+853: 5 - 5 --> spot on!
+854: 5 - 5 --> spot on!
+855: 4 - 4 --> spot on!
+856: 5 - 5 --> spot on!
+857: 4 - 4 --> spot on!
+858: 4 - 4 --> spot on!
+859: 4 - 4 --> spot on!
+860: 5 - 5 --> spot on!
+861: 5 - 5 --> spot on!
+862: 5 - 5 --> spot on!
+863: 4 - 1 --> off by 3 star
+864: 5 - 5 --> spot on!
+865: 5 - 4 --> off by 1 star
+866: 4 - 5 --> off by 1 star
+867: 5 - 5 --> spot on!
+868: 5 - 4 --> off by 1 star
+869: 4 - 5 --> off by 1 star
+870: 5 - 5 --> spot on!
+871: 4 - 2 --> off by 2 star
+872: 5 - 2 --> off by 3 star
+873: 4 - 5 --> off by 1 star
+874: 5 - 1 --> off by 4 star
+875: 5 - 5 --> spot on!
+876: 4 - 3 --> off by 1 star
+877: 4 - 4 --> spot on!
+878: 5 - 4 --> off by 1 star
+879: 4 - 3 --> off by 1 star
+880: 4 - 3 --> off by 1 star
+881: 2 - 4 --> off by 2 star
+882: 4 - 5 --> off by 1 star
+883: 4 - 5 --> off by 1 star
+884: 4 - 5 --> off by 1 star
+885: 4 - 5 --> off by 1 star
+886: 5 - 5 --> spot on!
+887: 5 - 2 --> off by 3 star
+888: 5 - 1 --> off by 4 star
+889: 5 - 5 --> spot on!
+890: 5 - 5 --> spot on!
+891: 4 - 5 --> off by 1 star
+892: 4 - 3 --> off by 1 star
+893: 1 - 1 --> spot on!
+894: 5 - 5 --> spot on!
+895: 4 - 4 --> spot on!
+896: 5 - 5 --> spot on!
+897: 4 - 3 --> off by 1 star
+898: 5 - 5 --> spot on!
+899: 1 - 1 --> spot on!
+900: 4 - 5 --> off by 1 star
+901: 5 - 1 --> off by 4 star
+902: 2 - 5 --> off by 3 star
+903: 5 - 5 --> spot on!
+904: 4 - 5 --> off by 1 star
+905: 5 - 5 --> spot on!
+906: 1 - 4 --> off by 3 star
+907: 5 - 5 --> spot on!
+908: 5 - 5 --> spot on!
+909: 5 - 4 --> off by 1 star
+910: 5 - 5 --> spot on!
+911: 5 - 4 --> off by 1 star
+912: 4 - 4 --> spot on!
+913: 5 - 4 --> off by 1 star
+914: 5 - 2 --> off by 3 star
+915: 5 - 5 --> spot on!
+916: 4 - 5 --> off by 1 star
+917: 4 - 5 --> off by 1 star
+918: 4 - 3 --> off by 1 star
+919: 4 - 2 --> off by 2 star
+920: 5 - 4 --> off by 1 star
+921: 5 - 5 --> spot on!
+922: 5 - 2 --> off by 3 star
+923: 3 - 3 --> spot on!
+924: 4 - 4 --> spot on!
+925: 5 - 5 --> spot on!
+926: 4 - 2 --> off by 2 star
+927: 4 - 4 --> spot on!
+928: 1 - 1 --> spot on!
+929: 4 - 5 --> off by 1 star
+930: 5 - 5 --> spot on!
+931: 5 - 5 --> spot on!
+932: 5 - 5 --> spot on!
+933: 4 - 2 --> off by 2 star
+934: 3 - 3 --> spot on!
+935: 4 - 4 --> spot on!
+936: 4 - 4 --> spot on!
+937: 5 - 5 --> spot on!
+938: 5 - 5 --> spot on!
+939: 5 - 5 --> spot on!
+940: 5 - 5 --> spot on!
+941: 5 - 2 --> off by 3 star
+942: 4 - 5 --> off by 1 star
+943: 5 - 4 --> off by 1 star
+944: 5 - 4 --> off by 1 star
+945: 4 - 5 --> off by 1 star
+946: 5 - 4 --> off by 1 star
+947: 5 - 5 --> spot on!
+948: 3 - 4 --> off by 1 star
+949: 5 - 5 --> spot on!
+950: 5 - 4 --> off by 1 star
+951: 5 - 5 --> spot on!
+952: 5 - 1 --> off by 4 star
+953: 1 - 1 --> spot on!
+954: 4 - 5 --> off by 1 star
+955: 1 - 4 --> off by 3 star
+956: 5 - 4 --> off by 1 star
+957: 5 - 4 --> off by 1 star
+958: 1 - 1 --> spot on!
+959: 5 - 5 --> spot on!
+960: 5 - 4 --> off by 1 star
+961: 5 - 5 --> spot on!
+962: 4 - 5 --> off by 1 star
+963: 4 - 4 --> spot on!
+964: 5 - 4 --> off by 1 star
+965: 3 - 3 --> spot on!
+966: 4 - 2 --> off by 2 star
+967: 5 - 5 --> spot on!
+968: 4 - 2 --> off by 2 star
+969: 5 - 5 --> spot on!
+970: 4 - 5 --> off by 1 star
+971: 3 - 5 --> off by 2 star
+972: 3 - 1 --> off by 2 star
+973: 5 - 5 --> spot on!
+974: 5 - 5 --> spot on!
+975: 4 - 4 --> spot on!
+976: 5 - 5 --> spot on!
+977: 4 - 2 --> off by 2 star
+978: 4 - 5 --> off by 1 star
+979: 4 - 4 --> spot on!
+980: 5 - 5 --> spot on!
+981: 5 - 4 --> off by 1 star
+982: 4 - 3 --> off by 1 star
+983: 5 - 5 --> spot on!
+984: 4 - 3 --> off by 1 star
+985: 1 - 5 --> off by 4 star
+986: 5 - 5 --> spot on!
+987: 5 - 5 --> spot on!
+988: 5 - 5 --> spot on!
+989: 4 - 4 --> spot on!
+990: 5 - 4 --> off by 1 star
+991: 4 - 3 --> off by 1 star
+992: 5 - 4 --> off by 1 star
+993: 5 - 5 --> spot on!
+994: 5 - 5 --> spot on!
+995: 5 - 5 --> spot on!
+996: 5 - 5 --> spot on!
+997: 4 - 3 --> off by 1 star
+998: 5 - 5 --> spot on!
+999: 5 - 5 --> spot on!
+1000: 4 - 5 --> off by 1 star
+1001: 5 - 5 --> spot on!
+1002: 4 - 5 --> off by 1 star
+1003: 4 - 5 --> off by 1 star
+1004: 2 - 3 --> off by 1 star
+1005: 5 - 4 --> off by 1 star
+1006: 4 - 1 --> off by 3 star
+1007: 3 - 3 --> spot on!
+1008: 4 - 4 --> spot on!
+1009: 4 - 4 --> spot on!
+1010: 5 - 5 --> spot on!
+1011: 4 - 5 --> off by 1 star
+1012: 4 - 5 --> off by 1 star
+1013: 5 - 4 --> off by 1 star
+1014: 3 - 3 --> spot on!
+1015: 5 - 5 --> spot on!
+1016: 4 - 5 --> off by 1 star
+1017: 3 - 5 --> off by 2 star
+1018: 3 - 4 --> off by 1 star
+1019: 4 - 5 --> off by 1 star
+1020: 3 - 4 --> off by 1 star
+1021: 5 - 5 --> spot on!
+1022: 5 - 5 --> spot on!
+1023: 5 - 1 --> off by 4 star
+1024: 4 - 5 --> off by 1 star
+1025: 5 - 5 --> spot on!
+1026: 5 - 5 --> spot on!
+1027: 4 - 2 --> off by 2 star
+1028: 5 - 4 --> off by 1 star
+1029: 5 - 5 --> spot on!
+1030: 5 - 5 --> spot on!
+1031: 3 - 2 --> off by 1 star
+1032: 5 - 5 --> spot on!
+1033: 5 - 5 --> spot on!
+1034: 5 - 4 --> off by 1 star
+1035: 5 - 2 --> off by 3 star
+1036: 5 - 2 --> off by 3 star
+1037: 5 - 4 --> off by 1 star
+1038: 3 - 1 --> off by 2 star
+1039: 5 - 4 --> off by 1 star
+1040: 5 - 5 --> spot on!
+1041: 5 - 5 --> spot on!
+1042: 5 - 5 --> spot on!
+1043: 5 - 4 --> off by 1 star
+1044: 4 - 4 --> spot on!
+1045: 5 - 5 --> spot on!
+1046: 5 - 5 --> spot on!
+1047: 5 - 5 --> spot on!
+1048: 5 - 4 --> off by 1 star
+1049: 5 - 5 --> spot on!
+1050: 5 - 4 --> off by 1 star
+1051: 1 - 1 --> spot on!
+1052: 5 - 5 --> spot on!
+1053: 5 - 2 --> off by 3 star
+1054: 4 - 5 --> off by 1 star
+1055: 5 - 2 --> off by 3 star
+1056: 4 - 1 --> off by 3 star
+1057: 3 - 3 --> spot on!
+1058: 4 - 2 --> off by 2 star
+1059: 1 - 4 --> off by 3 star
+1060: 4 - 2 --> off by 2 star
+1061: 1 - 2 --> off by 1 star
+1062: 5 - 5 --> spot on!
+1063: 5 - 1 --> off by 4 star
+1064: 1 - 5 --> off by 4 star
+1065: 5 - 5 --> spot on!
+1066: 5 - 5 --> spot on!
+1067: 5 - 4 --> off by 1 star
+1068: 4 - 4 --> spot on!
+1069: 5 - 4 --> off by 1 star
+1070: 4 - 3 --> off by 1 star
+1071: 4 - 4 --> spot on!
+1072: 4 - 3 --> off by 1 star
+1073: 4 - 4 --> spot on!
+1074: 2 - 4 --> off by 2 star
+1075: 4 - 4 --> spot on!
+1076: 5 - 5 --> spot on!
+1077: 5 - 2 --> off by 3 star
+1078: 5 - 4 --> off by 1 star
+1079: 3 - 4 --> off by 1 star
+1080: 5 - 5 --> spot on!
+1081: 4 - 4 --> spot on!
+1082: 4 - 4 --> spot on!
+1083: 5 - 3 --> off by 2 star
+1084: 1 - 1 --> spot on!
+1085: 5 - 5 --> spot on!
+1086: 5 - 3 --> off by 2 star
+1087: 4 - 4 --> spot on!
+1088: 4 - 2 --> off by 2 star
+1089: 4 - 4 --> spot on!
+1090: 5 - 1 --> off by 4 star
+1091: 5 - 5 --> spot on!
+1092: 4 - 3 --> off by 1 star
+1093: 4 - 2 --> off by 2 star
+1094: 4 - 3 --> off by 1 star
+1095: 5 - 5 --> spot on!
+1096: 4 - 3 --> off by 1 star
+1097: 1 - 1 --> spot on!
+1098: 4 - 5 --> off by 1 star
+1099: 4 - 3 --> off by 1 star
+1100: 4 - 3 --> off by 1 star
+1101: 1 - 4 --> off by 3 star
+1102: 4 - 5 --> off by 1 star
+1103: 4 - 4 --> spot on!
+1104: 4 - 3 --> off by 1 star
+1105: 4 - 4 --> spot on!
+1106: 4 - 5 --> off by 1 star
+1107: 4 - 5 --> off by 1 star
+1108: 1 - 1 --> spot on!
+1109: 5 - 5 --> spot on!
+1110: 5 - 4 --> off by 1 star
+1111: 5 - 5 --> spot on!
+1112: 5 - 4 --> off by 1 star
+1113: 4 - 4 --> spot on!
+1114: 4 - 5 --> off by 1 star
+1115: 4 - 3 --> off by 1 star
+1116: 4 - 4 --> spot on!
+1117: 4 - 2 --> off by 2 star
+1118: 4 - 2 --> off by 2 star
+1119: 4 - 5 --> off by 1 star
+1120: 4 - 5 --> off by 1 star
+1121: 5 - 5 --> spot on!
+1122: 4 - 4 --> spot on!
+1123: 4 - 3 --> off by 1 star
+1124: 1 - 5 --> off by 4 star
+1125: 5 - 4 --> off by 1 star
+1126: 2 - 2 --> spot on!
+1127: 1 - 1 --> spot on!
+1128: 4 - 5 --> off by 1 star
+1129: 5 - 5 --> spot on!
+1130: 4 - 4 --> spot on!
+1131: 4 - 5 --> off by 1 star
+1132: 4 - 5 --> off by 1 star
+1133: 5 - 3 --> off by 2 star
+1134: 5 - 1 --> off by 4 star
+1135: 4 - 1 --> off by 3 star
+1136: 4 - 2 --> off by 2 star
+1137: 4 - 4 --> spot on!
+1138: 4 - 4 --> spot on!
+1139: 5 - 5 --> spot on!
+1140: 5 - 4 --> off by 1 star
+1141: 4 - 5 --> off by 1 star
+1142: 4 - 4 --> spot on!
+1143: 4 - 3 --> off by 1 star
+1144: 4 - 4 --> spot on!
+1145: 4 - 5 --> off by 1 star
+1146: 4 - 3 --> off by 1 star
+1147: 5 - 5 --> spot on!
+1148: 5 - 4 --> off by 1 star
+1149: 5 - 5 --> spot on!
+1150: 4 - 5 --> off by 1 star
+1151: 3 - 4 --> off by 1 star
+1152: 4 - 4 --> spot on!
+1153: 4 - 2 --> off by 2 star
+1154: 4 - 1 --> off by 3 star
+1155: 4 - 2 --> off by 2 star
+1156: 3 - 4 --> off by 1 star
+1157: 5 - 5 --> spot on!
+1158: 4 - 4 --> spot on!
+1159: 4 - 4 --> spot on!
+1160: 5 - 5 --> spot on!
+1161: 5 - 5 --> spot on!
+1162: 4 - 5 --> off by 1 star
+1163: 4 - 5 --> off by 1 star
+1164: 5 - 5 --> spot on!
+1165: 3 - 2 --> off by 1 star
+1166: 4 - 4 --> spot on!
+1167: 5 - 5 --> spot on!
+1168: 5 - 5 --> spot on!
+1169: 5 - 4 --> off by 1 star
+1170: 4 - 1 --> off by 3 star
+1171: 5 - 5 --> spot on!
+1172: 5 - 5 --> spot on!
+1173: 5 - 4 --> off by 1 star
+1174: 5 - 5 --> spot on!
+1175: 5 - 5 --> spot on!
+1176: 4 - 5 --> off by 1 star
+1177: 4 - 3 --> off by 1 star
+1178: 4 - 1 --> off by 3 star
+1179: 4 - 5 --> off by 1 star
+1180: 4 - 4 --> spot on!
+1181: 4 - 5 --> off by 1 star
+1182: 3 - 4 --> off by 1 star
+1183: 4 - 3 --> off by 1 star
+1184: 3 - 4 --> off by 1 star
+1185: 4 - 4 --> spot on!
+1186: 4 - 2 --> off by 2 star
+1187: 1 - 2 --> off by 1 star
+1188: 5 - 5 --> spot on!
+1189: 1 - 1 --> spot on!
+1190: 4 - 4 --> spot on!
+1191: 1 - 2 --> off by 1 star
+1192: 5 - 5 --> spot on!
+1193: 5 - 5 --> spot on!
+1194: 3 - 4 --> off by 1 star
+1195: 2 - 3 --> off by 1 star
+1196: 5 - 5 --> spot on!
+1197: 5 - 4 --> off by 1 star
+1198: 5 - 3 --> off by 2 star
+1199: 5 - 4 --> off by 1 star
+1200: 5 - 5 --> spot on!
+1201: 4 - 3 --> off by 1 star
+1202: 1 - 2 --> off by 1 star
+1203: 4 - 3 --> off by 1 star
+1204: 4 - 1 --> off by 3 star
+1205: 5 - 2 --> off by 3 star
+1206: 4 - 5 --> off by 1 star
+1207: 4 - 4 --> spot on!
+1208: 4 - 5 --> off by 1 star
+1209: 5 - 2 --> off by 3 star
+1210: 3 - 1 --> off by 2 star
+1211: 4 - 1 --> off by 3 star
+1212: 1 - 5 --> off by 4 star
+1213: 5 - 5 --> spot on!
+1214: 5 - 5 --> spot on!
+1215: 5 - 5 --> spot on!
+1216: 5 - 5 --> spot on!
+1217: 5 - 1 --> off by 4 star
+1218: 2 - 1 --> off by 1 star
+1219: 3 - 4 --> off by 1 star
+1220: 4 - 4 --> spot on!
+1221: 4 - 4 --> spot on!
+1222: 5 - 3 --> off by 2 star
+1223: 4 - 2 --> off by 2 star
+1224: 4 - 2 --> off by 2 star
+1225: 4 - 5 --> off by 1 star
+1226: 3 - 3 --> spot on!
+1227: 4 - 2 --> off by 2 star
+1228: 5 - 5 --> spot on!
+1229: 4 - 5 --> off by 1 star
+1230: 2 - 2 --> spot on!
+1231: 5 - 5 --> spot on!
+1232: 5 - 5 --> spot on!
+1233: 4 - 4 --> spot on!
+1234: 5 - 5 --> spot on!
+1235: 5 - 5 --> spot on!
+1236: 5 - 5 --> spot on!
+1237: 4 - 4 --> spot on!
+1238: 4 - 2 --> off by 2 star
+1239: 1 - 2 --> off by 1 star
+1240: 4 - 5 --> off by 1 star
+1241: 4 - 4 --> spot on!
+1242: 4 - 5 --> off by 1 star
+1243: 5 - 5 --> spot on!
+1244: 5 - 2 --> off by 3 star
+1245: 4 - 1 --> off by 3 star
+1246: 5 - 4 --> off by 1 star
+1247: 3 - 5 --> off by 2 star
+1248: 4 - 4 --> spot on!
+1249: 5 - 4 --> off by 1 star
+1250: 4 - 4 --> spot on!
+1251: 5 - 5 --> spot on!
+1252: 5 - 5 --> spot on!
+1253: 4 - 5 --> off by 1 star
+1254: 4 - 4 --> spot on!
+1255: 3 - 4 --> off by 1 star
+1256: 4 - 5 --> off by 1 star
+1257: 5 - 5 --> spot on!
+1258: 4 - 4 --> spot on!
+1259: 5 - 5 --> spot on!
+1260: 5 - 5 --> spot on!
+1261: 5 - 5 --> spot on!
+1262: 5 - 5 --> spot on!
+1263: 5 - 5 --> spot on!
+1264: 5 - 5 --> spot on!
+1265: 5 - 4 --> off by 1 star
+1266: 5 - 2 --> off by 3 star
+1267: 5 - 5 --> spot on!
+1268: 4 - 4 --> spot on!
+1269: 4 - 4 --> spot on!
+1270: 5 - 5 --> spot on!
+1271: 1 - 1 --> spot on!
+1272: 3 - 1 --> off by 2 star
+1273: 5 - 4 --> off by 1 star
+1274: 5 - 5 --> spot on!
+1275: 2 - 1 --> off by 1 star
+1276: 5 - 5 --> spot on!
+1277: 5 - 4 --> off by 1 star
+1278: 5 - 5 --> spot on!
+1279: 4 - 3 --> off by 1 star
+1280: 4 - 4 --> spot on!
+1281: 4 - 4 --> spot on!
+1282: 4 - 3 --> off by 1 star
+1283: 4 - 4 --> spot on!
+1284: 5 - 5 --> spot on!
+1285: 1 - 1 --> spot on!
+1286: 5 - 5 --> spot on!
+1287: 3 - 2 --> off by 1 star
+1288: 4 - 4 --> spot on!
+1289: 5 - 4 --> off by 1 star
+1290: 5 - 5 --> spot on!
+1291: 5 - 4 --> off by 1 star
+1292: 5 - 5 --> spot on!
+1293: 5 - 4 --> off by 1 star
+1294: 4 - 3 --> off by 1 star
+1295: 1 - 2 --> off by 1 star
+1296: 5 - 4 --> off by 1 star
+1297: 4 - 4 --> spot on!
+1298: 3 - 3 --> spot on!
+1299: 5 - 4 --> off by 1 star
+1300: 5 - 5 --> spot on!
+1301: 5 - 5 --> spot on!
+1302: 4 - 5 --> off by 1 star
+1303: 5 - 5 --> spot on!
+1304: 5 - 5 --> spot on!
+1305: 1 - 1 --> spot on!
+1306: 4 - 2 --> off by 2 star
+1307: 5 - 5 --> spot on!
+1308: 5 - 5 --> spot on!
+1309: 4 - 5 --> off by 1 star
+1310: 5 - 5 --> spot on!
+1311: 5 - 5 --> spot on!
+1312: 5 - 5 --> spot on!
+1313: 5 - 5 --> spot on!
+1314: 5 - 2 --> off by 3 star
+1315: 5 - 5 --> spot on!
+1316: 5 - 3 --> off by 2 star
+1317: 5 - 4 --> off by 1 star
+1318: 3 - 2 --> off by 1 star
+1319: 5 - 5 --> spot on!
+1320: 4 - 5 --> off by 1 star
+1321: 5 - 5 --> spot on!
+1322: 4 - 5 --> off by 1 star
+1323: 5 - 5 --> spot on!
+1324: 5 - 5 --> spot on!
+1325: 1 - 1 --> spot on!
+1326: 5 - 5 --> spot on!
+1327: 5 - 5 --> spot on!
+1328: 2 - 2 --> spot on!
+1329: 5 - 4 --> off by 1 star
+1330: 5 - 5 --> spot on!
+1331: 1 - 1 --> spot on!
+1332: 4 - 4 --> spot on!
+1333: 5 - 5 --> spot on!
+1334: 2 - 2 --> spot on!
+1335: 4 - 5 --> off by 1 star
+1336: 4 - 4 --> spot on!
+1337: 4 - 4 --> spot on!
+1338: 4 - 1 --> off by 3 star
+1339: 4 - 1 --> off by 3 star
+1340: 4 - 4 --> spot on!
+1341: 5 - 5 --> spot on!
+1342: 5 - 5 --> spot on!
+1343: 1 - 1 --> spot on!
+1344: 5 - 5 --> spot on!
+1345: 4 - 5 --> off by 1 star
+1346: 3 - 2 --> off by 1 star
+1347: 4 - 5 --> off by 1 star
+1348: 1 - 5 --> off by 4 star
+1349: 4 - 5 --> off by 1 star
+1350: 5 - 4 --> off by 1 star
+1351: 5 - 4 --> off by 1 star
+1352: 5 - 5 --> spot on!
+1353: 4 - 4 --> spot on!
+1354: 5 - 4 --> off by 1 star
+1355: 4 - 4 --> spot on!
+1356: 3 - 2 --> off by 1 star
+1357: 4 - 3 --> off by 1 star
+1358: 5 - 5 --> spot on!
+1359: 5 - 5 --> spot on!
+1360: 1 - 2 --> off by 1 star
+1361: 5 - 5 --> spot on!
+1362: 1 - 1 --> spot on!
+1363: 5 - 5 --> spot on!
+1364: 4 - 2 --> off by 2 star
+1365: 2 - 4 --> off by 2 star
+1366: 5 - 5 --> spot on!
+1367: 4 - 4 --> spot on!
+1368: 5 - 1 --> off by 4 star
+1369: 5 - 5 --> spot on!
+1370: 5 - 5 --> spot on!
+1371: 5 - 5 --> spot on!
+1372: 5 - 5 --> spot on!
+1373: 3 - 5 --> off by 2 star
+1374: 4 - 4 --> spot on!
+1375: 5 - 4 --> off by 1 star
+1376: 5 - 5 --> spot on!
+1377: 4 - 5 --> off by 1 star
+1378: 4 - 5 --> off by 1 star
+1379: 3 - 3 --> spot on!
+1380: 5 - 5 --> spot on!
+1381: 4 - 4 --> spot on!
+1382: 4 - 2 --> off by 2 star
+1383: 5 - 5 --> spot on!
+1384: 3 - 3 --> spot on!
+1385: 5 - 1 --> off by 4 star
+1386: 4 - 1 --> off by 3 star
+1387: 4 - 4 --> spot on!
+1388: 1 - 1 --> spot on!
+1389: 5 - 4 --> off by 1 star
+1390: 3 - 3 --> spot on!
+1391: 5 - 3 --> off by 2 star
+1392: 5 - 3 --> off by 2 star
+1393: 5 - 5 --> spot on!
+1394: 4 - 5 --> off by 1 star
+1395: 4 - 1 --> off by 3 star
+1396: 5 - 4 --> off by 1 star
+1397: 5 - 4 --> off by 1 star
+1398: 4 - 5 --> off by 1 star
+1399: 5 - 5 --> spot on!
+1400: 5 - 5 --> spot on!
+1401: 4 - 5 --> off by 1 star
+1402: 2 - 4 --> off by 2 star
+1403: 4 - 5 --> off by 1 star
+1404: 5 - 5 --> spot on!
+1405: 3 - 4 --> off by 1 star
+1406: 3 - 4 --> off by 1 star
+1407: 3 - 4 --> off by 1 star
+1408: 5 - 1 --> off by 4 star
+1409: 5 - 5 --> spot on!
+1410: 1 - 2 --> off by 1 star
+1411: 4 - 2 --> off by 2 star
+1412: 5 - 5 --> spot on!
+1413: 5 - 5 --> spot on!
+1414: 5 - 5 --> spot on!
+1415: 5 - 5 --> spot on!
+1416: 5 - 4 --> off by 1 star
+1417: 5 - 5 --> spot on!
+1418: 4 - 3 --> off by 1 star
+1419: 5 - 5 --> spot on!
+1420: 3 - 4 --> off by 1 star
+1421: 4 - 3 --> off by 1 star
+1422: 1 - 1 --> spot on!
+1423: 5 - 4 --> off by 1 star
+1424: 4 - 1 --> off by 3 star
+1425: 4 - 4 --> spot on!
+1426: 5 - 5 --> spot on!
+1427: 4 - 5 --> off by 1 star
+1428: 5 - 5 --> spot on!
+1429: 5 - 5 --> spot on!
+1430: 5 - 4 --> off by 1 star
+1431: 5 - 5 --> spot on!
+1432: 4 - 5 --> off by 1 star
+1433: 4 - 4 --> spot on!
+1434: 1 - 2 --> off by 1 star
+1435: 5 - 5 --> spot on!
+1436: 4 - 1 --> off by 3 star
+1437: 3 - 2 --> off by 1 star
+1438: 5 - 2 --> off by 3 star
+1439: 5 - 5 --> spot on!
+1440: 4 - 4 --> spot on!
+1441: 4 - 1 --> off by 3 star
+1442: 4 - 3 --> off by 1 star
+1443: 4 - 4 --> spot on!
+1444: 4 - 4 --> spot on!
+1445: 5 - 5 --> spot on!
+1446: 5 - 5 --> spot on!
+1447: 5 - 1 --> off by 4 star
+1448: 5 - 4 --> off by 1 star
+1449: 4 - 5 --> off by 1 star
+1450: 4 - 3 --> off by 1 star
+1451: 4 - 5 --> off by 1 star
+1452: 5 - 5 --> spot on!
+1453: 5 - 5 --> spot on!
+1454: 5 - 5 --> spot on!
+1455: 5 - 1 --> off by 4 star
+1456: 4 - 5 --> off by 1 star
+1457: 5 - 4 --> off by 1 star
+1458: 5 - 1 --> off by 4 star
+1459: 5 - 4 --> off by 1 star
+1460: 1 - 5 --> off by 4 star
+1461: 5 - 4 --> off by 1 star
+1462: 3 - 4 --> off by 1 star
+1463: 1 - 1 --> spot on!
+1464: 5 - 5 --> spot on!
+1465: 4 - 5 --> off by 1 star
+1466: 4 - 3 --> off by 1 star
+1467: 3 - 3 --> spot on!
+1468: 4 - 3 --> off by 1 star
+1469: 4 - 2 --> off by 2 star
+1470: 4 - 5 --> off by 1 star
+1471: 5 - 5 --> spot on!
+1472: 3 - 3 --> spot on!
+1473: 4 - 2 --> off by 2 star
+1474: 5 - 5 --> spot on!
+1475: 1 - 1 --> spot on!
+1476: 4 - 4 --> spot on!
+1477: 1 - 1 --> spot on!
+1478: 5 - 5 --> spot on!
+1479: 5 - 4 --> off by 1 star
+1480: 5 - 5 --> spot on!
+1481: 1 - 1 --> spot on!
+1482: 4 - 2 --> off by 2 star
+1483: 4 - 4 --> spot on!
+1484: 5 - 2 --> off by 3 star
+1485: 5 - 2 --> off by 3 star
+1486: 1 - 1 --> spot on!
+1487: 5 - 4 --> off by 1 star
+1488: 4 - 4 --> spot on!
+1489: 5 - 4 --> off by 1 star
+1490: 4 - 4 --> spot on!
+1491: 5 - 5 --> spot on!
+1492: 5 - 4 --> off by 1 star
+1493: 1 - 2 --> off by 1 star
+1494: 4 - 3 --> off by 1 star
+1495: 5 - 5 --> spot on!
+1496: 4 - 5 --> off by 1 star
+1497: 5 - 5 --> spot on!
+1498: 1 - 1 --> spot on!
+1499: 4 - 4 --> spot on!
+1500: 5 - 2 --> off by 3 star
+1501: 3 - 4 --> off by 1 star
+1502: 5 - 5 --> spot on!
+1503: 2 - 4 --> off by 2 star
+1504: 4 - 2 --> off by 2 star
+1505: 5 - 5 --> spot on!
+1506: 1 - 1 --> spot on!
+1507: 5 - 4 --> off by 1 star
+1508: 5 - 5 --> spot on!
+1509: 5 - 4 --> off by 1 star
+1510: 5 - 5 --> spot on!
+1511: 5 - 5 --> spot on!
+1512: 5 - 3 --> off by 2 star
+1513: 3 - 1 --> off by 2 star
+1514: 5 - 5 --> spot on!
+1515: 5 - 5 --> spot on!
+1516: 2 - 1 --> off by 1 star
+1517: 5 - 5 --> spot on!
+1518: 5 - 2 --> off by 3 star
+1519: 5 - 5 --> spot on!
+1520: 4 - 3 --> off by 1 star
+1521: 5 - 5 --> spot on!
+1522: 5 - 5 --> spot on!
+1523: 5 - 1 --> off by 4 star
+1524: 4 - 4 --> spot on!
+1525: 5 - 5 --> spot on!
+1526: 5 - 5 --> spot on!
+1527: 1 - 2 --> off by 1 star
+1528: 4 - 4 --> spot on!
+1529: 2 - 5 --> off by 3 star
+1530: 4 - 1 --> off by 3 star
+1531: 4 - 5 --> off by 1 star
+1532: 5 - 3 --> off by 2 star
+1533: 5 - 5 --> spot on!
+1534: 3 - 1 --> off by 2 star
+1535: 5 - 5 --> spot on!
+1536: 1 - 1 --> spot on!
+1537: 5 - 5 --> spot on!
+1538: 4 - 1 --> off by 3 star
+1539: 4 - 4 --> spot on!
+1540: 1 - 1 --> spot on!
+1541: 4 - 4 --> spot on!
+1542: 4 - 4 --> spot on!
+1543: 4 - 5 --> off by 1 star
+1544: 4 - 3 --> off by 1 star
+1545: 4 - 3 --> off by 1 star
+1546: 5 - 5 --> spot on!
+1547: 1 - 5 --> off by 4 star
+1548: 5 - 5 --> spot on!
+1549: 5 - 5 --> spot on!
+1550: 4 - 4 --> spot on!
+1551: 5 - 4 --> off by 1 star
+1552: 4 - 2 --> off by 2 star
+1553: 5 - 5 --> spot on!
+1554: 5 - 5 --> spot on!
+1555: 5 - 5 --> spot on!
+1556: 5 - 5 --> spot on!
+1557: 4 - 4 --> spot on!
+1558: 4 - 5 --> off by 1 star
+1559: 5 - 5 --> spot on!
+1560: 2 - 5 --> off by 3 star
+1561: 5 - 4 --> off by 1 star
+1562: 5 - 5 --> spot on!
+1563: 4 - 4 --> spot on!
+1564: 4 - 5 --> off by 1 star
+1565: 5 - 2 --> off by 3 star
+1566: 2 - 1 --> off by 1 star
+1567: 4 - 2 --> off by 2 star
+1568: 5 - 4 --> off by 1 star
+1569: 4 - 4 --> spot on!
+1570: 4 - 4 --> spot on!
+1571: 4 - 5 --> off by 1 star
+1572: 4 - 4 --> spot on!
+1573: 4 - 1 --> off by 3 star
+1574: 4 - 4 --> spot on!
+1575: 4 - 4 --> spot on!
+1576: 4 - 4 --> spot on!
+1577: 5 - 5 --> spot on!
+1578: 5 - 5 --> spot on!
+1579: 5 - 5 --> spot on!
+1580: 5 - 5 --> spot on!
+1581: 5 - 5 --> spot on!
+1582: 5 - 5 --> spot on!
+1583: 5 - 5 --> spot on!
+1584: 4 - 5 --> off by 1 star
+1585: 4 - 3 --> off by 1 star
+1586: 5 - 1 --> off by 4 star
+1587: 4 - 5 --> off by 1 star
+1588: 4 - 3 --> off by 1 star
+1589: 5 - 4 --> off by 1 star
+1590: 4 - 3 --> off by 1 star
+1591: 3 - 5 --> off by 2 star
+1592: 5 - 5 --> spot on!
+1593: 1 - 1 --> spot on!
+1594: 3 - 4 --> off by 1 star
+1595: 5 - 5 --> spot on!
+1596: 4 - 5 --> off by 1 star
+1597: 3 - 1 --> off by 2 star
+1598: 5 - 4 --> off by 1 star
+1599: 5 - 5 --> spot on!
+1600: 5 - 4 --> off by 1 star
+1601: 4 - 4 --> spot on!
+1602: 3 - 3 --> spot on!
+1603: 5 - 5 --> spot on!
+1604: 5 - 5 --> spot on!
+1605: 1 - 1 --> spot on!
+1606: 4 - 3 --> off by 1 star
+1607: 5 - 5 --> spot on!
+1608: 2 - 4 --> off by 2 star
+1609: 5 - 5 --> spot on!
+1610: 4 - 5 --> off by 1 star
+1611: 4 - 3 --> off by 1 star
+1612: 4 - 5 --> off by 1 star
+1613: 1 - 1 --> spot on!
+1614: 3 - 2 --> off by 1 star
+1615: 5 - 5 --> spot on!
+1616: 5 - 5 --> spot on!
+1617: 5 - 5 --> spot on!
+1618: 3 - 4 --> off by 1 star
+1619: 2 - 2 --> spot on!
+1620: 3 - 5 --> off by 2 star
+1621: 5 - 5 --> spot on!
+1622: 4 - 5 --> off by 1 star
+1623: 4 - 5 --> off by 1 star
+1624: 5 - 2 --> off by 3 star
+1625: 5 - 5 --> spot on!
+1626: 5 - 3 --> off by 2 star
+1627: 5 - 5 --> spot on!
+1628: 1 - 1 --> spot on!
+1629: 4 - 5 --> off by 1 star
+1630: 4 - 5 --> off by 1 star
+1631: 4 - 2 --> off by 2 star
+1632: 4 - 5 --> off by 1 star
+1633: 5 - 4 --> off by 1 star
+1634: 4 - 3 --> off by 1 star
+1635: 3 - 3 --> spot on!
+1636: 5 - 5 --> spot on!
+1637: 5 - 5 --> spot on!
+1638: 4 - 3 --> off by 1 star
+1639: 5 - 3 --> off by 2 star
+1640: 4 - 5 --> off by 1 star
+1641: 5 - 4 --> off by 1 star
+1642: 4 - 4 --> spot on!
+1643: 5 - 5 --> spot on!
+1644: 5 - 4 --> off by 1 star
+1645: 5 - 5 --> spot on!
+1646: 5 - 5 --> spot on!
+1647: 5 - 5 --> spot on!
+1648: 4 - 5 --> off by 1 star
+1649: 4 - 5 --> off by 1 star
+1650: 5 - 5 --> spot on!
+1651: 5 - 2 --> off by 3 star
+1652: 3 - 2 --> off by 1 star
+1653: 5 - 5 --> spot on!
+1654: 5 - 5 --> spot on!
+1655: 5 - 5 --> spot on!
+1656: 5 - 3 --> off by 2 star
+1657: 5 - 4 --> off by 1 star
+1658: 4 - 3 --> off by 1 star
+1659: 4 - 5 --> off by 1 star
+1660: 5 - 4 --> off by 1 star
+1661: 3 - 3 --> spot on!
+1662: 4 - 5 --> off by 1 star
+1663: 4 - 4 --> spot on!
+1664: 5 - 5 --> spot on!
+1665: 3 - 5 --> off by 2 star
+1666: 2 - 3 --> off by 1 star
+1667: 5 - 5 --> spot on!
+1668: 5 - 5 --> spot on!
+1669: 5 - 5 --> spot on!
+1670: 5 - 5 --> spot on!
+1671: 5 - 5 --> spot on!
+1672: 5 - 5 --> spot on!
+1673: 5 - 3 --> off by 2 star
+1674: 5 - 5 --> spot on!
+1675: 4 - 1 --> off by 3 star
+1676: 5 - 5 --> spot on!
+1677: 5 - 5 --> spot on!
+1678: 5 - 5 --> spot on!
+1679: 4 - 3 --> off by 1 star
+1680: 5 - 5 --> spot on!
+1681: 5 - 4 --> off by 1 star
+1682: 5 - 5 --> spot on!
+1683: 1 - 2 --> off by 1 star
+1684: 5 - 5 --> spot on!
+1685: 5 - 5 --> spot on!
+1686: 5 - 5 --> spot on!
+1687: 4 - 4 --> spot on!
+1688: 5 - 5 --> spot on!
+1689: 4 - 1 --> off by 3 star
+1690: 5 - 1 --> off by 4 star
+1691: 4 - 3 --> off by 1 star
+1692: 4 - 3 --> off by 1 star
+1693: 1 - 1 --> spot on!
+1694: 4 - 1 --> off by 3 star
+1695: 5 - 5 --> spot on!
+1696: 5 - 5 --> spot on!
+1697: 4 - 5 --> off by 1 star
+1698: 4 - 3 --> off by 1 star
+1699: 4 - 4 --> spot on!
+1700: 5 - 5 --> spot on!
+1701: 5 - 5 --> spot on!
+1702: 4 - 4 --> spot on!
+1703: 5 - 5 --> spot on!
+1704: 4 - 4 --> spot on!
+1705: 5 - 3 --> off by 2 star
+1706: 5 - 5 --> spot on!
+1707: 4 - 1 --> off by 3 star
+1708: 4 - 4 --> spot on!
+1709: 1 - 1 --> spot on!
+1710: 1 - 1 --> spot on!
+1711: 4 - 2 --> off by 2 star
+1712: 5 - 4 --> off by 1 star
+1713: 5 - 5 --> spot on!
+1714: 4 - 4 --> spot on!
+1715: 5 - 5 --> spot on!
+1716: 5 - 5 --> spot on!
+1717: 5 - 5 --> spot on!
+1718: 4 - 5 --> off by 1 star
+1719: 4 - 5 --> off by 1 star
+1720: 5 - 5 --> spot on!
+1721: 5 - 5 --> spot on!
+1722: 4 - 4 --> spot on!
+1723: 4 - 5 --> off by 1 star
+1724: 2 - 2 --> spot on!
+1725: 4 - 2 --> off by 2 star
+1726: 4 - 5 --> off by 1 star
+1727: 5 - 5 --> spot on!
+1728: 4 - 5 --> off by 1 star
+1729: 5 - 5 --> spot on!
+1730: 4 - 5 --> off by 1 star
+1731: 4 - 1 --> off by 3 star
+1732: 4 - 5 --> off by 1 star
+1733: 5 - 5 --> spot on!
+1734: 1 - 2 --> off by 1 star
+1735: 4 - 5 --> off by 1 star
+1736: 4 - 5 --> off by 1 star
+1737: 5 - 5 --> spot on!
+1738: 5 - 5 --> spot on!
+1739: 3 - 3 --> spot on!
+1740: 5 - 5 --> spot on!
+1741: 5 - 5 --> spot on!
+1742: 5 - 4 --> off by 1 star
+1743: 5 - 5 --> spot on!
+1744: 4 - 5 --> off by 1 star
+1745: 4 - 2 --> off by 2 star
+1746: 5 - 4 --> off by 1 star
+1747: 4 - 5 --> off by 1 star
+1748: 5 - 2 --> off by 3 star
+1749: 4 - 4 --> spot on!
+1750: 3 - 4 --> off by 1 star
+1751: 5 - 5 --> spot on!
+1752: 4 - 4 --> spot on!
+1753: 5 - 5 --> spot on!
+1754: 4 - 1 --> off by 3 star
+1755: 5 - 5 --> spot on!
+1756: 3 - 2 --> off by 1 star
+1757: 1 - 4 --> off by 3 star
+1758: 5 - 3 --> off by 2 star
+1759: 5 - 5 --> spot on!
+1760: 4 - 5 --> off by 1 star
+1761: 5 - 5 --> spot on!
+1762: 4 - 5 --> off by 1 star
+1763: 4 - 3 --> off by 1 star
+1764: 5 - 5 --> spot on!
+1765: 5 - 5 --> spot on!
+1766: 4 - 5 --> off by 1 star
+1767: 5 - 5 --> spot on!
+1768: 4 - 5 --> off by 1 star
+1769: 5 - 5 --> spot on!
+1770: 5 - 5 --> spot on!
+1771: 5 - 4 --> off by 1 star
+1772: 5 - 5 --> spot on!
+1773: 4 - 4 --> spot on!
+1774: 4 - 5 --> off by 1 star
+1775: 5 - 5 --> spot on!
+1776: 5 - 1 --> off by 4 star
+1777: 5 - 3 --> off by 2 star
+1778: 4 - 4 --> spot on!
+1779: 5 - 5 --> spot on!
+1780: 5 - 3 --> off by 2 star
+1781: 4 - 3 --> off by 1 star
+1782: 4 - 4 --> spot on!
+1783: 2 - 3 --> off by 1 star
+1784: 5 - 5 --> spot on!
+1785: 5 - 3 --> off by 2 star
+1786: 5 - 5 --> spot on!
+1787: 5 - 5 --> spot on!
+1788: 4 - 5 --> off by 1 star
+1789: 5 - 4 --> off by 1 star
+1790: 4 - 2 --> off by 2 star
+1791: 5 - 5 --> spot on!
+1792: 4 - 5 --> off by 1 star
+1793: 4 - 4 --> spot on!
+1794: 4 - 1 --> off by 3 star
+1795: 4 - 3 --> off by 1 star
+1796: 4 - 3 --> off by 1 star
+1797: 5 - 4 --> off by 1 star
+1798: 5 - 5 --> spot on!
+1799: 4 - 5 --> off by 1 star
+1800: 5 - 5 --> spot on!
+1801: 5 - 5 --> spot on!
+1802: 1 - 2 --> off by 1 star
+1803: 5 - 5 --> spot on!
+1804: 4 - 5 --> off by 1 star
+1805: 5 - 1 --> off by 4 star
+1806: 1 - 1 --> spot on!
+1807: 5 - 5 --> spot on!
+1808: 5 - 4 --> off by 1 star
+1809: 4 - 3 --> off by 1 star
+1810: 5 - 5 --> spot on!
+1811: 5 - 5 --> spot on!
+1812: 4 - 5 --> off by 1 star
+1813: 1 - 5 --> off by 4 star
+1814: 5 - 4 --> off by 1 star
+1815: 2 - 4 --> off by 2 star
+1816: 3 - 2 --> off by 1 star
+1817: 5 - 5 --> spot on!
+1818: 5 - 5 --> spot on!
+1819: 5 - 3 --> off by 2 star
+1820: 1 - 5 --> off by 4 star
+1821: 5 - 5 --> spot on!
+1822: 5 - 5 --> spot on!
+1823: 4 - 1 --> off by 3 star
+1824: 5 - 5 --> spot on!
+1825: 1 - 1 --> spot on!
+1826: 4 - 5 --> off by 1 star
+1827: 3 - 2 --> off by 1 star
+1828: 4 - 5 --> off by 1 star
+1829: 4 - 5 --> off by 1 star
+1830: 5 - 3 --> off by 2 star
+1831: 5 - 5 --> spot on!
+1832: 5 - 5 --> spot on!
+1833: 3 - 5 --> off by 2 star
+1834: 4 - 4 --> spot on!
+1835: 5 - 2 --> off by 3 star
+1836: 5 - 4 --> off by 1 star
+1837: 4 - 1 --> off by 3 star
+1838: 3 - 5 --> off by 2 star
+1839: 5 - 5 --> spot on!
+1840: 4 - 3 --> off by 1 star
+1841: 4 - 5 --> off by 1 star
+1842: 4 - 5 --> off by 1 star
+1843: 4 - 5 --> off by 1 star
+1844: 5 - 5 --> spot on!
+1845: 5 - 5 --> spot on!
+1846: 5 - 5 --> spot on!
+1847: 5 - 5 --> spot on!
+1848: 4 - 2 --> off by 2 star
+1849: 5 - 5 --> spot on!
+1850: 5 - 5 --> spot on!
+1851: 5 - 4 --> off by 1 star
+1852: 4 - 2 --> off by 2 star
+1853: 1 - 3 --> off by 2 star
+1854: 4 - 5 --> off by 1 star
+1855: 4 - 4 --> spot on!
+1856: 4 - 2 --> off by 2 star
+1857: 5 - 3 --> off by 2 star
+1858: 5 - 4 --> off by 1 star
+1859: 4 - 5 --> off by 1 star
+1860: 3 - 1 --> off by 2 star
+1861: 4 - 3 --> off by 1 star
+1862: 1 - 5 --> off by 4 star
+1863: 3 - 2 --> off by 1 star
+1864: 5 - 5 --> spot on!
+1865: 4 - 4 --> spot on!
+1866: 5 - 5 --> spot on!
+1867: 5 - 5 --> spot on!
+1868: 5 - 5 --> spot on!
+1869: 5 - 5 --> spot on!
+1870: 5 - 5 --> spot on!
+1871: 5 - 5 --> spot on!
+1872: 5 - 1 --> off by 4 star
+1873: 1 - 1 --> spot on!
+1874: 1 - 1 --> spot on!
+1875: 3 - 1 --> off by 2 star
+1876: 4 - 3 --> off by 1 star
+1877: 4 - 4 --> spot on!
+1878: 5 - 4 --> off by 1 star
+1879: 4 - 2 --> off by 2 star
+1880: 4 - 5 --> off by 1 star
+1881: 4 - 3 --> off by 1 star
+1882: 4 - 4 --> spot on!
+1883: 4 - 5 --> off by 1 star
+1884: 4 - 5 --> off by 1 star
+1885: 4 - 5 --> off by 1 star
+1886: 5 - 5 --> spot on!
+1887: 5 - 5 --> spot on!
+1888: 4 - 5 --> off by 1 star
+1889: 4 - 2 --> off by 2 star
+1890: 3 - 3 --> spot on!
+1891: 5 - 2 --> off by 3 star
+1892: 5 - 5 --> spot on!
+1893: 4 - 5 --> off by 1 star
+1894: 5 - 4 --> off by 1 star
+1895: 4 - 5 --> off by 1 star
+1896: 5 - 5 --> spot on!
+1897: 5 - 5 --> spot on!
+1898: 5 - 3 --> off by 2 star
+1899: 4 - 3 --> off by 1 star
+1900: 4 - 2 --> off by 2 star
+1901: 3 - 4 --> off by 1 star
+1902: 4 - 1 --> off by 3 star
+1903: 5 - 5 --> spot on!
+1904: 5 - 5 --> spot on!
+1905: 4 - 4 --> spot on!
+1906: 4 - 5 --> off by 1 star
+1907: 3 - 2 --> off by 1 star
+1908: 2 - 4 --> off by 2 star
+1909: 3 - 4 --> off by 1 star
+1910: 5 - 5 --> spot on!
+1911: 5 - 5 --> spot on!
+1912: 2 - 2 --> spot on!
+1913: 5 - 1 --> off by 4 star
+1914: 5 - 5 --> spot on!
+1915: 5 - 5 --> spot on!
+1916: 5 - 5 --> spot on!
+1917: 5 - 4 --> off by 1 star
+1918: 4 - 4 --> spot on!
+1919: 4 - 3 --> off by 1 star
+1920: 5 - 5 --> spot on!
+1921: 5 - 4 --> off by 1 star
+1922: 5 - 3 --> off by 2 star
+1923: 1 - 1 --> spot on!
+1924: 4 - 4 --> spot on!
+1925: 5 - 5 --> spot on!
+1926: 4 - 3 --> off by 1 star
+1927: 4 - 4 --> spot on!
+1928: 5 - 5 --> spot on!
+1929: 5 - 5 --> spot on!
+1930: 5 - 5 --> spot on!
+1931: 5 - 5 --> spot on!
+1932: 5 - 5 --> spot on!
+1933: 4 - 5 --> off by 1 star
+1934: 5 - 5 --> spot on!
+1935: 5 - 2 --> off by 3 star
+1936: 4 - 4 --> spot on!
+1937: 4 - 3 --> off by 1 star
+1938: 5 - 5 --> spot on!
+1939: 4 - 3 --> off by 1 star
+1940: 3 - 4 --> off by 1 star
+1941: 5 - 5 --> spot on!
+1942: 5 - 5 --> spot on!
+1943: 5 - 4 --> off by 1 star
+1944: 4 - 5 --> off by 1 star
+1945: 5 - 5 --> spot on!
+1946: 3 - 4 --> off by 1 star
+1947: 4 - 4 --> spot on!
+1948: 4 - 4 --> spot on!
+1949: 5 - 2 --> off by 3 star
+1950: 5 - 4 --> off by 1 star
+1951: 4 - 5 --> off by 1 star
+1952: 4 - 4 --> spot on!
+1953: 3 - 4 --> off by 1 star
+1954: 3 - 2 --> off by 1 star
+1955: 5 - 4 --> off by 1 star
+1956: 5 - 5 --> spot on!
+1957: 4 - 5 --> off by 1 star
+1958: 5 - 5 --> spot on!
+1959: 5 - 4 --> off by 1 star
+1960: 4 - 4 --> spot on!
+1961: 5 - 5 --> spot on!
+1962: 5 - 5 --> spot on!
+1963: 5 - 5 --> spot on!
+1964: 5 - 4 --> off by 1 star
+1965: 5 - 2 --> off by 3 star
+1966: 4 - 5 --> off by 1 star
+1967: 4 - 2 --> off by 2 star
+1968: 4 - 4 --> spot on!
+1969: 4 - 5 --> off by 1 star
+1970: 5 - 5 --> spot on!
+1971: 5 - 4 --> off by 1 star
+1972: 4 - 3 --> off by 1 star
+1973: 3 - 5 --> off by 2 star
+1974: 5 - 5 --> spot on!
+1975: 5 - 5 --> spot on!
+1976: 4 - 5 --> off by 1 star
+1977: 4 - 5 --> off by 1 star
+1978: 5 - 3 --> off by 2 star
+1979: 4 - 5 --> off by 1 star
+1980: 5 - 5 --> spot on!
+1981: 5 - 5 --> spot on!
+1982: 4 - 4 --> spot on!
+1983: 4 - 3 --> off by 1 star
+1984: 5 - 5 --> spot on!
+1985: 4 - 5 --> off by 1 star
+1986: 5 - 5 --> spot on!
+1987: 4 - 5 --> off by 1 star
+1988: 5 - 5 --> spot on!
+1989: 5 - 5 --> spot on!
+1990: 5 - 5 --> spot on!
+1991: 4 - 1 --> off by 3 star
+1992: 5 - 5 --> spot on!
+1993: 1 - 5 --> off by 4 star
+1994: 5 - 5 --> spot on!
+1995: 2 - 4 --> off by 2 star
+1996: 5 - 5 --> spot on!
+1997: 4 - 5 --> off by 1 star
+1998: 5 - 5 --> spot on!
+1999: 4 - 5 --> off by 1 star
+ #spot on: 985
+ #off by 1 star: 658
+ #off by 2 star: 168
+ #off by 3 star: 120
+ #off by 4 star: 69
+ #spot on: 0.4925
+ #off by 1 star: 0.329
+ #off by 2 star: 0.084
+ #off by 3 star: 0.06
+ #off by 4 star: 0.0345
