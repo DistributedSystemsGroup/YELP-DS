@@ -12,7 +12,7 @@ Tips: Building scikit-learn with pip (This is usually the fastest way to install
 ======
 Contact:
 
-mai@eurecom.fr
+mai@eurecom.fr  
 cai@eurecom.fr
 
 If you have any issues.
