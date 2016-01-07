@@ -1,7 +1,7 @@
 YELP-DS
 =======
 
-Semester project on the YELP dataset
+Semester project on the YELP dataset (https://www.yelp.com/dataset_challenge/dataset)
 
 Basic set-up:
 If you want to run this code, you need install scikit-learn (http://scikit-learn.org/stable/install.html) library.
@@ -15,5 +15,5 @@ Contact:
 mai@eurecom.fr  
 cai@eurecom.fr
 
-If you have any issues.
+If you have any issue.
 
