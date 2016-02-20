@@ -9,11 +9,12 @@ If you want to run this code, you need install scikit-learn (http://scikit-learn
 Tips: Building scikit-learn with pip (This is usually the fastest way to install or upgrade to the latest stable release):
     pip install --user --install-option="--prefix=" -U scikit-learn
 
+Scikit-learn requires Numpy & Scipy, you must have both of them installed before installing scikit-learn. You can install these modules by:  
+  $ sudo apt-get install python-numpy  
+  $ sudo apt-get install python-scipy  
+  
 ======
-Contact:
+If you want to discuss with us about this project, please send us an email to:
 
-mai@eurecom.fr  
+mai@eurecom.fr  or
 cai@eurecom.fr
-
-If you have any issue.
-
